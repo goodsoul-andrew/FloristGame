@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private PlayerInput playerInput;
     private Vector2 moveInput;
     public float moveSpeed = 10f;
+    public float placeRadius = 2;
     public UnityEngine.Object creationObject;
 
     void Start()
@@ -37,9 +38,13 @@ public class Player : MonoBehaviour
     {
         Vector2 mousePosition = Mouse.current.position.ReadValue();
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-        var creation = Instantiate(creationObject, worldPosition, Quaternion.Euler(0, 0, 0));
         Debug.Log("Клик по позиции: " + worldPosition);
+        var dist = ((Vector2)rb.transform.position - worldPosition).magnitude;
+        Debug.Log("Расстояние от клика до игрока = " + dist);
+        if (dist <= placeRadius)
+        {
+            Instantiate(creationObject, worldPosition, Quaternion.Euler(0, 0, 0));
+        }
     }
 
     private void FixedUpdate()
