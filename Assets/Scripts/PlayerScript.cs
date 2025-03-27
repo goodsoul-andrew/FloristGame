@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     private Vector2 moveInput;
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float placeRadius = 2;
-    public UnityEngine.Object creationObject;
+    [SerializeField] private UnityEngine.Object creationObject;
 
     void Start()
     {
