@@ -7,15 +7,21 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
     private PlayerInput playerInput;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+
     private Vector2 moveInput;
-    public float moveSpeed = 10f;
-    public float placeRadius = 2;
+    [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] private float placeRadius = 2;
     public UnityEngine.Object creationObject;
 
     void Start()
     {
         playerInput = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
         playerInput.actions["Move"].performed += HandleMove;
         playerInput.actions["Move"].canceled += HandleMoveCanceled;
 
@@ -49,6 +55,10 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        animator.SetFloat("moveX", moveInput.x);
+        animator.SetFloat("moveY", moveInput.y);
+
+        Camera.main.transform.position = new Vector3(rb.position.x, rb.position.y, Camera.main.transform.position.z);
         rb.MovePosition(rb.position + moveInput * (moveSpeed * Time.deltaTime));
     }
 }
