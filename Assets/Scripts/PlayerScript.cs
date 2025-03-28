@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float placeRadius = 2;
     [SerializeField] private UnityEngine.Object creationObject;
 
-    void Start()
+    private void Start()
     {
         playerInput = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
@@ -58,7 +58,6 @@ public class Player : MonoBehaviour
         animator.SetFloat("moveX", moveInput.x);
         animator.SetFloat("moveY", moveInput.y);
 
-        Camera.main.transform.position = new Vector3(rb.position.x, rb.position.y, Camera.main.transform.position.z);
         rb.MovePosition(rb.position + moveInput * (moveSpeed * Time.deltaTime));
     }
 }
