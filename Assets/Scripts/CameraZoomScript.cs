@@ -8,7 +8,6 @@ public class OrthographicZoom : MonoBehaviour
     public float maxZoom = 5;
     public float minZoom = 20;
     public float sensitivity = 1;
-    public float speed = 30;
 
     void Start()
     {
