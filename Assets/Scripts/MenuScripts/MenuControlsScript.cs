@@ -5,7 +5,6 @@ public class MenuControlsScript : MonoBehaviour
 {
     public void StartGame()
     {
-        Debug.Log("Starting game");
         SceneManager.LoadScene("GameScene");
     }
 
