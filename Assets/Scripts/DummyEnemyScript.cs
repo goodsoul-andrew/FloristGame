@@ -13,6 +13,6 @@ public class DummyEnemy : MonoBehaviour
 
     private void DestroyMyself()
     {
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 }

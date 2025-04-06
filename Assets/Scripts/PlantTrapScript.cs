@@ -1,7 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlantTrapScript : MonoBehaviour
+public class PlantTrap: MonoBehaviour
 {
     private Animator animator;
     private bool isOpen;

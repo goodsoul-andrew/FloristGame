@@ -79,6 +79,10 @@ public class Player : MonoBehaviour
             {
                 GameObject minion = (GameObject)Instantiate(creationObject, worldPosition, Quaternion.Euler(0, 0, 0));
                 minion.tag = "PlayerMinion";
+                if (minion.TryGetComponent<Plant>(out var plant))
+                {
+                    plant.isSample = false;
+                }
             }
             else
             {
