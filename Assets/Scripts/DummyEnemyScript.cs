@@ -3,17 +3,16 @@ using UnityEngine;
 public class DummyEnemy : MonoBehaviour
 {
     public Health health;
+    public DamageDealer damageDealer;
     void Start()
     {
         health = GetComponent<Health>();
+        damageDealer = GetComponent<DamageDealer>();
+        health.OnDeath += DestroyMyself;
     }
 
-    void Update()
+    private void DestroyMyself()
     {
-        if (health.isDead)
-        {
-            Destroy(this.gameObject);
-        }
-        this.transform.position += new Vector3(0, 0.01f, 0);
+        Destroy(this.gameObject);
     }
 }

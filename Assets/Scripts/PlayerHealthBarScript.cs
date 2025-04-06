@@ -11,10 +11,11 @@ public class HealthBar : MonoBehaviour
     {
         healthBar = GetComponent<Image>();
         playerHP = player.GetComponent<Health>();
+        playerHP.OnHealthChanged += UpdateHealthBar;
     }
 
     
-    void Update()
+    private void UpdateHealthBar()
     {
         healthBar.fillAmount = playerHP.HP / playerHP.maxHP;
     }

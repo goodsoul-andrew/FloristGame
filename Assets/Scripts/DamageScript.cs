@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageDealer : MonoBehaviour
 {
-    public float damageAmount = 10;
+    public float damageAmount;
     public HashSet<string> Friends = new HashSet<string>();
 
     private void DealDamage(GameObject target)

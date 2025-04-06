@@ -2,14 +2,17 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public float maxHP = 100;
+    public float maxHP;
     private float currentHP;
+    public System.Action OnHealthChanged;
+    public System.Action OnDeath;
     public float HP => currentHP;
     public bool isDead => HP <= 0;
 
     void Start()
     {
         currentHP = maxHP;
+        OnHealthChanged?.Invoke();
     }
 
     public void TakeDamage(float damage)
@@ -19,8 +22,9 @@ public class Health : MonoBehaviour
         if (currentHP <= 0)
         {
             currentHP = 0;
-            Die();
+            OnDeath?.Invoke();
         }
+        OnHealthChanged?.Invoke();
     }
 
     public void Heal(float amount)
@@ -30,10 +34,6 @@ public class Health : MonoBehaviour
         {
             currentHP = maxHP;
         }
-    }
-
-    private void Die()
-    {
-        Debug.Log("Died");
+        OnHealthChanged?.Invoke();
     }
 }
