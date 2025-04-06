@@ -58,19 +58,18 @@ public class Player : MonoBehaviour
         if (isPaused) return;
         Vector2 mousePosition = Mouse.current.position.ReadValue();
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        // Debug.Log("Клик по позиции: " + worldPosition);
         var dist = ((Vector2)rb.transform.position - worldPosition).magnitude;
-        // Debug.Log("Расстояние от клика до игрока = " + dist);
+        Debug.Log($"Клик по позиции: {worldPosition}, рассдояние до игрока = {dist}");
         if (dist <= placeRadius)
         {
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(worldPosition, 0.5f); // Радиус может быть настройкой
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(worldPosition, 0.5f);
 
             bool canPlace = true;
             foreach (var collider in colliders)
             {
                 if (collider.gameObject.CompareTag("PlayerMinion"))
                 {
-                    canPlace = false; // Найден объект с тем же тегом
+                    canPlace = false;
                     break;
                 }
             }
@@ -83,10 +82,6 @@ public class Player : MonoBehaviour
                 {
                     plant.isSample = false;
                 }
-            }
-            else
-            {
-                Debug.Log("Невозможно разместить миниона: область занята!");
             }
         }
     }
