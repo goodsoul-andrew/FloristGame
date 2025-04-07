@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      test_trap_plant_closed_0: -4973027276912278226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
