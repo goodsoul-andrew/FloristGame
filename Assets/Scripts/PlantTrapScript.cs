@@ -25,9 +25,9 @@ public class PlantTrap: MonoBehaviour
         if (isOpen)
         {
             isOpen = false;
-            plant.DestroyAfterDelay(1f);
             animator.SetBool("isOpen", false);
             Debug.Log("Close trap");
+            plant.DestroyAfterDelay(0.25f);
         }
     }
 }
