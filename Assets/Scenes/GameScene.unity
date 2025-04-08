@@ -982,7 +982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832c9e68f22bf9ca4ac7da527d2855ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 30
+  maxHP: 10
 --- !u!212 &203620096
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2510,7 +2510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832c9e68f22bf9ca4ac7da527d2855ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 30
+  maxHP: 10
 --- !u!212 &461495618
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32502,7 +32502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  placeRadius: 2
+  placeRadius: 10
   creationObject: {fileID: 970566215}
   pauseMenu: {fileID: 674019282}
 --- !u!50 &1946183539

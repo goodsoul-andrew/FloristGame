@@ -9,12 +9,17 @@ public class Plant : MonoBehaviour
 
     void Start()
     {
-        if (! isSample) StartCoroutine(RemoveTrapAfterDelay(destroyDelay));
+        if (! isSample) StartCoroutine(RemoveAfterDelay(destroyDelay));
     }
 
-    private IEnumerator RemoveTrapAfterDelay(float delay)
+    private IEnumerator RemoveAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         Destroy(gameObject);
+    }
+
+    public void DestroyAfterDelay(float delay)
+    {
+        if (! isSample) StartCoroutine(RemoveAfterDelay(delay));
     }
 }

@@ -6,12 +6,14 @@ public class PlantTrap: MonoBehaviour
 {
     private Animator animator;
     private bool isOpen;
+    private Plant plant;
     private DamageDealer damageDealer;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         damageDealer = GetComponent<DamageDealer>();
+        plant = GetComponent<Plant>();
         damageDealer.Friends.Add("Player");
         damageDealer.Friends.Add("PlayerMinion");
         isOpen = true;
@@ -23,6 +25,7 @@ public class PlantTrap: MonoBehaviour
         if (isOpen)
         {
             isOpen = false;
+            plant.DestroyAfterDelay(1f);
             animator.SetBool("isOpen", false);
             Debug.Log("Close trap");
         }
