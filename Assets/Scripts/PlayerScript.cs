@@ -9,12 +9,12 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerInput playerInput;
     private Animator animator;
+    private FlowersManagerScript flowersManager;
 
     private Vector2 moveInput;
     private bool isPaused;
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float placeRadius = 5;
-    [SerializeField] private UnityEngine.Object creationObject;
     [SerializeField] private UnityEngine.GameObject pauseMenu;
 
     private void Start()
@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        flowersManager = GetComponent<FlowersManagerScript>();
 
         playerInput.actions["Move"].performed += HandleMove;
         playerInput.actions["Move"].canceled += HandleMoveCanceled;
@@ -29,6 +30,8 @@ public class Player : MonoBehaviour
         playerInput.actions["Place"].started += HandleClick;
 
         playerInput.actions["Pause"].started += HandlePause;
+
+        playerInput.actions["ChangeFlower"].started += HandleChangeFlower;
 
         ResumeGame();
     }
@@ -62,33 +65,18 @@ public class Player : MonoBehaviour
         Debug.Log($"Клик по позиции: {worldPosition}, рассдояние до игрока = {dist}");
         if (dist <= placeRadius)
         {
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(worldPosition, 0.5f);
-
-            bool canPlace = true;
-            foreach (var collider in colliders)
-            {
-                if (collider.gameObject.CompareTag("PlayerMinion"))
-                {
-                    canPlace = false;
-                    break;
-                }
-            }
-
-            if (canPlace)
-            {
-                GameObject minion = (GameObject)Instantiate(creationObject, worldPosition, Quaternion.Euler(0, 0, 0));
-                minion.tag = "PlayerMinion";
-                if (minion.TryGetComponent<Plant>(out var plant))
-                {
-                    plant.isSample = false;
-                }
-            }
+            flowersManager.PlaceFlower(worldPosition);
         }
     }
 
     private void HandlePause(InputAction.CallbackContext context)
     {
         if (!isPaused) PauseGame();
+    }
+
+    private void HandleChangeFlower(InputAction.CallbackContext context)
+    {
+        flowersManager.SetIndex(int.Parse(context.control.name));
     }
 
     public void PauseGame()
