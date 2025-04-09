@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
 
     private void HandleChangeFlower(InputAction.CallbackContext context)
     {
-        flowersManager.SetIndex(int.Parse(context.control.name));
+        if (!isPaused) flowersManager.SetIndex(int.Parse(context.control.name));
     }
 
     public void PauseGame()
