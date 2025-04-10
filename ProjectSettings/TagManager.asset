@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PlayerMinion
   - Enemy
+  - flower1
+  - flower2
+  - flower3
   layers:
   - Default
   - TransparentFX
