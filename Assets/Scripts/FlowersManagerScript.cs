@@ -94,6 +94,13 @@ public class FlowersManagerScript : MonoBehaviour
         return numberOfFlowers;
     }
 
+    public void ChangeNumberOfFlowers(int index)
+    {
+        FlowersCount[index]++;
+        var textComponent = FlowersNumbers[index].GetComponent<TextMeshProUGUI>();
+        textComponent.text = FlowersCount[index].ToString();
+    }
+
     public void RecreateFlowersUI()
     {
         if(FlowersNumbers!=null)
