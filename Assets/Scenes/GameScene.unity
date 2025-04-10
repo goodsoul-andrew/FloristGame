@@ -32894,14 +32894,14 @@ MonoBehaviour:
   - {fileID: 163596157}
   - {fileID: 218653611}
   - {fileID: 1898304943}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 218653611}
+  - {fileID: 1898304943}
+  - {fileID: 163596157}
+  - {fileID: 1898304943}
   FlowersCount: ffffffff02000000050000000e000000ffffffffffffffffffffffff
   scrollSprite: {fileID: -2695729982739442573, guid: 3b6e8b42cfcdd774abc790aa17cfe834, type: 3}
   Index: 0
-  numberOfFlowers: 7
+  numberOfFlowers: 4
   Bar: {fileID: 598981319}
 --- !u!1 &1994335754
 GameObject:
