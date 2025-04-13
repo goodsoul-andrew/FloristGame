@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Callbacks;
 using UnityEngine;
@@ -13,8 +15,10 @@ public class Player : MonoBehaviour
 
     private Vector2 moveInput;
     private bool isPaused;
+    private bool canPlace;
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float placeRadius = 5;
+    [SerializeField] private float placeDelay = 2f;
     [SerializeField] private UnityEngine.GameObject pauseMenu;
 
     private void Start()
@@ -33,6 +37,7 @@ public class Player : MonoBehaviour
 
         playerInput.actions["ChangeFlower"].started += HandleChangeFlower;
 
+        StartCoroutine(StartPlaceDelay(0));
         ResumeGame();
     }
 
@@ -58,7 +63,7 @@ public class Player : MonoBehaviour
 
     private void HandleClick(InputAction.CallbackContext context)
     {
-        if (isPaused) return;
+        if (isPaused || !canPlace) return;
         Vector2 mousePosition = Mouse.current.position.ReadValue();
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         var dist = ((Vector2)rb.transform.position - worldPosition).magnitude;
@@ -66,6 +71,7 @@ public class Player : MonoBehaviour
         if (dist <= placeRadius)
         {
             flowersManager.PlaceFlower(worldPosition);
+            StartCoroutine(StartPlaceDelay(placeDelay));
         }
     }
 
@@ -77,6 +83,13 @@ public class Player : MonoBehaviour
     private void HandleChangeFlower(InputAction.CallbackContext context)
     {
         if (!isPaused) flowersManager.SetIndex(int.Parse(context.control.name));
+    }
+
+    public IEnumerator StartPlaceDelay(float delay)
+    {
+        canPlace = false;
+        yield return new WaitForSeconds(delay);
+        canPlace = true;
     }
 
     public void PauseGame()

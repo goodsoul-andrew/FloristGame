@@ -56505,6 +56505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   placeRadius: 10
+  placeDelay: 1
   pauseMenu: {fileID: 674019282}
 --- !u!50 &1946183539
 Rigidbody2D:
@@ -56577,7 +56578,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 7818843845386774630, guid: 1ef5200281e14fd4ea52663f9ae614fa, type: 3}
+  m_Sprite: {fileID: -8108571039695255361, guid: c74f72e10c6dbfe4bb8c9f5fbf019f04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
