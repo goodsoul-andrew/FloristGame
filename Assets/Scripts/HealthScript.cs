@@ -6,19 +6,19 @@ public class Health : MonoBehaviour
     private float currentHP;
     public System.Action OnHealthChanged;
     public System.Action OnDeath;
-    public float HP => currentHP;
-    public bool isDead => HP <= 0;
 
-    void Start()
+    public float HP => currentHP;
+    public bool IsDead => HP <= 0;
+
+    protected virtual void Start()
     {
         currentHP = maxHP;
         OnHealthChanged?.Invoke();
     }
 
-    public void TakeDamage(float damage)
+    public virtual void TakeDamage(float damage)
     {
         currentHP -= damage;
-        Debug.Log($"Taken {damage} damage. Current HP is {HP}");
         if (currentHP <= 0)
         {
             currentHP = 0;
@@ -27,7 +27,7 @@ public class Health : MonoBehaviour
         OnHealthChanged?.Invoke();
     }
 
-    public void Heal(float amount)
+    public virtual void Heal(float amount)
     {
         currentHP += amount;
         if (currentHP > maxHP)
