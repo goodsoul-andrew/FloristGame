@@ -5,13 +5,13 @@ public class Enemy : MonoBehaviour
 {
     public Health health;
     public DamageDealer damageDealer;
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float detectionRadius = 10f;
-    private Rigidbody2D rb;
-    private Collider2D playerCollider;
-    private CircleCollider2D selfCollider;
+    [SerializeField] protected float moveSpeed = 5f;
+    [SerializeField] protected float detectionRadius = 10f;
+    protected Rigidbody2D rb;
+    protected Collider2D playerCollider;
+    protected CircleCollider2D selfCollider;
 
-    void Start()
+    protected void Start()
     {
         health = GetComponent<Health>();
         damageDealer = GetComponent<DamageDealer>();
@@ -58,7 +58,7 @@ public class Enemy : MonoBehaviour
         rb.MovePosition(rb.position + moveSpeed * Time.deltaTime * direction);
     }
 
-    private void DestroyMyself()
+    protected void DestroyMyself()
     {
         Destroy(gameObject);
     }
