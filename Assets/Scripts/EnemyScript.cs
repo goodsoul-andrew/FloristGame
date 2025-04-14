@@ -35,19 +35,21 @@ public class Enemy : MonoBehaviour
     private bool CanSeePlayer()
     {
         var playerPos = playerCollider.transform.position + (Vector3)playerCollider.offset;
-        var r = selfCollider.radius * selfCollider.transform.localScale.x + 0.1f;
         Vector2 directionToPlayer = (playerPos - selfCollider.transform.position).normalized;
-        Vector2 rayPos = (Vector2)selfCollider.transform.position + selfCollider.offset + directionToPlayer * r;
-        RaycastHit2D hit = Physics2D.Raycast(rayPos, directionToPlayer, detectionRadius - r);
-        Debug.DrawRay(rayPos, directionToPlayer, Color.red);
-        if (hit.collider != null)
+        var r = selfCollider.radius * selfCollider.transform.localScale.x + 0.1f;
+        var hits = Physics2D.RaycastAll(selfCollider.transform.position, directionToPlayer, detectionRadius - r);
+        foreach (var hit in hits)
         {
             if (hit.collider.CompareTag("Player"))
             {
-                return true; 
+                return true;
+            }
+            else if (hit.collider.CompareTag("Obstacle"))
+            {
+                return false;
             }
         }
-        return false; 
+        return false;
     }
 
     private void MoveTowardsPlayer()
