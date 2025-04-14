@@ -1,21 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.UI;
 using UnityEngine;
 
-public class PlantTrap: MonoBehaviour
+public class PlantTrap: Plant
 {
     private Animator animator;
     private bool isOpen;
-    private Plant plant;
     private DamageDealer damageDealer;
+    private CapsuleCollider2D selfCollider;
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         animator = GetComponent<Animator>();
         damageDealer = GetComponent<DamageDealer>();
-        plant = GetComponent<Plant>();
         damageDealer.Friends.Add("Player");
         damageDealer.Friends.Add("PlayerMinion");
+        selfCollider = GetComponent<CapsuleCollider2D>();
         isOpen = true;
     }
 
@@ -27,7 +29,7 @@ public class PlantTrap: MonoBehaviour
             isOpen = false;
             animator.SetBool("isOpen", false);
             Debug.Log("Close trap");
-            plant.DestroyAfterDelay(0.25f);
+            DestroyAfterDelay(0.25f);
         }
     }
 }

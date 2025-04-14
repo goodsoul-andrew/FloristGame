@@ -6,6 +6,7 @@ using System;
 public class FlowersManagerScript : MonoBehaviour
 {
     [SerializeField] private GameObject[] FlowersObjects;
+    private Plant[] FlowersPlants;
     [SerializeField] private int[] FlowersCount;
     [SerializeField] private Sprite scrollSprite;
     [SerializeField] private int Index = 0;
@@ -30,6 +31,20 @@ public class FlowersManagerScript : MonoBehaviour
         scrollImage.sprite = scrollSprite;
         scrollObject.layer = LayerMask.NameToLayer("UI");
 
+        FlowersPlants = new Plant[FlowersObjects.Length];
+        for (var i = 0; i < FlowersPlants.Length; i++)
+        {
+            if (FlowersObjects[i].TryGetComponent<Plant>(out var plant))
+            {
+                FlowersPlants[i] = plant;
+                Debug.Log(plant);
+            }
+            else
+            {
+                throw new InvalidOperationException("Попытка добавить в массив растений не растение");
+            }
+        }
+
         RecreateFlowersUI();
     }
     public void PlaceFlower(Vector2 position)
@@ -44,19 +59,7 @@ public class FlowersManagerScript : MonoBehaviour
             Debug.Log("Закончились");
             return;
         }
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(position, 0.5f);
-
-        bool canPlace = true;
-        foreach (var collider in colliders)
-        {
-            if (collider.gameObject.CompareTag("PlayerMinion"))
-            {
-                canPlace = false;
-                break;
-            }
-        }
-
-        if (canPlace)
+        if (FlowersPlants[Index].IsAreaAvailable(position))
         {
             FlowersCount[Index]--;
             if(FlowersCount[Index] >= 0)

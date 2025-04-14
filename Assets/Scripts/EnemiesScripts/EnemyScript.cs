@@ -8,31 +8,51 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float moveSpeed = 5f;
     [SerializeField] protected float detectionRadius = 10f;
     protected Rigidbody2D rb;
-    protected Collider2D playerCollider;
+    public Collider2D playerCollider {get; private set;}
     protected CircleCollider2D selfCollider;
+    private IEnemyState currentState;
+
+    public readonly WanderingState wanderingState = new WanderingState();
+    public readonly ChasingState chasingState = new ChasingState();
 
     protected void Start()
     {
         health = GetComponent<Health>();
         damageDealer = GetComponent<DamageDealer>();
+        damageDealer.Friends.Add("Enemy");
         rb = GetComponent<Rigidbody2D>();
         health.OnDeath += DestroyMyself;
         playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>();
         selfCollider = GetComponent<CircleCollider2D>();
+
+        ChangeState(wanderingState);
+    }
+
+    public void ChangeState(IEnemyState newState)
+    {
+        currentState?.Exit(this);
+        currentState = newState;
+        currentState?.Enter(this);
     }
 
     void FixedUpdate()
+    {
+        currentState?.Update(this);
+    }
+
+    public bool IsPlayerInChasingRadius()
     {
         if (playerCollider is not null)
         {
             if (Vector2.Distance(transform.position, playerCollider.transform.position) <= detectionRadius && CanSeePlayer())
             {
-                MoveTowardsPlayer();
+                return true;
             }
         }
+        return false;
     }
 
-    private bool CanSeePlayer()
+    public bool CanSeePlayer()
     {
         var playerPos = playerCollider.transform.position + (Vector3)playerCollider.offset;
         Vector2 directionToPlayer = (playerPos - selfCollider.transform.position).normalized;
@@ -52,9 +72,9 @@ public class Enemy : MonoBehaviour
         return false;
     }
 
-    private void MoveTowardsPlayer()
+    public virtual void MoveTowardsTarget(Vector2 targetPosition)
     {
-        Vector2 direction = (playerCollider.transform.position - transform.position).normalized;
+        Vector2 direction = (targetPosition - (Vector2)transform.position).normalized;
         rb.MovePosition(rb.position + moveSpeed * Time.deltaTime * direction);
     }
 

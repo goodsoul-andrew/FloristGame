@@ -3,7 +3,8 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class SmartEnemy : Enemy
-{    private NavMeshAgent navMeshAgent;
+{    
+    public NavMeshAgent navMeshAgent;
 
     new void Start()
     {
@@ -11,16 +12,12 @@ public class SmartEnemy : Enemy
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.updateRotation = false;
         navMeshAgent.updateUpAxis = false;
+        chasingState.ChaseDuration = 5f;
+        chasingState.ForgetTarget = false;
     }
 
-    void FixedUpdate()
+    public override void MoveTowardsTarget(Vector2 targetPosition)
     {
-        if (playerCollider is not null)
-        {
-            if (Vector2.Distance(transform.position, playerCollider.transform.position) <= detectionRadius)
-            {
-                navMeshAgent.SetDestination(playerCollider.transform.position);
-            }
-        }
+        navMeshAgent.SetDestination(targetPosition);
     }
 }
