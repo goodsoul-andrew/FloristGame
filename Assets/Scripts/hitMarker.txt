@@ -1,0 +1,31 @@
+private void CreateHitMarker(Vector2 hitPosition)
+    {
+        GameObject hitMarker = new GameObject("HitMarker");
+        hitMarker.transform.position = hitPosition;
+        SpriteRenderer spriteRenderer = hitMarker.AddComponent<SpriteRenderer>();
+        spriteRenderer.color = Color.red;
+        spriteRenderer.sortingOrder = 3;
+        spriteRenderer.sprite = CreateCircleSprite(2f);
+        Destroy(hitMarker, 1f); 
+    }
+
+private Sprite CreateCircleSprite(float radius)
+{
+    Texture2D texture = new Texture2D(32, 32);
+    Color[] colors = new Color[32 * 32];
+    for (int i = 0; i < colors.Length; i++) colors[i] = new Color(0, 0, 0, 0);
+    for (int x = 0; x < 32; x++)
+    {
+        for (int y = 0; y < 32; y++)
+        {
+            if (Vector2.Distance(new Vector2(x, y), new Vector2(16, 16)) < radius * 16)
+            {
+                colors[x + y * 32] = Color.red;
+            }
+        }
+    }
+    texture.SetPixels(colors);
+    texture.Apply();
+    Sprite sprite = Sprite.Create(texture, new Rect(0, 0, 32, 32), new Vector2(0.5f, 0.5f));
+    return sprite;
+}

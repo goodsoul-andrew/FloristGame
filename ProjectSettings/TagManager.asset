@@ -9,6 +9,7 @@ TagManager:
   - flower1
   - flower2
   - flower3
+  - Obstacle
   layers:
   - Default
   - TransparentFX
