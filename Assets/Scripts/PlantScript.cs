@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Plant : MonoBehaviour
 {
-    public bool isSample;
+    public bool IsInfinite;
     public float destroyDelay = 10f;
 
     protected virtual void Start()
     {
-        if (! isSample) StartCoroutine(RemoveAfterDelay(destroyDelay));
+        if (! IsInfinite) StartCoroutine(RemoveAfterDelay(destroyDelay));
     }
 
     private IEnumerator RemoveAfterDelay(float delay)
@@ -21,7 +21,7 @@ public class Plant : MonoBehaviour
 
     public void DestroyAfterDelay(float delay)
     {
-        if (! isSample) StartCoroutine(RemoveAfterDelay(delay));
+        if (! IsInfinite) StartCoroutine(RemoveAfterDelay(delay));
     }
 
     protected virtual Collider2D[] GetCollidersInArea(Vector2 position)

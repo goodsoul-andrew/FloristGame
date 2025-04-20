@@ -10,15 +10,17 @@ TagManager:
   - flower2
   - flower3
   - Obstacle
+  - LilyPad
+  - Water
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Entity
   - Water
   - UI
-  - "\u043C\u044F"
-  - 
+  - LilyPad
+  - Player
   - 
   - 
   - 

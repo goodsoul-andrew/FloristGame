@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 5dc193b85525e4245a1110c6db4dd365
+guid: bb54f29d6ce7533c48a833a3b6b22033
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1248163592640228442
-    second: "\u0437\u0430\u0431\u043E\u0440_0"
+      213: -6636963309793451902
+    second: Lilypad_0
+  - first:
+      213: 5237606164704071833
+    second: Lilypad_1
+  - first:
+      213: 1453897970555885594
+    second: Lilypad_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +119,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0437\u0430\u0431\u043E\u0440_0"
+      name: Lilypad_0
       rect:
         serializedVersion: 2
-        x: 406
-        y: 0
-        width: 130
-        height: 1024
+        x: 219
+        y: 172
+        width: 654
+        height: 679
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a39a1753d1adaee0800000000000000
-      internalID: -1248163592640228442
+      spriteID: 280e57ca805c4e3a0800000000000000
+      internalID: -6636963309793451902
       vertices: []
       indices: 
       edges: []
@@ -138,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e0b2acdec621814278a8523e102adf00
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +154,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u0437\u0430\u0431\u043E\u0440_0": -1248163592640228442
+      Lilypad_0: -6636963309793451902
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
