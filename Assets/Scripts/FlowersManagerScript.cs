@@ -66,7 +66,7 @@ public class FlowersManagerScript : MonoBehaviour
             minion.tag = "PlayerMinion";
             if (minion.TryGetComponent<Plant>(out var plant))
             {
-                plant.isSample = false;
+                //plant.IsInfinite = false;
             }
         }
     }

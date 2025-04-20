@@ -12,7 +12,7 @@ public class SmartEnemy : Enemy
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.updateRotation = false;
         navMeshAgent.updateUpAxis = false;
-        chasingState.ChaseDuration = 5f;
+        //chasingState.ChaseDuration = 5f;
         chasingState.ForgetTarget = false;
     }
 

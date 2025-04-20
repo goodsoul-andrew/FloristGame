@@ -17,6 +17,7 @@ public class PlantTrap: Plant
         damageDealer = GetComponent<DamageDealer>();
         damageDealer.Friends.Add("Player");
         damageDealer.Friends.Add("PlayerMinion");
+        damageDealer.Friends.Add("lilyPad");
         selfCollider = GetComponent<CapsuleCollider2D>();
         isOpen = true;
     }
