@@ -41,4 +41,9 @@ public class Plant : MonoBehaviour
         }
         return true;
     }
+
+    public GameObject Place(Vector2 position)
+    {
+        return Instantiate(this.gameObject, position, Quaternion.Euler(0, 0, 0));
+    }
 }

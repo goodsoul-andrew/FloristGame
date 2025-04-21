@@ -6,7 +6,7 @@ using System;
 public class FlowersManagerScript : MonoBehaviour
 {
     [SerializeField] private GameObject[] FlowersObjects;
-    private Plant[] FlowersPlants;
+    private Plant[] Plants;
     [SerializeField] private int[] FlowersCount;
     [SerializeField] private Sprite scrollSprite;
     [SerializeField] private Sprite backSprite;
@@ -21,12 +21,12 @@ public class FlowersManagerScript : MonoBehaviour
 
     private void Start()
     {
-        FlowersPlants = new Plant[FlowersObjects.Length];
-        for (var i = 0; i < FlowersPlants.Length; i++)
+        Plants = new Plant[FlowersObjects.Length];
+        for (var i = 0; i < Plants.Length; i++)
         {
             if (FlowersObjects[i].TryGetComponent<Plant>(out var plant))
             {
-                FlowersPlants[i] = plant;
+                Plants[i] = plant;
                 Debug.Log(plant);
             }
             else
@@ -54,7 +54,7 @@ public class FlowersManagerScript : MonoBehaviour
             Debug.Log("Закончились");
             return;
         }
-        if (FlowersPlants[Index].IsAreaAvailable(position))
+        if (Plants[Index].IsAreaAvailable(position))
         {
             TutorialScript.FinishTutorial("place");
             FlowersCount[Index]--;
@@ -63,12 +63,7 @@ public class FlowersManagerScript : MonoBehaviour
                 var textComponent = FlowersNumbers[Index].GetComponent<TextMeshProUGUI>();
                 textComponent.text = FlowersCount[Index].ToString();
             }
-            GameObject minion = (GameObject)Instantiate(FlowersObjects[Index], position, Quaternion.Euler(0, 0, 0));
-            minion.tag = "PlayerMinion";
-            if (minion.TryGetComponent<Plant>(out var plant))
-            {
-                //plant.IsInfinite = false;
-            }
+            Plants[Index].Place(position);
         }
     }
     public void SetIndex(int index)

@@ -109,4 +109,18 @@ public class Player : MonoBehaviour
         pauseMenu.SetActive(false);
         AudioListener.pause = false;
     }
+
+    public bool CheckIfOnLilyPad()
+    {
+        Vector2 position = transform.position;
+        var colliders = Physics2D.OverlapCircleAll(position, 0.5f);
+        foreach (var collider in colliders)
+        {
+            if (collider != null && collider.CompareTag("LilyPad"))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }
