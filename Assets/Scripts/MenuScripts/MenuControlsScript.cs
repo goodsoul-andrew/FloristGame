@@ -10,7 +10,7 @@ public class MenuControlsScript : MonoBehaviour
 
     public void ExitGame()
     {
-        Debug.Log("Exiting game");
+        //Debug.Log("Exiting game");
         Application.Quit();
     }
 }

@@ -13,6 +13,7 @@ TagManager:
   - LilyPad
   - Water
   - PlantTrap
+  - Ground
   layers:
   - Default
   - TransparentFX

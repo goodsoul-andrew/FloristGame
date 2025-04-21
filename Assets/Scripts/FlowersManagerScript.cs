@@ -27,7 +27,6 @@ public class FlowersManagerScript : MonoBehaviour
             if (FlowersObjects[i].TryGetComponent<Plant>(out var plant))
             {
                 Plants[i] = plant;
-                Debug.Log(plant);
             }
             else
             {
@@ -36,7 +35,7 @@ public class FlowersManagerScript : MonoBehaviour
         }
         RecreateFlowersUI();
 
-        var scrollObj = CreateBasicObject(new Vector2(50, 50),new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0)*100, 0));
+        var scrollObj = CreateBasicObject(new Vector2(50, 50), new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0));
         var spriteImage = scrollObj.AddComponent<Image>();
         spriteImage.sprite = scrollSprite;
 
@@ -44,46 +43,48 @@ public class FlowersManagerScript : MonoBehaviour
     }
     public void PlaceFlower(Vector2 position)
     {
-        if(Index >= numberOfFlowers)
+        if (Index >= numberOfFlowers)
         {
-            Debug.Log("Цветка под таким индексом нет");
+            //Debug.Log("Цветка под таким индексом нет");
             return;
         }
-        if(FlowersCount[Index] == 0)
+        if (FlowersCount[Index] == 0)
         {
-            Debug.Log("Закончились");
+            //Debug.Log("Закончились");
             return;
         }
         if (Plants[Index].IsAreaAvailable(position))
         {
             TutorialScript.FinishTutorial("place");
-            FlowersCount[Index]--;
-            if(FlowersCount[Index] >= 0)
+            if (Plants[Index].TryPlace(position))
             {
-                var textComponent = FlowersNumbers[Index].GetComponent<TextMeshProUGUI>();
-                textComponent.text = FlowersCount[Index].ToString();
+                FlowersCount[Index]--;
+                if (FlowersCount[Index] >= 0)
+                {
+                    var textComponent = FlowersNumbers[Index].GetComponent<TextMeshProUGUI>();
+                    textComponent.text = FlowersCount[Index].ToString();
+                }
             }
-            Plants[Index].Place(position);
         }
     }
     public void SetIndex(int index)
     {
         index--;
-        Debug.Log($"индекс нажат:{index}");
-        if(index < numberOfFlowers)
+        //Debug.Log($"индекс нажат:{index}");
+        if (index < numberOfFlowers)
         {
             TutorialScript.FinishTutorial("change");
-            Debug.Log($"Новый индекс:{index}");
+            //Debug.Log($"Новый индекс:{index}");
             Index = index;
-            scrollTransform.anchoredPosition = new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0)*100, 0);
+            scrollTransform.anchoredPosition = new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0);
         }
     }
 
     public void SetNumberOfFlowers(int number)
     {
-        numberOfFlowers = Math.Min(number,FlowersObjects.Length);
+        numberOfFlowers = Math.Min(number, FlowersObjects.Length);
         RecreateFlowersUI();
-        scrollTransform.anchoredPosition = new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0)*100, 0);
+        scrollTransform.anchoredPosition = new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0);
     }
     public int GetNumberOfFlowers()
     {
@@ -99,25 +100,25 @@ public class FlowersManagerScript : MonoBehaviour
 
     public void RecreateFlowersUI()
     {
-        if(FlowersNumbers!=null)
+        if (FlowersNumbers != null)
         {
             for (var i = 0; i < numberOfFlowers; i++)
             {
-                if(FlowersNumbers[i]!=null) Destroy(FlowersNumbers[i]);
-                if(FlowersImages[i]!=null) Destroy(FlowersImages[i]);
-                if(FlowersBackgrounds[i]!=null) Destroy(FlowersBackgrounds[i]);
+                if (FlowersNumbers[i] != null) Destroy(FlowersNumbers[i]);
+                if (FlowersImages[i] != null) Destroy(FlowersImages[i]);
+                if (FlowersBackgrounds[i] != null) Destroy(FlowersBackgrounds[i]);
             }
         }
         FlowersNumbers = new GameObject[numberOfFlowers];
         FlowersImages = new GameObject[numberOfFlowers];
         FlowersBackgrounds = new GameObject[numberOfFlowers];
 
-        for(var i = 0; i < numberOfFlowers; i++)
+        for (var i = 0; i < numberOfFlowers; i++)
         {
-            var xLocation = (float)(i - (numberOfFlowers - 1) / 2.0)*100;
+            var xLocation = (float)(i - (numberOfFlowers - 1) / 2.0) * 100;
 
             //фон
-            var backObj = CreateBasicObject(new Vector2(60, 60),new Vector2(xLocation, 0));
+            var backObj = CreateBasicObject(new Vector2(60, 60), new Vector2(xLocation, 0));
             var backImage = backObj.AddComponent<Image>();
             backImage.sprite = backSprite;
 
@@ -125,7 +126,7 @@ public class FlowersManagerScript : MonoBehaviour
 
 
             //картинка
-            var imageObj = CreateBasicObject(new Vector2(40, 40),new Vector2(xLocation, 0));
+            var imageObj = CreateBasicObject(new Vector2(40, 40), new Vector2(xLocation, 0));
             var imageImage = imageObj.AddComponent<Image>();
             imageImage.sprite = FlowersObjects[i].GetComponent<SpriteRenderer>().sprite;
 
@@ -133,14 +134,14 @@ public class FlowersManagerScript : MonoBehaviour
 
 
             //текст
-            var textObj = CreateBasicObject(new Vector2(60, 40),new Vector2(xLocation, -50));
+            var textObj = CreateBasicObject(new Vector2(60, 40), new Vector2(xLocation, -50));
 
             TextMeshProUGUI text = textObj.AddComponent<TextMeshProUGUI>();
-            if(FlowersCount[i]>=0)
+            if (FlowersCount[i] >= 0)
                 text.text = FlowersCount[i].ToString();
             text.alignment = TextAlignmentOptions.Center;
 
-            FlowersNumbers[i]=textObj;
+            FlowersNumbers[i] = textObj;
 
         }
     }
@@ -148,7 +149,7 @@ public class FlowersManagerScript : MonoBehaviour
     private GameObject CreateBasicObject(Vector2 size, Vector2 position)
     {
         GameObject obj = new GameObject();
-        obj.transform.SetParent(Bar.transform,false);
+        obj.transform.SetParent(Bar.transform, false);
 
         RectTransform transform = obj.AddComponent<RectTransform>();
         transform.sizeDelta = size;

@@ -24,6 +24,6 @@ public class OrthographicZoom : MonoBehaviour
         newZoom = Mathf.Clamp(newZoom, maxZoom, minZoom);
         //Debug.Log($"newZoom after clamp is {newZoom}");
         cam.orthographicSize = newZoom;
-        Debug.Log($"Zoom is {cam.orthographicSize}");
+        //Debug.Log($"Zoom is {cam.orthographicSize}");
     }
 }

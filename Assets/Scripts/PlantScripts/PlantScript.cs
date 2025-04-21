@@ -11,7 +11,7 @@ public class Plant : MonoBehaviour
     public float destroyDelay = 10f;
     protected string[] obstacles = new string[] {"Obstacle", "PlayerMinion"};
 
-    protected virtual void Start()
+    protected virtual void Awake()
     {
         if (! IsInfinite) StartCoroutine(RemoveAfterDelay(destroyDelay));
     }
@@ -37,7 +37,6 @@ public class Plant : MonoBehaviour
         Collider2D[] colliders = GetCollidersInArea(position);
         foreach (var collider in colliders)
         {
-            Debug.Log($"obstacle: {collider.tag} {obstacles.Contains(collider.tag)} {string.Join(", ", obstacles)} {obstacles.Contains("PlantTrap")} {collider.tag == "PlantTrap"}");
             if (obstacles.Contains(collider.tag))
             {
                 return false;
@@ -49,5 +48,15 @@ public class Plant : MonoBehaviour
     public virtual GameObject Place(Vector2 position)
     {
         return Instantiate(this.gameObject, position, Quaternion.Euler(0, 0, 0));
+    }
+
+    public virtual bool TryPlace(Vector2 position)
+    {
+        if (IsAreaAvailable(position))
+        {
+            Instantiate(this.gameObject, position, Quaternion.Euler(0, 0, 0));
+            return true;
+        }
+        return false;
     }
 }

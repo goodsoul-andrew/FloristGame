@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
         Vector2 mousePosition = Mouse.current.position.ReadValue();
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         var dist = ((Vector2)rb.transform.position - worldPosition).magnitude;
-        Debug.Log($"Клик по позиции: {worldPosition}, рассдояние до игрока = {dist}");
+        //Debug.Log($"Клик по позиции: {worldPosition}, рассдояние до игрока = {dist}");
         if (dist <= placeRadius)
         {
             flowersManager.PlaceFlower(worldPosition);

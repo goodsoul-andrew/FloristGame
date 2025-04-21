@@ -11,9 +11,9 @@ public class PlantTrap: Plant
     private DamageDealer damageDealer;
     private readonly string[] friends = new string[] {"Player", "PlayerMinion", "PlantTrap", "LilyPad"};
 
-    protected override void Start()
+    protected override void Awake()
     {
-        base.Start();
+        base.Awake();
         animator = GetComponent<Animator>();
         damageDealer = GetComponent<DamageDealer>();
         damageDealer.Friends.AddRange(friends);
@@ -28,7 +28,7 @@ public class PlantTrap: Plant
         {
             isOpen = false;
             animator.SetBool("isOpen", false);
-            Debug.Log("Close trap");
+            //Debug.Log("Close trap");
             DestroyAfterDelay(0.8f);
             TutorialScript.FinishTutorial("fight");
         }
