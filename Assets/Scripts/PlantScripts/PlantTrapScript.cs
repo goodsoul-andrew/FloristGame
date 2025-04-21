@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.UI;
 using UnityEngine;
 
@@ -8,18 +9,16 @@ public class PlantTrap: Plant
     private Animator animator;
     private bool isOpen;
     private DamageDealer damageDealer;
-    private CapsuleCollider2D selfCollider;
+    private readonly string[] friends = new string[] {"Player", "PlayerMinion", "PlantTrap", "LilyPad"};
 
     protected override void Start()
     {
         base.Start();
         animator = GetComponent<Animator>();
         damageDealer = GetComponent<DamageDealer>();
-        damageDealer.Friends.Add("Player");
-        damageDealer.Friends.Add("PlayerMinion");
-        damageDealer.Friends.Add("lilyPad");
-        selfCollider = GetComponent<CapsuleCollider2D>();
+        damageDealer.Friends.AddRange(friends);
         isOpen = true;
+        obstacles = new string[] {"Obstacle", "PlayerMinion", "PlantTrap"};
     }
 
     void OnTriggerEnter2D(Collider2D collision)

@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.IO.LowLevel.Unsafe;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,6 +9,7 @@ public class Plant : MonoBehaviour
 {
     public bool IsInfinite;
     public float destroyDelay = 10f;
+    protected string[] obstacles = new string[] {"Obstacle", "PlayerMinion"};
 
     protected virtual void Start()
     {
@@ -34,7 +37,8 @@ public class Plant : MonoBehaviour
         Collider2D[] colliders = GetCollidersInArea(position);
         foreach (var collider in colliders)
         {
-            if (collider.gameObject.CompareTag("PlayerMinion") || collider.gameObject.CompareTag("Obstacle"))
+            Debug.Log($"obstacle: {collider.tag} {obstacles.Contains(collider.tag)} {string.Join(", ", obstacles)} {obstacles.Contains("PlantTrap")} {collider.tag == "PlantTrap"}");
+            if (obstacles.Contains(collider.tag))
             {
                 return false;
             }
@@ -42,7 +46,7 @@ public class Plant : MonoBehaviour
         return true;
     }
 
-    public GameObject Place(Vector2 position)
+    public virtual GameObject Place(Vector2 position)
     {
         return Instantiate(this.gameObject, position, Quaternion.Euler(0, 0, 0));
     }

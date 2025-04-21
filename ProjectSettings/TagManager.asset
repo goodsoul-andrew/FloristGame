@@ -12,6 +12,7 @@ TagManager:
   - Obstacle
   - LilyPad
   - Water
+  - PlantTrap
   layers:
   - Default
   - TransparentFX
