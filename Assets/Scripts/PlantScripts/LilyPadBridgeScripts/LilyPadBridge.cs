@@ -78,17 +78,21 @@ public class LilyPadBridge : Plant
             foreach (var pos in positions)
             {
                 var dist = (pos - position).magnitude;
-                if (dist < width && dist < minDist)
+                var diff = MathF.Abs(dist - width);
+                if (dist < minDist)
                 {
                     minDist = dist;
                     bestPos = pos;
                 }
             }
-            var direction = GetDirection(bestPos, position);
-            position = bestPos + direction * width;
+            if (minDist <= width + 0.3f)
+            {
+                var direction = GetDirection(bestPos, position);
+                position = bestPos + direction * width;
+            }
             position.x = MathF.Round(position.x, 2);
             position.y = MathF.Round(position.y, 2);
-            if (base.IsAreaAvailable(position) && ! positions.Contains(position))
+            if (base.IsAreaAvailable(position) && !positions.Contains(position))
             {
                 base.Place(position);
                 return true;
@@ -113,26 +117,26 @@ public class LilyPadBridge : Plant
                 if (dir.x == 0 && dir.y == 1) // сосед сверху
                 {
                     //Debug.Log("neighbour up");
-                    this.edgeUp.ChangeEdge(false);
-                    neighbour.edgeDown.ChangeEdge(false);
+                    this.edgeUp.ChangeAndBlock(false);
+                    neighbour.edgeDown.ChangeAndBlock(false);
                 }
                 else if (dir.x == 0 && dir.y == -1) // сосед снизу
                 {
                     //Debug.Log("neighbour down");
-                    neighbour.edgeUp.ChangeEdge(false);
-                    this.edgeDown.ChangeEdge(false);
+                    neighbour.edgeUp.ChangeAndBlock(false);
+                    this.edgeDown.ChangeAndBlock(false);
                 }
                 else if (dir.x == 1 && dir.y == 0) // сосед справа
                 {
                     //Debug.Log("neighbour right");
-                    this.edgeRight.ChangeEdge(false);
-                    neighbour.edgeLeft.ChangeEdge(false);
+                    this.edgeRight.ChangeAndBlock(false);
+                    neighbour.edgeLeft.ChangeAndBlock(false);
                 }
                 else if (dir.x == -1 && dir.y == 0) // сосед слева
                 {
                     //Debug.Log("neighbour left");
-                    neighbour.edgeRight.ChangeEdge(false);
-                    this.edgeLeft.ChangeEdge(false);
+                    neighbour.edgeRight.ChangeAndBlock(false);
+                    this.edgeLeft.ChangeAndBlock(false);
                 }
             }
         }

@@ -21,12 +21,19 @@ public class Player : MonoBehaviour
     [SerializeField] private float placeDelay = 2f;
     [SerializeField] private UnityEngine.GameObject pauseMenu;
 
+    private CircleCollider2D selfColllider;
+    private Vector2 truePosition
+    {
+        get => (Vector2)transform.position + selfColllider.offset; 
+    }
+
     private void Start()
     {
         playerInput = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         flowersManager = GetComponent<FlowersManagerScript>();
+        selfColllider = GetComponent<CircleCollider2D>();
 
         playerInput.actions["Move"].performed += HandleMove;
         playerInput.actions["Move"].canceled += HandleMoveCanceled;
@@ -113,11 +120,12 @@ public class Player : MonoBehaviour
     public bool CheckIfOnLilyPad()
     {
         Vector2 position = transform.position;
-        var colliders = Physics2D.OverlapCircleAll(position, 0.5f);
+        var colliders = Physics2D.OverlapCircleAll(truePosition, 0.01f);
         foreach (var collider in colliders)
         {
             if (collider != null && collider.CompareTag("LilyPad"))
             {
+                //Debug.Log($"{collider.transform.position}");
                 return true;
             }
         }

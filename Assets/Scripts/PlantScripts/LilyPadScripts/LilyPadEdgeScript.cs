@@ -26,7 +26,7 @@ public class LilyPadEdge : MonoBehaviour
         }
     }
 
-    public void ChangeEdge(bool isEnabled)
+    public void Change(bool isEnabled)
     {
         edgeCollider.enabled = isEnabled;
     }
