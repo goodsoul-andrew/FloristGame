@@ -44,7 +44,7 @@ public class FlowersManagerScript : MonoBehaviour
     }
     public void PlaceFlower(Vector2 position)
     {
-        if(Index >= numberOfFlowers || FlowersObjects[Index]==null)
+        if(Index >= numberOfFlowers)
         {
             Debug.Log("Цветка под таким индексом нет");
             return;
@@ -73,7 +73,8 @@ public class FlowersManagerScript : MonoBehaviour
     public void SetIndex(int index)
     {
         index--;
-        if(index < numberOfFlowers && FlowersObjects[index]!=null)
+        Debug.Log($"индекс нажат:{index}");
+        if(index < numberOfFlowers)
         {
             Debug.Log($"Новый индекс:{index}");
             Index = index;
@@ -158,5 +159,5 @@ public class FlowersManagerScript : MonoBehaviour
         obj.layer = LayerMask.NameToLayer("UI");
 
         return obj;
-    } 
+    }
 }
