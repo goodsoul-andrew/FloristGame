@@ -10,6 +10,7 @@ public class LilyPad : Plant
     protected override void Start()
     {
         base.Start();
+        TutorialScript.FinishTutorial("build");
         player = GameObject.FindGameObjectWithTag("Player");
         waterLayer = LayerMask.NameToLayer("Water");
         playerLayer = LayerMask.NameToLayer("Player");

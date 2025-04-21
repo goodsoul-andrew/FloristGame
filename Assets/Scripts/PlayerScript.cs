@@ -46,6 +46,8 @@ public class Player : MonoBehaviour
         animator.SetFloat("moveX", moveInput.x);
         animator.SetFloat("moveY", moveInput.y);
 
+        if(moveInput.x*moveInput.x+moveInput.y*moveInput.y!=0) TutorialScript.FinishTutorial("walk");
+
         rb.MovePosition(rb.position + moveInput * (moveSpeed * Time.deltaTime));
     }
 

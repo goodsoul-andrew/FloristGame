@@ -56,6 +56,7 @@ public class FlowersManagerScript : MonoBehaviour
         }
         if (FlowersPlants[Index].IsAreaAvailable(position))
         {
+            TutorialScript.FinishTutorial("place");
             FlowersCount[Index]--;
             if(FlowersCount[Index] >= 0)
             {
@@ -76,6 +77,7 @@ public class FlowersManagerScript : MonoBehaviour
         Debug.Log($"индекс нажат:{index}");
         if(index < numberOfFlowers)
         {
+            TutorialScript.FinishTutorial("change");
             Debug.Log($"Новый индекс:{index}");
             Index = index;
             scrollTransform.anchoredPosition = new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0)*100, 0);
