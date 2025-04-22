@@ -30,7 +30,7 @@ public class PlantTrap : Plant
             {
                 isOpen = false;
                 animator.SetBool("isOpen", false);
-                Debug.Log("Close trap");
+                //Debug.Log("Close trap");
                 DestroyAfterDelay(0.8f);
                 TutorialScript.FinishTutorial("fight");
             }

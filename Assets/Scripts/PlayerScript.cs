@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor.Callbacks;
 using UnityEngine;
@@ -21,11 +22,11 @@ public class Player : MonoBehaviour
     [SerializeField] private float placeDelay = 2f;
     [SerializeField] private UnityEngine.GameObject pauseMenu;
 
+    [SerializeField] private string[] walkable = new string[] { "Ground", "LilyPad", "LilyPadBridge" };
+    [SerializeField] private string[] notWalkable = new string[] { "Swamp" };
+
     private CircleCollider2D selfColllider;
-    private Vector2 truePosition
-    {
-        get => (Vector2)transform.position + selfColllider.offset; 
-    }
+    public Vector2 TruePosition => (Vector2)selfColllider.transform.position + selfColllider.offset;
 
     private void Start()
     {
@@ -119,11 +120,24 @@ public class Player : MonoBehaviour
 
     public bool CheckIfOnLilyPad()
     {
-        Vector2 position = transform.position;
-        var colliders = Physics2D.OverlapCircleAll(truePosition, 0.01f);
+        var colliders = Physics2D.OverlapCircleAll(TruePosition, 0.01f);
         foreach (var collider in colliders)
         {
             if (collider != null && collider.CompareTag("LilyPad"))
+            {
+                //Debug.Log($"{collider.transform.position}");
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public bool IsOnGround()
+    {
+        var colliders = Physics2D.OverlapCircleAll(TruePosition, 0.01f);
+        foreach (var collider in colliders)
+        {
+            if (collider != null && walkable.Contains(collider.tag))
             {
                 //Debug.Log($"{collider.transform.position}");
                 return true;

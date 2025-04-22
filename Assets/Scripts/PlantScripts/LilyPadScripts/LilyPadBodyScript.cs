@@ -4,13 +4,13 @@ using UnityEngine;
 public class LilyPadBody : MonoBehaviour
 {
     private Player player;
-    private int waterLayer;
+    private int swampLayer;
     private int playerLayer;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        waterLayer = LayerMask.NameToLayer("Water");
+        swampLayer = LayerMask.NameToLayer("Swamp");
         playerLayer = LayerMask.NameToLayer("Player");
     }
 
@@ -19,7 +19,7 @@ public class LilyPadBody : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             //Debug.Log("Player entered LilyPad");
-            Physics2D.IgnoreLayerCollision(waterLayer, playerLayer, true);
+            Physics2D.IgnoreLayerCollision(swampLayer, playerLayer, true);
         }
     }
 
@@ -28,12 +28,12 @@ public class LilyPadBody : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             //Debug.Log("Player exited LilyPad");
-            Physics2D.IgnoreLayerCollision(waterLayer, playerLayer, false);
+            Physics2D.IgnoreLayerCollision(swampLayer, playerLayer, false);
         }
         if (player.CheckIfOnLilyPad())
         {
             //Debug.Log("Player is on other LilyPad");
-            Physics2D.IgnoreLayerCollision(waterLayer, playerLayer, true);
+            Physics2D.IgnoreLayerCollision(swampLayer, playerLayer, true);
         }
         //Debug.Log(player.CheckIfOnLilyPad());
     }

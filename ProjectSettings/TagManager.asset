@@ -11,9 +11,9 @@ TagManager:
   - flower3
   - Obstacle
   - LilyPad
-  - Water
   - PlantTrap
   - Ground
+  - Swamp
   layers:
   - Default
   - TransparentFX
@@ -23,7 +23,7 @@ TagManager:
   - UI
   - LilyPad
   - Player
-  - 
+  - Swamp
   - 
   - 
   - 

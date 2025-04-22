@@ -14,9 +14,9 @@ public class LilyPadEdge : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Water") && ! isAlwaysDisabled)
+        if (collision.CompareTag("Swamp") && ! isAlwaysDisabled)
         {
-            //Debug.Log("edge is on water");
+            //Debug.Log("edge is on swamp");
             edgeCollider.enabled = true;
         }
         else if (collision.CompareTag("LilyPad"))

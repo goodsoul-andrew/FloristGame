@@ -12,9 +12,9 @@ public class LilyPadBridgeEdge : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Water") && ! block)
+        if (collision.CompareTag("Swamp") && ! block)
         {
-            Debug.Log("edge is on water");
+            Debug.Log("edge is on swamp");
             edgeCollider.enabled = true;
         }
         /*else if (collision.CompareTag("LilyPad"))

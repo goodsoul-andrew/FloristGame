@@ -6,6 +6,7 @@ public class DamageDealer : MonoBehaviour
 {
     public float damageAmount;
     public HashSet<string> Friends = new HashSet<string>();
+    public bool Enabled = true;
 
     private void DealDamage(GameObject target)
     {
@@ -19,11 +20,11 @@ public class DamageDealer : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        DealDamage(collision.gameObject);
+        if (Enabled) DealDamage(collision.gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        DealDamage(collision.gameObject);
+        if (Enabled) DealDamage(collision.gameObject);
     }
 }

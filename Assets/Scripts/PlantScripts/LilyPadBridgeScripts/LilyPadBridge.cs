@@ -16,9 +16,7 @@ public class LilyPadBridge : Plant
     private LilyPadBridgeEdge edgeLeft;
     [SerializeField] private GameObject edgeRightObject;
     private LilyPadBridgeEdge edgeRight;
-    private string[] walkable = new string[] { "Ground", "LilyPad", "LilyPadBridge" };
-    private string[] notWalkable = new string[] { "Water" };
-    private static HashSet<Vector2> positions = new HashSet<Vector2>();
+    //private static HashSet<Vector2> positions = new HashSet<Vector2>();
     private static Dictionary<Vector2, LilyPadBridge> bridges = new Dictionary<Vector2, LilyPadBridge>();
     private float width = 1.95f;
 
@@ -36,7 +34,7 @@ public class LilyPadBridge : Plant
     protected void Start()
     {
         //Debug.Log("starting LilyPadBridge");
-        positions.Add(transform.position);
+        //positions.Add(transform.position);
         bridges[transform.position] = this;
         //Debug.Log(positions.Count);
         SetUp();
@@ -62,7 +60,7 @@ public class LilyPadBridge : Plant
     {
         position.x = MathF.Round(position.x, 2);
         position.y = MathF.Round(position.y, 2);
-        if (positions.Count == 0)
+        if (bridges.Count == 0)
         {
             if (base.IsAreaAvailable(position))
             {
@@ -75,7 +73,7 @@ public class LilyPadBridge : Plant
         {
             var minDist = float.MaxValue;
             var bestPos = Vector2.zero;
-            foreach (var pos in positions)
+            foreach (var pos in bridges.Keys)
             {
                 var dist = (pos - position).magnitude;
                 var diff = MathF.Abs(dist - width);
@@ -92,7 +90,7 @@ public class LilyPadBridge : Plant
             }
             position.x = MathF.Round(position.x, 2);
             position.y = MathF.Round(position.y, 2);
-            if (base.IsAreaAvailable(position) && !positions.Contains(position))
+            if (base.IsAreaAvailable(position) && !bridges.ContainsKey(position))
             {
                 base.Place(position);
                 return true;
@@ -105,7 +103,7 @@ public class LilyPadBridge : Plant
     {
         //Debug.Log("entering SetUp");
         var position = (Vector2)this.transform.position;
-        foreach (var pos in positions)
+        foreach (var pos in bridges.Keys)
         {
             if (pos == position) continue;
             var dist = (pos - position).magnitude;

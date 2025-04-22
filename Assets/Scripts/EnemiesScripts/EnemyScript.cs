@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float detectionRadius = 10f;
     protected Rigidbody2D rb;
     public Collider2D playerCollider {get; private set;}
+    private Player player;
     protected CircleCollider2D selfCollider;
     private IEnemyState currentState;
 
@@ -22,6 +23,7 @@ public class Enemy : MonoBehaviour
         damageDealer.Friends.Add("Enemy");
         rb = GetComponent<Rigidbody2D>();
         health.OnDeath += DestroyMyself;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>();
         selfCollider = GetComponent<CircleCollider2D>();
 
@@ -44,7 +46,7 @@ public class Enemy : MonoBehaviour
     {
         if (playerCollider is not null)
         {
-            if (Vector2.Distance(transform.position, playerCollider.transform.position) <= detectionRadius && CanSeePlayer())
+            if (Vector2.Distance(transform.position, player.TruePosition) <= detectionRadius && CanSeePlayer())
             {
                 return true;
             }
@@ -55,7 +57,7 @@ public class Enemy : MonoBehaviour
     public bool CanSeePlayer()
     {
         var playerPos = playerCollider.transform.position + (Vector3)playerCollider.offset;
-        Vector2 directionToPlayer = (playerPos - selfCollider.transform.position).normalized;
+        Vector2 directionToPlayer = (player.TruePosition - (Vector2)selfCollider.transform.position).normalized;
         var r = selfCollider.radius * selfCollider.transform.localScale.x + 0.1f;
         var hits = Physics2D.RaycastAll(selfCollider.transform.position, directionToPlayer, detectionRadius - r);
         foreach (var hit in hits)
