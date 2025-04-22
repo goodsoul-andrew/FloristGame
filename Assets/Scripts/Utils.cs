@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Utils
 {
-    private static string[] ground = new string[] { "Ground", "LilyPad", "LilyPadBridge" };
+    public readonly static string[] ground = new string[] { "Ground", "LilyPad", "LilyPadBridge" };
     private static string[] notWalkable = new string[] { "Swamp" };
 
     public static bool StandsOnGround(GameObject target) => StandsOn(target, ground);
@@ -13,11 +13,16 @@ public class Utils
     public static bool StandsOn (GameObject target, IEnumerable<string> tags)
     {
         var position = target.transform.position;
+        var radius = 0.5f;
         if (target.TryGetComponent<Collider2D>(out var targetCollider))
         {
             position = (Vector2)targetCollider.transform.position + targetCollider.offset;
+            if (targetCollider is CircleCollider2D circleCollider)
+            {
+                radius = circleCollider.radius;
+            }
         }
-        var colliders = Physics2D.OverlapCircleAll(position, 0.5f);
+        var colliders = Physics2D.OverlapCircleAll(position, radius);
         foreach (var collider in colliders)
         {
             if (collider != null && tags.Contains(collider.tag))

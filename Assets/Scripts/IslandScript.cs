@@ -5,15 +5,11 @@ using UnityEngine;
 public class Island : MonoBehaviour
 {
     private Player player;
-    private int swampLayer;
-    private int playerLayer;
     private Swamp swamp;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        swampLayer = LayerMask.NameToLayer("Swamp");
-        playerLayer = LayerMask.NameToLayer("Player");
         GetSwamp();
     }
 
@@ -31,6 +27,10 @@ public class Island : MonoBehaviour
         {
             swamp.Enable(collision.gameObject);
         }
+        if (IsTargetOnOtherIsland(collision))
+        {
+            swamp.Disable(collision.gameObject);
+        }
     }
 
     private void GetSwamp()
@@ -44,5 +44,29 @@ public class Island : MonoBehaviour
                 return;
             }
         }
+    }
+
+    private bool IsTargetOnOtherIsland(Collider2D target)
+    {
+        var position = target.transform.position;
+        var radius = 0.5f;
+        if (target.TryGetComponent<Collider2D>(out var targetCollider))
+        {
+            position = (Vector2)targetCollider.transform.position + targetCollider.offset;
+            if (targetCollider is CircleCollider2D circleCollider)
+            {
+                radius = circleCollider.radius;
+            }
+        }
+        var colliders = Physics2D.OverlapCircleAll(position, radius);
+        foreach (var collider in colliders)
+        {
+            if (collider != null && Utils.ground.Contains(collider.tag) && collider.transform.position != transform.position)
+            {
+                Debug.Log($"Other island is {collider.tag} on {collider.transform.position}, this is {tag} on {transform.position}");
+                return true;
+            }
+        }
+        return false;
     }
 }

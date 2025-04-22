@@ -84066,8 +84066,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.011708319, y: -0.93275595}
-  m_Radius: 0.44532943
+  m_Offset: {x: 0, y: -0.9}
+  m_Radius: 0.23352337
 --- !u!114 &1946183545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84095,7 +84095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlowersObjects:
   - {fileID: 5806446023648027630, guid: 050774bc3afab0ed78292550e995b871, type: 3}
-  - {fileID: 2818257179695705881, guid: 9f1aeae67e76a4a59acc4cec00b24849, type: 3}
+  - {fileID: 207077199748663049, guid: 050a15d013a3f0dc0894e95f348a4135, type: 3}
   - {fileID: 2046330481088126319, guid: b43211bc11b52bb41afa8df897780339, type: 3}
   - {fileID: 1946183536}
   - {fileID: 551170128155598930, guid: 21ea896b4473ab64aa969861be6b3e83, type: 3}

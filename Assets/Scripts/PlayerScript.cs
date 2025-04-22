@@ -28,7 +28,7 @@ public class Player : MonoBehaviour, IMoving
 
     private void Start()
     {
-        Speed = 10f;
+        Speed = 6f;
         playerInput = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
