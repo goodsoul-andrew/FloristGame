@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4397709008591365186}
   - component: {fileID: 7147800261601301872}
   - component: {fileID: 2718929223025223043}
+  - component: {fileID: 4897859227690609957}
   m_Layer: 0
   m_Name: LilyPad
   m_TagString: LilyPad
@@ -182,6 +183,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4897859227690609957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207077199748663049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b306ad0cec76c4281621b606c2dc23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &393925537918586163
 GameObject:
   m_ObjectHideFlags: 0

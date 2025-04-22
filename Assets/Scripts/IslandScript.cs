@@ -1,4 +1,5 @@
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Island : MonoBehaviour
@@ -6,29 +7,42 @@ public class Island : MonoBehaviour
     private Player player;
     private int swampLayer;
     private int playerLayer;
-    private BoxCollider2D[] swampColliders;
+    private Swamp swamp;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         swampLayer = LayerMask.NameToLayer("Swamp");
         playerLayer = LayerMask.NameToLayer("Player");
-        var allSwamp = GameObject.FindGameObjectsWithTag("Swamp");
-        swampColliders = allSwamp.Select(el => el.GetComponent<BoxCollider2D>()).ToArray();
+        GetSwamp();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        foreach (var swampCollider in swampColliders)
+        //Debug.Log($"{Utils.StandsOnGround(collision.gameObject)}");
+        if (Utils.StandsOn(collision.gameObject, "Swamp"))
         {
-            Physics2D.IgnoreCollision(collision, swampCollider, true);
+            swamp.Disable(collision.gameObject);
         }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
-        foreach (var swampCollider in swampColliders)
+        if (Utils.StandsOn(collision.gameObject, "Swamp"))
         {
-            Physics2D.IgnoreCollision(collision, swampCollider, false);
+            swamp.Enable(collision.gameObject);
+        }
+    }
+
+    private void GetSwamp()
+    {
+        var colliders = Physics2D.OverlapCircleAll(transform.position, 0.01f);
+        foreach (var collider in colliders)
+        {
+            if (collider.TryGetComponent<Swamp>(out var newSwamp))
+            {
+                swamp = newSwamp;
+                return;
+            }
         }
     }
 }

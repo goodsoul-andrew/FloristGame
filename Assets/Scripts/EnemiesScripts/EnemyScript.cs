@@ -1,11 +1,11 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IMoving
 {
-    public Health health;
+    public Health Health;
     public DamageDealer damageDealer;
-    [SerializeField] protected float moveSpeed = 5f;
+    public float Speed {get; set;}
     [SerializeField] protected float detectionRadius = 10f;
     protected Rigidbody2D rb;
     public Collider2D playerCollider {get; private set;}
@@ -18,11 +18,12 @@ public class Enemy : MonoBehaviour
 
     protected void Start()
     {
-        health = GetComponent<Health>();
+        Speed = 5f;
+        Health = GetComponent<Health>();
         damageDealer = GetComponent<DamageDealer>();
         damageDealer.Friends.Add("Enemy");
         rb = GetComponent<Rigidbody2D>();
-        health.OnDeath += DestroyMyself;
+        Health.OnDeath += DestroyMyself;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>();
         selfCollider = GetComponent<CircleCollider2D>();
@@ -77,7 +78,7 @@ public class Enemy : MonoBehaviour
     public virtual void MoveTowardsTarget(Vector2 targetPosition)
     {
         Vector2 direction = (targetPosition - (Vector2)transform.position).normalized;
-        rb.MovePosition(rb.position + moveSpeed * Time.deltaTime * direction);
+        rb.MovePosition(rb.position + Speed * Time.deltaTime * direction);
     }
 
     protected void DestroyMyself()

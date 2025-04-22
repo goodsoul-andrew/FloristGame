@@ -7,7 +7,7 @@ using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IMoving
 {
     private Rigidbody2D rb;
     private PlayerInput playerInput;
@@ -17,19 +17,18 @@ public class Player : MonoBehaviour
     private Vector2 moveInput;
     private bool isPaused;
     private bool canPlace;
-    [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float placeRadius = 5;
     [SerializeField] private float placeDelay = 2f;
     [SerializeField] private UnityEngine.GameObject pauseMenu;
 
-    [SerializeField] private string[] walkable = new string[] { "Ground", "LilyPad", "LilyPadBridge" };
-    [SerializeField] private string[] notWalkable = new string[] { "Swamp" };
-
     private CircleCollider2D selfColllider;
     public Vector2 TruePosition => (Vector2)selfColllider.transform.position + selfColllider.offset;
 
+    public float Speed { get; set; }
+
     private void Start()
     {
+        Speed = 10f;
         playerInput = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -56,7 +55,7 @@ public class Player : MonoBehaviour
 
         if(moveInput.x*moveInput.x+moveInput.y*moveInput.y!=0) TutorialScript.FinishTutorial("walk");
 
-        rb.MovePosition(rb.position + moveInput * (moveSpeed * Time.deltaTime));
+        rb.MovePosition(rb.position + moveInput * (Speed * Time.deltaTime));
     }
 
     private void HandleMove(InputAction.CallbackContext context)
@@ -116,33 +115,5 @@ public class Player : MonoBehaviour
         isPaused = false;
         pauseMenu.SetActive(false);
         AudioListener.pause = false;
-    }
-
-    public bool CheckIfOnLilyPad()
-    {
-        var colliders = Physics2D.OverlapCircleAll(TruePosition, 0.01f);
-        foreach (var collider in colliders)
-        {
-            if (collider != null && collider.CompareTag("LilyPad"))
-            {
-                //Debug.Log($"{collider.transform.position}");
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public bool IsOnGround()
-    {
-        var colliders = Physics2D.OverlapCircleAll(TruePosition, 0.01f);
-        foreach (var collider in colliders)
-        {
-            if (collider != null && walkable.Contains(collider.tag))
-            {
-                //Debug.Log($"{collider.transform.position}");
-                return true;
-            }
-        }
-        return false;
     }
 }
