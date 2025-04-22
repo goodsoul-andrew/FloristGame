@@ -4,33 +4,36 @@ using Unity.VisualScripting;
 using UnityEditor.UI;
 using UnityEngine;
 
-public class PlantTrap: Plant
+public class PlantTrap : Plant
 {
     private Animator animator;
     private bool isOpen;
     private DamageDealer damageDealer;
-    private readonly string[] friends = new string[] {"Player", "PlayerMinion", "PlantTrap", "LilyPad"};
 
     protected override void Awake()
     {
         base.Awake();
         animator = GetComponent<Animator>();
         damageDealer = GetComponent<DamageDealer>();
+        var friends = new string[] { "Player", "PlayerMinion", "PlantTrap", "LilyPad" };
         damageDealer.Friends.AddRange(friends);
         isOpen = true;
-        obstacles = new string[] {"Obstacle", "PlayerMinion", "PlantTrap"};
+        obstacles = new string[] { "Obstacle", "PlayerMinion", "PlantTrap" };
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (damageDealer.Friends.Contains(collision.gameObject.tag)) return;
-        if (isOpen)
+        if (! damageDealer.Friends.Contains(collision.tag))
         {
-            isOpen = false;
-            animator.SetBool("isOpen", false);
-            //Debug.Log("Close trap");
-            DestroyAfterDelay(0.8f);
-            TutorialScript.FinishTutorial("fight");
+            Debug.Log($"{collision.tag} {string.Join(", ", damageDealer.Friends)} {damageDealer.Friends.Contains(collision.tag)}");
+            if (isOpen)
+            {
+                isOpen = false;
+                animator.SetBool("isOpen", false);
+                Debug.Log("Close trap");
+                DestroyAfterDelay(0.8f);
+                TutorialScript.FinishTutorial("fight");
+            }
         }
     }
 }

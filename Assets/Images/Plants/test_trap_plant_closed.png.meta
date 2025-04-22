@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 356b2b5b3ddf0920b915c6778c61806b
+guid: d1eb4ca184b3bfe1d8c50c1bcecfdef1
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      test_trap_plant_closed_0: -4973027276912278226
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

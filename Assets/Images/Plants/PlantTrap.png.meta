@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 2607c73c30c17c7c3bbeaf83b3b928ba
+guid: 84cbae3b0bd36d5baa0a1922c255a2cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3379149598789292135
-    second: test_trap_plant_open_0
+      213: -8888341327064046431
+    second: PlantTrap_0
+  - first:
+      213: -7621843219398858948
+    second: PlantTrap_1
+  - first:
+      213: 8591425148345594281
+    second: PlantTrap_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +119,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: test_trap_plant_open_0
+      name: PlantTrap_open
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 242
+        x: 41
+        y: 191
+        width: 908
+        height: 664
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7605db618a625ee20800000000000000
-      internalID: 3379149598789292135
+      spriteID: 1a46cedc7a446a480800000000000000
+      internalID: -8888341327064046431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlantTrap_closed
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 135
+        width: 957
+        height: 679
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a13f7137afda3770800000000000000
+      internalID: 8591425148345594281
       vertices: []
       indices: 
       edges: []
@@ -138,7 +166,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: da4b0fd65b7ee1fffb38c0dd5ee6553b
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +176,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      test_trap_plant_open_0: 3379149598789292135
+      PlantTrap_closed: 8591425148345594281
+      PlantTrap_open: -8888341327064046431
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

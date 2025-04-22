@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 4b7f6f1ac9d4bdc6982e8e948ed72042
+guid: 8188c35b82de3599bb38fcbe04497c2e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8888341327064046431
-    second: PlantTrap_0
+      213: -5682094984726474318
+    second: LilyPadTest_0
   - first:
-      213: -7621843219398858948
-    second: PlantTrap_1
+      213: 7271695473875205955
+    second: LilyPadTest_1
   - first:
-      213: 8591425148345594281
-    second: PlantTrap_2
+      213: -394000899120236344
+    second: LilyPadTest_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,45 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlantTrap_open
+      name: LilyPadTest_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 191
-        width: 908
-        height: 664
+        x: 219
+        y: 172
+        width: 654
+        height: 679
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a46cedc7a446a480800000000000000
-      internalID: -8888341327064046431
+      spriteID: 2b1995767b42521b0800000000000000
+      internalID: -5682094984726474318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantTrap_closed
+      name: LilyPadTest_1
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 135
-        width: 957
-        height: 679
+        x: 513
+        y: 179
+        width: 8
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a13f7137afda3770800000000000000
-      internalID: 8591425148345594281
+      spriteID: 34fb523a1804ae460800000000000000
+      internalID: 7271695473875205955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilyPadTest_2
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 179
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8f0ce054a388af0800000000000000
+      internalID: -394000899120236344
       vertices: []
       indices: 
       edges: []
@@ -166,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1c86b09337124172b93da781e31d263a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -175,9 +197,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      PlantTrap_closed: 8591425148345594281
-      PlantTrap_open: -8888341327064046431
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

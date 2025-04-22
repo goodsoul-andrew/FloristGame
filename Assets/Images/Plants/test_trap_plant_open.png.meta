@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 6b030f590857befaab1eb62c804e04e6
+guid: a5d96e02573c007ecadc5945e815fe42
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 397789480611464906
-    second: LilyPadBridge_0
-  - first:
-      213: 4573156532587448846
-    second: LilyPadBridge_1
-  - first:
-      213: 7623245154069809300
-    second: LilyPadBridge_2
+      213: 3379149598789292135
+    second: test_trap_plant_open_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LilyPadBridge_0
+      name: test_trap_plant_open_0
       rect:
         serializedVersion: 2
-        x: 219
-        y: 172
-        width: 654
-        height: 679
+        x: 0
+        y: 0
+        width: 256
+        height: 242
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac6cb3fcc6b358500800000000000000
-      internalID: 397789480611464906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LilyPadBridge_1
-      rect:
-        serializedVersion: 2
-        x: 513
-        y: 179
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e0ac12303ad177f30800000000000000
-      internalID: 4573156532587448846
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LilyPadBridge_2
-      rect:
-        serializedVersion: 2
-        x: 532
-        y: 179
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4988c04f3153bc960800000000000000
-      internalID: 7623245154069809300
+      spriteID: 7605db618a625ee20800000000000000
+      internalID: 3379149598789292135
       vertices: []
       indices: 
       edges: []
