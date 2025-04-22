@@ -18,8 +18,6 @@ public class TutorialSetterScript : MonoBehaviour
         TutorialScript.AddTutorialToTheQueue("walk");
         TutorialScript.AddTutorialToTheQueue("place");
         TutorialScript.AddTutorialToTheQueue("change");
-        TutorialScript.AddTutorialToTheQueue("fight");
-        TutorialScript.AddTutorialToTheQueue("build");
     }
 
     // Update is called once per frame
