@@ -10,7 +10,6 @@ public class LilyPad : Plant
     {
         base.Awake();
         bridges[transform.position] = this;
-        TutorialScript.FinishTutorial("build");
     }
 
     private static Vector2 GetDirection(Vector2 start, Vector2 finish)

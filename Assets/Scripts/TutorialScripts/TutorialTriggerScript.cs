@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TutorialAdderScript : MonoBehaviour
+public class TutorialTriggerScript : MonoBehaviour
 {
     [SerializeField] private string tutorialName;
     void OnTriggerEnter2D(Collider2D otherCollider) 
@@ -8,7 +8,7 @@ public class TutorialAdderScript : MonoBehaviour
         Debug.Log(otherCollider.gameObject.tag);
         if (otherCollider.gameObject.tag == "Player") 
         {
-            TutorialScript.AddTutorialToTheQueue(tutorialName);
+            FindFirstObjectByType<TutorialManagerScript>().AddTutorialToTheQueue(tutorialName);
         }
     }
 }

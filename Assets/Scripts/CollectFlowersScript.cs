@@ -5,6 +5,11 @@ public class CollectFlowersScript : MonoBehaviour
 {
     private readonly List<string> flowerTags = new() { "flower1", "flower2", "flower3" };
     public FlowersManagerScript FlowersManager;
+
+    private void Start()
+    {
+        FlowersManager = FindFirstObjectByType<FlowersManagerScript>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (flowerTags.Contains(collision.gameObject.tag))

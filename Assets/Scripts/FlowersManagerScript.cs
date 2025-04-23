@@ -5,15 +5,14 @@ using System;
 
 public class FlowersManagerScript : MonoBehaviour
 {
-    [SerializeField] private GameObject[] FlowersObjects;
+    [SerializeField] private Flower[] Flowers;
     private Plant[] Plants;
-    [SerializeField] private int[] FlowersCount;
     [SerializeField] private Sprite scrollSprite;
     [SerializeField] private Sprite backSprite;
-    [SerializeField] private int Index = 0;
     [SerializeField] private int numberOfFlowers;
     [SerializeField] private GameObject Bar;
 
+    private int Index = 0;
     private GameObject[] FlowersNumbers;
     private GameObject[] FlowersImages;
     private GameObject[] FlowersBackgrounds;
@@ -21,10 +20,10 @@ public class FlowersManagerScript : MonoBehaviour
 
     private void Start()
     {
-        Plants = new Plant[FlowersObjects.Length];
+        Plants = new Plant[Flowers.Length];
         for (var i = 0; i < Plants.Length; i++)
         {
-            if (FlowersObjects[i].TryGetComponent<Plant>(out var plant))
+            if (Flowers[i].Object.TryGetComponent<Plant>(out var plant))
             {
                 Plants[i] = plant;
             }
@@ -48,21 +47,21 @@ public class FlowersManagerScript : MonoBehaviour
             //Debug.Log("Цветка под таким индексом нет");
             return;
         }
-        if (FlowersCount[Index] == 0)
+        if (Flowers[Index].Count == 0)
         {
             //Debug.Log("Закончились");
             return;
         }
         if (Plants[Index].IsAreaAvailable(position))
         {
-            TutorialScript.FinishTutorial("place");
+            FindFirstObjectByType<TutorialManagerScript>().FinishTutorial("place");
             if (Plants[Index].TryPlace(position))
             {
-                FlowersCount[Index]--;
-                if (FlowersCount[Index] >= 0)
+                Flowers[Index].Count--;
+                if (Flowers[Index].Count >= 0)
                 {
                     var textComponent = FlowersNumbers[Index].GetComponent<TextMeshProUGUI>();
-                    textComponent.text = FlowersCount[Index].ToString();
+                    textComponent.text = Flowers[Index].Count.ToString();
                 }
             }
         }
@@ -73,7 +72,7 @@ public class FlowersManagerScript : MonoBehaviour
         //Debug.Log($"индекс нажат:{index}");
         if (index < numberOfFlowers)
         {
-            TutorialScript.FinishTutorial("change");
+            FindFirstObjectByType<TutorialManagerScript>().FinishTutorial("change");
             //Debug.Log($"Новый индекс:{index}");
             Index = index;
             scrollTransform.anchoredPosition = new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0);
@@ -82,7 +81,7 @@ public class FlowersManagerScript : MonoBehaviour
 
     public void SetNumberOfFlowers(int number)
     {
-        numberOfFlowers = Math.Min(number, FlowersObjects.Length);
+        numberOfFlowers = Math.Min(number, Flowers.Length);
         RecreateFlowersUI();
         scrollTransform.anchoredPosition = new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0);
     }
@@ -93,9 +92,9 @@ public class FlowersManagerScript : MonoBehaviour
 
     public void ChangeNumberOfFlowers(int index)
     {
-        FlowersCount[index]++;
+        Flowers[index].Count++;
         var textComponent = FlowersNumbers[index].GetComponent<TextMeshProUGUI>();
-        textComponent.text = FlowersCount[index].ToString();
+        textComponent.text = Flowers[index].Count.ToString();
     }
 
     public void RecreateFlowersUI()
@@ -128,7 +127,7 @@ public class FlowersManagerScript : MonoBehaviour
             //картинка
             var imageObj = CreateBasicObject(new Vector2(40, 40), new Vector2(xLocation, 0));
             var imageImage = imageObj.AddComponent<Image>();
-            imageImage.sprite = FlowersObjects[i].GetComponent<SpriteRenderer>().sprite;
+            imageImage.sprite = Flowers[i].Object.GetComponent<SpriteRenderer>().sprite;
 
             FlowersImages[i] = imageObj;
 
@@ -136,9 +135,9 @@ public class FlowersManagerScript : MonoBehaviour
             //текст
             var textObj = CreateBasicObject(new Vector2(60, 40), new Vector2(xLocation, -50));
 
-            TextMeshProUGUI text = textObj.AddComponent<TextMeshProUGUI>();
-            if (FlowersCount[i] >= 0)
-                text.text = FlowersCount[i].ToString();
+            var text = textObj.AddComponent<TextMeshProUGUI>();
+            if (Flowers[i].Count >= 0)
+                text.text = Flowers[i].Count.ToString();
             text.alignment = TextAlignmentOptions.Center;
 
             FlowersNumbers[i] = textObj;
@@ -151,11 +150,20 @@ public class FlowersManagerScript : MonoBehaviour
         GameObject obj = new GameObject();
         obj.transform.SetParent(Bar.transform, false);
 
-        RectTransform transform = obj.AddComponent<RectTransform>();
+        var transform = obj.AddComponent<RectTransform>();
         transform.sizeDelta = size;
         transform.anchoredPosition = position;
         obj.layer = LayerMask.NameToLayer("UI");
 
         return obj;
     }
+}
+
+[System.Serializable]
+public class Flower
+{
+    public string Name;
+    public GameObject Object;
+    public int Count;
+
 }

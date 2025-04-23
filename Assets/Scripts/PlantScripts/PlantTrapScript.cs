@@ -32,7 +32,7 @@ public class PlantTrap : Plant
                 animator.SetBool("isOpen", false);
                 //Debug.Log("Close trap");
                 DestroyAfterDelay(0.8f);
-                TutorialScript.FinishTutorial("fight");
+                FindFirstObjectByType<TutorialManagerScript>().FinishTutorial("fight");
             }
         }
     }

@@ -20,6 +20,10 @@ public class Player : MonoBehaviour, IMoving
     [SerializeField] private float placeRadius = 5;
     [SerializeField] private float placeDelay = 2f;
     [SerializeField] private UnityEngine.GameObject pauseMenu;
+    [SerializeField] private GameObject E;
+
+
+    private Queue<Interraction> interactors = new();
 
     private CircleCollider2D selfColllider;
     public Vector2 TruePosition => (Vector2)selfColllider.transform.position + selfColllider.offset;
@@ -32,7 +36,7 @@ public class Player : MonoBehaviour, IMoving
         playerInput = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        flowersManager = GetComponent<FlowersManagerScript>();
+        flowersManager = FindFirstObjectByType<FlowersManagerScript>();
         selfColllider = GetComponent<CircleCollider2D>();
 
         playerInput.actions["Move"].performed += HandleMove;
@@ -44,6 +48,8 @@ public class Player : MonoBehaviour, IMoving
 
         playerInput.actions["ChangeFlower"].started += HandleChangeFlower;
 
+        playerInput.actions["Interact"].started += HandleInteraction;
+
         StartCoroutine(StartPlaceDelay(0));
         ResumeGame();
     }
@@ -53,9 +59,17 @@ public class Player : MonoBehaviour, IMoving
         animator.SetFloat("moveX", moveInput.x);
         animator.SetFloat("moveY", moveInput.y);
 
-        if(moveInput.x*moveInput.x+moveInput.y*moveInput.y!=0) TutorialScript.FinishTutorial("walk");
+        if(moveInput.x*moveInput.x+moveInput.y*moveInput.y!=0) FindFirstObjectByType<TutorialManagerScript>().FinishTutorial("walk");
 
         rb.MovePosition(rb.position + moveInput * (Speed * Time.deltaTime));
+    }
+
+    void OnTriggerEnter2D(Collider2D otherCollider) 
+    {
+        if(otherCollider.TryGetComponent<Interraction>(out var interactor) && !interactors.Contains(interactor))
+        {
+            interactors.Enqueue(interactor);
+        }
     }
 
     private void HandleMove(InputAction.CallbackContext context)
@@ -92,6 +106,11 @@ public class Player : MonoBehaviour, IMoving
     private void HandleChangeFlower(InputAction.CallbackContext context)
     {
         if (!isPaused) flowersManager.SetIndex(int.Parse(context.control.name));
+    }
+
+    private void HandleInteraction(InputAction.CallbackContext context)
+    {
+        if (!isPaused && interactors.Count!=0)interactors.Dequeue().Interract();
     }
 
     public IEnumerator StartPlaceDelay(float delay)
