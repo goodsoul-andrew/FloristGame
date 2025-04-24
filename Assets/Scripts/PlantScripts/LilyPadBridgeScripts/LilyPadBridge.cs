@@ -38,7 +38,7 @@ public class LilyPadBridge : Plant
         bridges[transform.position] = this;
         //Debug.Log(positions.Count);
         SetUp();
-        FindFirstObjectByType<TutorialManagerScript>().FinishTutorial("build");
+        FindFirstObjectByType<TutorialManager>().FinishTutorial("build");
     }
 
     private static Vector2 GetDirection(Vector2 start, Vector2 finish)

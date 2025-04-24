@@ -12,7 +12,8 @@ public class Player : MonoBehaviour, IMoving
     private Rigidbody2D rb;
     private PlayerInput playerInput;
     private Animator animator;
-    private FlowersManagerScript flowersManager;
+    private FlowersManager flowersManager;
+    private DialogueManager dialogueManager;
 
     private Vector2 moveInput;
     private bool isPaused;
@@ -20,10 +21,10 @@ public class Player : MonoBehaviour, IMoving
     [SerializeField] private float placeRadius = 5;
     [SerializeField] private float placeDelay = 2f;
     [SerializeField] private UnityEngine.GameObject pauseMenu;
-    [SerializeField] private GameObject E;
+    [SerializeField] private GameObject InterractionObject;
 
 
-    private Queue<Interraction> interactors = new();
+    private List<Interraction> interactors = new();
 
     private CircleCollider2D selfColllider;
     public Vector2 TruePosition => (Vector2)selfColllider.transform.position + selfColllider.offset;
@@ -36,7 +37,8 @@ public class Player : MonoBehaviour, IMoving
         playerInput = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        flowersManager = FindFirstObjectByType<FlowersManagerScript>();
+        flowersManager = FindFirstObjectByType<FlowersManager>();
+        dialogueManager = FindFirstObjectByType<DialogueManager>();
         selfColllider = GetComponent<CircleCollider2D>();
 
         playerInput.actions["Move"].performed += HandleMove;
@@ -50,6 +52,8 @@ public class Player : MonoBehaviour, IMoving
 
         playerInput.actions["Interact"].started += HandleInteraction;
 
+        playerInput.actions["SkipDialogue"].started += HandleDialogueSkip;
+
         StartCoroutine(StartPlaceDelay(0));
         ResumeGame();
     }
@@ -59,7 +63,7 @@ public class Player : MonoBehaviour, IMoving
         animator.SetFloat("moveX", moveInput.x);
         animator.SetFloat("moveY", moveInput.y);
 
-        if(moveInput.x*moveInput.x+moveInput.y*moveInput.y!=0) FindFirstObjectByType<TutorialManagerScript>().FinishTutorial("walk");
+        if(moveInput.x*moveInput.x+moveInput.y*moveInput.y!=0) FindFirstObjectByType<TutorialManager>().FinishTutorial("walk");
 
         rb.MovePosition(rb.position + moveInput * (Speed * Time.deltaTime));
     }
@@ -68,7 +72,18 @@ public class Player : MonoBehaviour, IMoving
     {
         if(otherCollider.TryGetComponent<Interraction>(out var interactor) && !interactors.Contains(interactor))
         {
-            interactors.Enqueue(interactor);
+            interactors.Add(interactor);
+            InterractionObject.SetActive(true);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D otherCollider) 
+    {
+        if(otherCollider.TryGetComponent<Interraction>(out var interactor))
+        {
+            interactor.EndInterraction();
+            interactors.Remove(interactor);
+            InterractionObject.SetActive(false);
         }
     }
 
@@ -110,7 +125,22 @@ public class Player : MonoBehaviour, IMoving
 
     private void HandleInteraction(InputAction.CallbackContext context)
     {
-        if (!isPaused && interactors.Count!=0)interactors.Dequeue().Interract();
+        if (!isPaused && interactors.Count!=0)
+        {   
+            var interactor = interactors[0];
+            interactor.StartInterraction();
+            interactors.Remove(interactor);
+            InterractionObject.SetActive(false);
+        }
+    }
+
+    private void HandleDialogueSkip(InputAction.CallbackContext context)
+    {
+        if (!isPaused)
+        {
+            dialogueManager.DisplayNextSentence();
+            FindFirstObjectByType<TutorialManager>().FinishTutorial("dialogue");
+        }
     }
 
     public IEnumerator StartPlaceDelay(float delay)

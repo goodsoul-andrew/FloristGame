@@ -3,13 +3,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-public class DialigueTriggerScript : Interraction
+public class DialigueTrigger : Interraction
 {
     [SerializeField] private Dialogue dialogue;
 
-    public override void Interract()
+    public override void StartInterraction()
     {
-        FindFirstObjectByType<DialogueManagerScript>().StartDialogue(dialogue);
+        FindFirstObjectByType<TutorialManager>().AddTutorialToTheQueue("dialogue");
+        FindFirstObjectByType<DialogueManager>().StartDialogue(dialogue);
+    }
+
+    public override void EndInterraction()
+    {
+        FindFirstObjectByType<DialogueManager>().EndDialogue();
+        Debug.Log("ended");
     }
 
 }

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
 
-public class DialogueManagerScript : MonoBehaviour 
+public class DialogueManager : MonoBehaviour 
 {
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
@@ -17,7 +17,7 @@ public class DialogueManagerScript : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         sentences.Clear();
-        animator.SetBool("IsOpen",true);
+        animator.SetBool("IsUp",true);
         nameText.text = dialogue.Name;
 
         foreach(string sentence in dialogue.Sentences)
@@ -48,6 +48,6 @@ public class DialogueManagerScript : MonoBehaviour
     }
     public void EndDialogue()
     {
-        animator.SetBool("IsOpen",false);
+        animator.SetBool("IsUp",false);
     }
 }

@@ -3,22 +3,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-public class TutorialManagerScript : MonoBehaviour
+public class TutorialManager : MonoBehaviour
 {
     [SerializeField] private Tutorial[] tutorials;
+
+    [SerializeField] private Animator animator;
     private Dictionary<string,GameObject> dictOfTutorialsObjects = new();
 
-    private bool movingUp = false;
-    private bool movingDown = false;
-
-    private Vector2 screenPosition = new Vector2(-600,-270);
-    private Vector2 outOfScreenPosition = new Vector2(-600,-950);
+    private Vector2 screenPosition = new Vector2(-730,-270);
+    private Vector2 outOfScreenPosition = new Vector2(-730,-950);
 
     private HashSet<string> passedTutorials = new();
     private Queue<string> tutorialsQueue = new();
     private bool hasTutorial = false;
+    private bool moving = false;
     private string currentTypeOfTutorial ="";
-    private RectTransform rectTransform;
 
     public void AddTutorialToTheQueue(string typeOfTutorial)
     {
@@ -31,10 +30,10 @@ public class TutorialManagerScript : MonoBehaviour
 
     public void FinishTutorial(string typeOfTutorial)
     {
-        if(hasTutorial && !movingUp && currentTypeOfTutorial == typeOfTutorial && dictOfTutorialsObjects.TryGetValue(typeOfTutorial,out var tutorial))
+        if(hasTutorial && !moving && currentTypeOfTutorial == typeOfTutorial && dictOfTutorialsObjects.TryGetValue(typeOfTutorial,out var tutorial))
         {
-            rectTransform = tutorial.GetComponent<RectTransform>();
-            movingDown = true;
+            animator.SetBool("IsUp",false);
+            StartCoroutine(SetActiveAfterDelay(0.3f,false));
         }
     } 
 
@@ -48,33 +47,22 @@ public class TutorialManagerScript : MonoBehaviour
 
     void Update()
     {
-        if(!hasTutorial && tutorialsQueue.Count!=0)
+        if(!hasTutorial && !moving && tutorialsQueue.Count!=0)
         {
-            var typeOfTutorial = tutorialsQueue.Dequeue();
-            var tutorial = dictOfTutorialsObjects[typeOfTutorial];
-            rectTransform = tutorial.GetComponent<RectTransform>();
-            movingUp = true;
-            currentTypeOfTutorial = typeOfTutorial;
-            hasTutorial = true;
+            currentTypeOfTutorial = tutorialsQueue.Dequeue();
+            animator.SetBool("IsUp",true);
+            dictOfTutorialsObjects[currentTypeOfTutorial].SetActive(true);
+            StartCoroutine(SetActiveAfterDelay(0.3f,true));
         }
+    }
 
-        if(movingUp)
-        {
-            rectTransform.anchoredPosition = Vector2.Lerp(rectTransform.anchoredPosition, screenPosition, Time.deltaTime * 3);
-            if(Vector2.Distance(rectTransform.anchoredPosition, screenPosition) < 16f)
-            {
-                movingUp = false;
-            } 
-        }
-        if(movingDown)
-        {
-            rectTransform.anchoredPosition = Vector2.Lerp(rectTransform.anchoredPosition, outOfScreenPosition, Time.deltaTime * 3);
-            if(Vector2.Distance(rectTransform.anchoredPosition, outOfScreenPosition) < 16f) 
-            {
-                hasTutorial = false;
-                movingDown = false;
-            }
-        }
+    private IEnumerator SetActiveAfterDelay(float delay,bool active)
+    {
+        moving = true;
+        yield return new WaitForSeconds(delay);
+        dictOfTutorialsObjects[currentTypeOfTutorial].SetActive(active);
+        moving = false;
+        hasTutorial = active;
     }
 }
 [System.Serializable]

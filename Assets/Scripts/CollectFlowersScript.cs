@@ -4,15 +4,18 @@ using UnityEngine;
 public class CollectFlowersScript : MonoBehaviour
 {
     private readonly List<string> flowerTags = new() { "flower1", "flower2", "flower3" };
-    public FlowersManagerScript FlowersManager;
+    private Rigidbody2D rb;
+    public FlowersManager FlowersManager;
 
     private void Start()
     {
-        FlowersManager = FindFirstObjectByType<FlowersManagerScript>();
+        rb = GetComponent<Rigidbody2D>();
+        FlowersManager = FindFirstObjectByType<FlowersManager>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (flowerTags.Contains(collision.gameObject.tag))
+        var dist = ((Vector2)rb.transform.position - (Vector2)collision.gameObject.transform.position).magnitude;
+        if (dist <= 2 && flowerTags.Contains(collision.gameObject.tag))
         {
             Destroy(collision.gameObject);
             switch (collision.gameObject.tag)

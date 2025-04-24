@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-public class FlowersManagerScript : MonoBehaviour
+public class FlowersManager : MonoBehaviour
 {
     [SerializeField] private Flower[] Flowers;
     private Plant[] Plants;
@@ -54,7 +54,7 @@ public class FlowersManagerScript : MonoBehaviour
         }
         if (Plants[Index].IsAreaAvailable(position))
         {
-            FindFirstObjectByType<TutorialManagerScript>().FinishTutorial("place");
+            FindFirstObjectByType<TutorialManager>().FinishTutorial("place");
             if (Plants[Index].TryPlace(position))
             {
                 Flowers[Index].Count--;
@@ -72,7 +72,7 @@ public class FlowersManagerScript : MonoBehaviour
         //Debug.Log($"индекс нажат:{index}");
         if (index < numberOfFlowers)
         {
-            FindFirstObjectByType<TutorialManagerScript>().FinishTutorial("change");
+            FindFirstObjectByType<TutorialManager>().FinishTutorial("change");
             //Debug.Log($"Новый индекс:{index}");
             Index = index;
             scrollTransform.anchoredPosition = new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0);

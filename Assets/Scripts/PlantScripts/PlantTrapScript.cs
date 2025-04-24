@@ -34,7 +34,7 @@ public class PlantTrap : Plant
                 animator.SetBool("isOpen", false);
                 //Debug.Log("Close trap");
                 DestroyAfterDelay(0.8f);
-                FindFirstObjectByType<TutorialManagerScript>().FinishTutorial("fight");
+                FindFirstObjectByType<TutorialManager>().FinishTutorial("fight");
             }
         }
     }
