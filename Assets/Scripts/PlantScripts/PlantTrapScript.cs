@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor.UI;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlantTrap : Plant
 {
@@ -18,7 +20,7 @@ public class PlantTrap : Plant
         var friends = new string[] { "Player", "PlayerMinion", "PlantTrap", "LilyPad" };
         damageDealer.Friends.AddRange(friends);
         isOpen = true;
-        obstacles = new string[] { "Obstacle", "PlayerMinion", "PlantTrap" };
+        //obstacles = new string[] { "Obstacle", "PlayerMinion", "PlantTrap" };
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -35,5 +37,21 @@ public class PlantTrap : Plant
                 FindFirstObjectByType<TutorialManagerScript>().FinishTutorial("fight");
             }
         }
+    }
+
+    public override bool IsAreaAvailable(Vector2 position)
+    {
+        var obstacles = new string[] {"Obstacle", "PlayerMinion", "PlantTrap"};
+        Collider2D[] colliders = GetCollidersInArea(position);
+        Debug.Log($"{string.Join(", ", obstacles)}");
+        foreach (var collider in colliders)
+        {
+            Debug.Log($"{collider.tag} {obstacles.Contains(collider.tag)}");
+            if (obstacles.Contains(collider.tag))
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }
