@@ -7,7 +7,7 @@ using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour, IMoving
+public class Player : MonoBehaviour, IMoving, IDamageable
 {
     private Rigidbody2D rb;
     private PlayerInput playerInput;
@@ -30,6 +30,7 @@ public class Player : MonoBehaviour, IMoving
     public Vector2 TruePosition => (Vector2)selfColllider.transform.position + selfColllider.offset;
 
     public float Speed { get; set; }
+    public Health HP {get; set;}
 
     private void Start()
     {
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour, IMoving
         flowersManager = FindFirstObjectByType<FlowersManager>();
         dialogueManager = FindFirstObjectByType<DialogueManager>();
         selfColllider = GetComponent<CircleCollider2D>();
+        HP = GetComponent<Health>();
 
         playerInput.actions["Move"].performed += HandleMove;
         playerInput.actions["Move"].canceled += HandleMoveCanceled;

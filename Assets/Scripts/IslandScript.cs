@@ -23,13 +23,13 @@ public class Island : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (Utils.StandsOn(collision.gameObject, "Swamp"))
-        {
-            swamp.Enable(collision.gameObject);
-        }
         if (IsTargetOnOtherIsland(collision))
         {
             swamp.Disable(collision.gameObject);
+        }
+        else if (Utils.StandsOn(collision.gameObject, "Swamp"))
+        {
+            swamp.Enable(collision.gameObject);
         }
     }
 

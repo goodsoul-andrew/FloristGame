@@ -5,7 +5,7 @@ public abstract class StatusEffect
 {
     public string EffectName { get; private set; }
     public float Duration { get; private set; }
-    private HashSet<GameObject> affected = new HashSet<GameObject>();
+    protected HashSet<GameObject> affected = new HashSet<GameObject>();
 
     public StatusEffect(string effectName, float duration)
     {

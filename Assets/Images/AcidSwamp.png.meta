@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 32afcd4d1a14d7c49a0b41433b76d0ce
+guid: 704bb7a2c0c44f1979db822a29517976
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6106237381415067752
-    second: "\u0411\u0435\u0437 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044F
-      (4)_0"
+      213: 1434018324488450629
+    second: AcidSwamp_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -114,14 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0411\u0435\u0437 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044F
-        (4)_0"
+      name: AcidSwamp_0
       rect:
         serializedVersion: 2
-        x: 138
-        y: 215
-        width: 749
-        height: 707
+        x: 0
+        y: 0
+        width: 2048
+        height: 2048
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 860e471db86bdb450800000000000000
-      internalID: 6106237381415067752
+      spriteID: 542f8808118a6e310800000000000000
+      internalID: 1434018324488450629
       vertices: []
       indices: 
       edges: []
@@ -149,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "\u0411\u0435\u0437 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044F (4)_0": 6106237381415067752
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,14 +1,15 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, IMoving
+public class Enemy : MonoBehaviour, IMoving, IDamageable
 {
-    public Health Health;
     public DamageDealer damageDealer;
     public float Speed {get; set;}
     [SerializeField] protected float detectionRadius = 10f;
     protected Rigidbody2D rb;
     public Collider2D playerCollider {get; private set;}
+    public Health HP { get; set; }
+
     private Player player;
     protected CircleCollider2D selfCollider;
     private IEnemyState currentState;
@@ -18,12 +19,12 @@ public class Enemy : MonoBehaviour, IMoving
 
     protected void Start()
     {
-        Speed = 5f;
-        Health = GetComponent<Health>();
+        Speed = 3f;
+        HP = GetComponent<Health>();
         damageDealer = GetComponent<DamageDealer>();
         damageDealer.Friends.Add("Enemy");
         rb = GetComponent<Rigidbody2D>();
-        Health.OnDeath += DestroyMyself;
+        HP.OnDeath += DestroyMyself;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>();
         selfCollider = GetComponent<CircleCollider2D>();
