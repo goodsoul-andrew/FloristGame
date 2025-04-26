@@ -5,7 +5,7 @@ public class DamageEffect : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
-    public float effectDuration = 0.5f;
+    public float effectDuration = 0.1f;
     private Coroutine currentEffectCoroutine;
 
     private void Awake()
