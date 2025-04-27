@@ -14,8 +14,7 @@ public class CollectFlowersScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var dist = ((Vector2)rb.transform.position - (Vector2)collision.gameObject.transform.position).magnitude;
-        if (dist <= 2 && flowerTags.Contains(collision.gameObject.tag))
+        if (flowerTags.Contains(collision.gameObject.tag))
         {
             Destroy(collision.gameObject);
             switch (collision.gameObject.tag)

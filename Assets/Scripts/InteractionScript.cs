@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class Interraction : MonoBehaviour
+public class Interaction : MonoBehaviour
 {
-    public virtual void StartInterraction()
+    public virtual void StartInteraction()
     {
         Debug.Log("пустое взаимодействие, странно");
     }
 
-    public virtual void EndInterraction()
+    public virtual void EndInteraction()
     {
         Debug.Log("пустое взаимодействие, странно");
     }

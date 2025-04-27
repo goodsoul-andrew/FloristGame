@@ -21,10 +21,10 @@ public class Player : MonoBehaviour, IMoving, IDamageable
     [SerializeField] private float placeRadius = 5;
     [SerializeField] private float placeDelay = 2f;
     [SerializeField] private UnityEngine.GameObject pauseMenu;
-    [SerializeField] private GameObject InterractionObject;
+    [SerializeField] private GameObject InteractionObject;
 
 
-    private List<Interraction> interactors = new();
+    private List<Interaction> interactors = new();
 
     private CircleCollider2D selfColllider;
     public Vector2 TruePosition => (Vector2)selfColllider.transform.position + selfColllider.offset;
@@ -70,23 +70,20 @@ public class Player : MonoBehaviour, IMoving, IDamageable
         rb.MovePosition(rb.position + moveInput * (Speed * Time.deltaTime));
     }
 
-    void OnTriggerEnter2D(Collider2D otherCollider) 
+    public void InteractionEnter(Interaction interactor) 
     {
-        if(otherCollider.TryGetComponent<Interraction>(out var interactor) && !interactors.Contains(interactor))
+        if(!interactors.Contains(interactor))
         {
             interactors.Add(interactor);
-            InterractionObject.SetActive(true);
+            InteractionObject.SetActive(true);
         }
     }
 
-    void OnTriggerExit2D(Collider2D otherCollider) 
+    public void InteractionExit(Interaction interactor) 
     {
-        if(otherCollider.TryGetComponent<Interraction>(out var interactor))
-        {
-            interactor.EndInterraction();
-            interactors.Remove(interactor);
-            InterractionObject.SetActive(false);
-        }
+        interactor.EndInteraction();
+        interactors.Remove(interactor);
+        InteractionObject.SetActive(false);
     }
 
     private void HandleMove(InputAction.CallbackContext context)
@@ -130,9 +127,10 @@ public class Player : MonoBehaviour, IMoving, IDamageable
         if (!isPaused && interactors.Count!=0)
         {   
             var interactor = interactors[0];
-            interactor.StartInterraction();
+            interactor.StartInteraction();
             interactors.Remove(interactor);
-            InterractionObject.SetActive(false);
+            if(interactors.Count == 0)
+                InteractionObject.SetActive(false);
         }
     }
 
