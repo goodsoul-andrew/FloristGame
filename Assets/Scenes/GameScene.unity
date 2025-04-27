@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 92898712}
   - component: {fileID: 92898711}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u043B\u0435\u0432\u043E_0 (3)"
+  m_Name: "\u043B\u0435\u0441-\u043F\u0440\u0430\u0432\u043E-swamp"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -650,12 +650,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92898710}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.4, y: 144.5649, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 36.920265, y: 147.50453, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &92971143
 GameObject:
@@ -955,7 +955,7 @@ GameObject:
   - component: {fileID: 119642394}
   - component: {fileID: 119642393}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u043D\u0438\u0437_0 (1)"
+  m_Name: "\u043B\u0435\u0441-\u043D\u0438\u0437-field1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1024,12 +1024,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119642392}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.82, y: 90.03, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.32, y: 92.69, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &129253375
 GameObject:
@@ -1057,11 +1057,11 @@ Transform:
   m_GameObject: {fileID: 129253375}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.5166, y: 50.73, z: 0.27508304}
+  m_LocalPosition: {x: 44.997696, y: 83.619644, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1929675519}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &129253377
 SpriteRenderer:
@@ -1132,8 +1132,7 @@ GameObject:
   - component: {fileID: 168450821}
   - component: {fileID: 168450823}
   m_Layer: 0
-  m_Name: "\u0431\u043B\u043E\u043A \u0446\u0435\u043B\u0438\u043A\u043E\u043C \u0431\u043E\u043B\u043E\u0442\u043E_0
-    (6)"
+  m_Name: big_block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2238,7 +2237,7 @@ GameObject:
   - component: {fileID: 262965416}
   - component: {fileID: 262965415}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u0432\u0435\u0440\u0445_0 (1)"
+  m_Name: "\u043B\u0435\u0441-\u043D\u0438\u0437-swamp"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2307,12 +2306,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262965414}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.12, y: 108.1382, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.640266, y: 111.07783, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &274673585
 GameObject:
@@ -2325,7 +2324,7 @@ GameObject:
   - component: {fileID: 274673587}
   - component: {fileID: 274673586}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u043B\u0435\u0432\u043E_0 (2)"
+  m_Name: "\u043B\u0435\u0441-\u043F\u0440\u0430\u0432\u043E-home"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2394,12 +2393,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274673585}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.8, y: -43.18, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 26.320263, y: -40.240368, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &281905727
 GameObject:
@@ -2561,7 +2560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 299163642}
   m_Layer: 0
-  m_Name: swamp
+  m_Name: Swamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2575,8 +2574,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299163641}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.535026, y: 104.38418, z: -0.6314391}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.05529, y: 107.32381, z: -18.28172}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2592,7 +2591,7 @@ Transform:
   - {fileID: 1205063659}
   - {fileID: 168450820}
   - {fileID: 1040836593}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 678198332}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &301064527
 GameObject:
@@ -2775,8 +2774,7 @@ GameObject:
   - component: {fileID: 322866775}
   - component: {fileID: 322866777}
   m_Layer: 0
-  m_Name: "\u0431\u043B\u043E\u043A \u0446\u0435\u043B\u0438\u043A\u043E\u043C \u0431\u043E\u043B\u043E\u0442\u043E_0
-    (3)"
+  m_Name: big_block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2938,7 +2936,7 @@ GameObject:
   - component: {fileID: 337173535}
   - component: {fileID: 337173534}
   m_Layer: 0
-  m_Name: Flower (6)
+  m_Name: flower2
   m_TagString: flower2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3878,7 +3876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &386940242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4314,8 +4312,7 @@ GameObject:
   - component: {fileID: 423056444}
   - component: {fileID: 423056446}
   m_Layer: 0
-  m_Name: "\u0431\u043B\u043E\u043A \u0446\u0435\u043B\u0438\u043A\u043E\u043C \u0431\u043E\u043B\u043E\u0442\u043E_0
-    (12)"
+  m_Name: small_block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4574,7 +4571,7 @@ GameObject:
   - component: {fileID: 452300896}
   - component: {fileID: 452300895}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u043D\u0438\u0437_0"
+  m_Name: "\u043B\u0435\u0441-\u043D\u0438\u0437-field1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4643,12 +4640,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452300894}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.9244, y: 89.91, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.404136, y: 92.84963, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &477720988
 GameObject:
@@ -4783,7 +4780,7 @@ GameObject:
   - component: {fileID: 482265764}
   - component: {fileID: 482265763}
   m_Layer: 0
-  m_Name: Flower (9)
+  m_Name: flower2
   m_TagString: flower2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5438,7 +5435,7 @@ GameObject:
   - component: {fileID: 528952977}
   - component: {fileID: 528952976}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u0432\u0435\u0440\u0445_0"
+  m_Name: "\u043B\u0435\u0441-\u0432\u0432\u0435\u0440\u0445-home"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5508,11 +5505,11 @@ Transform:
   m_GameObject: {fileID: 528952975}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.5061, y: -35.648, z: 0.16871645}
+  m_LocalPosition: {x: 11.200264, y: -73.47037, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 568866315}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &539692193
 GameObject:
@@ -5601,7 +5598,7 @@ GameObject:
   - component: {fileID: 544373554}
   - component: {fileID: 544373553}
   m_Layer: 0
-  m_Name: Flower (17)
+  m_Name: flower1
   m_TagString: flower1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5946,8 +5943,7 @@ GameObject:
   - component: {fileID: 559298967}
   - component: {fileID: 559298969}
   m_Layer: 0
-  m_Name: "\u0431\u043B\u043E\u043A \u0446\u0435\u043B\u0438\u043A\u043E\u043C \u0431\u043E\u043B\u043E\u0442\u043E_0
-    (11)"
+  m_Name: small_block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6344,8 +6340,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568866314}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.8261003, y: -40.762005, z: -0.16871645}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.3058357, y: -37.822372, z: -17.818996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6366,13 +6362,8 @@ Transform:
   - {fileID: 1444492555}
   - {fileID: 916528563}
   - {fileID: 1458887228}
-  - {fileID: 1469325632}
   - {fileID: 1175494825}
-  - {fileID: 1166296405}
-  - {fileID: 528952977}
-  - {fileID: 1618756209}
-  - {fileID: 2007806925}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 678198332}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &585710086
 GameObject:
@@ -6667,7 +6658,7 @@ GameObject:
   - component: {fileID: 602389624}
   - component: {fileID: 602389623}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u043F\u0440\u0430\u0432\u043E_0 (1)"
+  m_Name: "\u043B\u0435\u0441-\u043B\u0435\u0432\u043E-home-main"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6736,12 +6727,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602389622}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.88, y: -21.5967, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.400265, y: -18.657068, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &607505911
 PrefabInstance:
@@ -7441,7 +7432,7 @@ GameObject:
   - component: {fileID: 659776931}
   - component: {fileID: 659776930}
   m_Layer: 0
-  m_Name: Flower (4)
+  m_Name: flower1
   m_TagString: flower1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7575,7 +7566,7 @@ GameObject:
   - component: {fileID: 664735375}
   - component: {fileID: 664735374}
   m_Layer: 0
-  m_Name: Flower(2) (7)
+  m_Name: flower3
   m_TagString: flower3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7817,6 +7808,9 @@ Transform:
   - {fileID: 477720990}
   - {fileID: 693959732}
   - {fileID: 1759860078}
+  - {fileID: 568866315}
+  - {fileID: 299163642}
+  - {fileID: 1929675519}
   - {fileID: 254137475}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7832,7 +7826,7 @@ GameObject:
   - component: {fileID: 680603750}
   - component: {fileID: 680603749}
   m_Layer: 0
-  m_Name: Flower(2) (9)
+  m_Name: flower3
   m_TagString: flower3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7966,7 +7960,7 @@ GameObject:
   - component: {fileID: 686689116}
   - component: {fileID: 686689115}
   m_Layer: 0
-  m_Name: Flower (13)
+  m_Name: flower2
   m_TagString: flower2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9253,8 +9247,7 @@ GameObject:
   - component: {fileID: 782986228}
   - component: {fileID: 782986230}
   m_Layer: 0
-  m_Name: "\u0431\u043B\u043E\u043A \u0446\u0435\u043B\u0438\u043A\u043E\u043C \u0431\u043E\u043B\u043E\u0442\u043E_0
-    (15)"
+  m_Name: small_block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9717,11 +9710,11 @@ Transform:
   m_GameObject: {fileID: 798972360}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.767036, y: 68.9563, z: 0.27508304}
+  m_LocalPosition: {x: -4.2859383, y: 101.84595, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1929675519}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &798972362
 SpriteRenderer:
@@ -10074,7 +10067,7 @@ GameObject:
   - component: {fileID: 882191359}
   - component: {fileID: 882191358}
   m_Layer: 0
-  m_Name: Flower (2)
+  m_Name: flower1
   m_TagString: flower1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10508,7 +10501,7 @@ GameObject:
   - component: {fileID: 916528565}
   - component: {fileID: 916528564}
   m_Layer: 0
-  m_Name: Flower (19)
+  m_Name: flower1
   m_TagString: flower1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12120,7 +12113,7 @@ GameObject:
   - component: {fileID: 994387023}
   - component: {fileID: 994387022}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u043F\u0440\u0430\u0432\u043E_0"
+  m_Name: "\u043B\u0435\u0441-\u043B\u0435\u0432\u043E-field1-swamp"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12189,12 +12182,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994387021}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.05, y: 99.2953, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.5297356, y: 102.23493, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1040836592
 GameObject:
@@ -12210,8 +12203,7 @@ GameObject:
   - component: {fileID: 1040836595}
   - component: {fileID: 1040836597}
   m_Layer: 0
-  m_Name: "\u0431\u043B\u043E\u043A \u0446\u0435\u043B\u0438\u043A\u043E\u043C \u0431\u043E\u043B\u043E\u0442\u043E_0
-    (13)"
+  m_Name: big_block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13039,7 +13031,7 @@ GameObject:
   - component: {fileID: 1087382425}
   - component: {fileID: 1087382428}
   m_Layer: 0
-  m_Name: Tilemap
+  m_Name: layer2_field
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15126,7 +15118,7 @@ GameObject:
   - component: {fileID: 1098911551}
   - component: {fileID: 1098911550}
   m_Layer: 0
-  m_Name: Flower (3)
+  m_Name: flower2
   m_TagString: flower2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15317,7 +15309,7 @@ GameObject:
   - component: {fileID: 1105494479}
   - component: {fileID: 1105494478}
   m_Layer: 0
-  m_Name: Flower (11)
+  m_Name: flower2
   m_TagString: flower2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15451,7 +15443,7 @@ GameObject:
   - component: {fileID: 1113848968}
   - component: {fileID: 1113848967}
   m_Layer: 0
-  m_Name: Flower (14)
+  m_Name: flower2
   m_TagString: flower2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15736,7 +15728,7 @@ GameObject:
   - component: {fileID: 1146273455}
   - component: {fileID: 1146273454}
   m_Layer: 0
-  m_Name: Flower(2) (10)
+  m_Name: flower3
   m_TagString: flower3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15872,8 +15864,7 @@ GameObject:
   - component: {fileID: 1148309871}
   - component: {fileID: 1148309873}
   m_Layer: 0
-  m_Name: "\u0431\u043B\u043E\u043A \u0446\u0435\u043B\u0438\u043A\u043E\u043C \u0431\u043E\u043B\u043E\u0442\u043E_0
-    (4)"
+  m_Name: small_block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16036,7 +16027,7 @@ GameObject:
   - component: {fileID: 1148585900}
   - component: {fileID: 1148585902}
   m_Layer: 0
-  m_Name: field
+  m_Name: layer1_field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63008,17 +62999,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 84, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 1, y: 84, z: 0}
+  - first: {x: 2, y: 84, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -63299,26 +63280,6 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 0, y: 85, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 1, y: 85, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 2, y: 85, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -63740,7 +63701,7 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 2850
+  - m_RefCount: 2847
     m_Data: {fileID: 11400000, guid: e9e5e426efccf694fba77f497088a30b, type: 2}
   - m_RefCount: 1555
     m_Data: {fileID: 11400000, guid: 1433e344404b6a3498f48eac6123fc60, type: 2}
@@ -63777,7 +63738,7 @@ Tilemap:
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 493d9995dd84a9c4895c70042528d2f3, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 2850
+  - m_RefCount: 2847
     m_Data: {fileID: 3118233613878599590, guid: c837949db484b0c49afb9fd10c2c443f, type: 3}
   - m_RefCount: 1555
     m_Data: {fileID: 8959862674831882131, guid: c837949db484b0c49afb9fd10c2c443f, type: 3}
@@ -63814,7 +63775,7 @@ Tilemap:
   - m_RefCount: 6
     m_Data: {fileID: -7452636288830173740, guid: e15540197f53f314c879165b047e38e1, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 4610
+  - m_RefCount: 4607
     m_Data:
       e00: 1
       e01: 0
@@ -63869,7 +63830,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 4762
+  - m_RefCount: 4759
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -63997,7 +63958,7 @@ GameObject:
   - component: {fileID: 1166296405}
   - component: {fileID: 1166296404}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u043F\u0440\u0430\u0432\u043E_0"
+  m_Name: "\u043B\u0435\u0441-\u043B\u0435\u0432\u043E-home"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64067,11 +64028,11 @@ Transform:
   m_GameObject: {fileID: 1166296403}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.2939, y: -6.777996, z: 0.16871645}
+  m_LocalPosition: {x: -23.599735, y: -44.60037, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 568866315}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1175494823
 GameObject:
@@ -64519,8 +64480,7 @@ GameObject:
   - component: {fileID: 1205063660}
   - component: {fileID: 1205063662}
   m_Layer: 0
-  m_Name: "\u0431\u043B\u043E\u043A \u0446\u0435\u043B\u0438\u043A\u043E\u043C \u0431\u043E\u043B\u043E\u0442\u043E_0
-    (5)"
+  m_Name: big_block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64911,7 +64871,7 @@ GameObject:
   - component: {fileID: 1302212191}
   - component: {fileID: 1302212190}
   m_Layer: 0
-  m_Name: Flower(2) (8)
+  m_Name: flower3
   m_TagString: flower3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65270,7 +65230,7 @@ GameObject:
   - component: {fileID: 1344751643}
   - component: {fileID: 1344751642}
   m_Layer: 0
-  m_Name: Flower (16)
+  m_Name: flower1
   m_TagString: flower1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65693,11 +65653,11 @@ Transform:
   m_GameObject: {fileID: 1387298168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -83.89, y: 49.03, z: 0.27508304}
+  m_LocalPosition: {x: -51.4089, y: 81.91965, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1929675519}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1387298170
 SpriteRenderer:
@@ -66142,7 +66102,7 @@ GameObject:
   - component: {fileID: 1444492557}
   - component: {fileID: 1444492556}
   m_Layer: 0
-  m_Name: Flower (18)
+  m_Name: flower1
   m_TagString: flower1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66664,7 +66624,7 @@ GameObject:
   - component: {fileID: 1458887230}
   - component: {fileID: 1458887229}
   m_Layer: 0
-  m_Name: Flower (20)
+  m_Name: flower1
   m_TagString: flower1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66812,11 +66772,11 @@ Transform:
   m_GameObject: {fileID: 1469325631}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.355836, y: -71.20763, z: 0.16871645}
+  m_LocalPosition: {x: 0.05000019, y: -109.03, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 568866315}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1469325633
 SpriteRenderer:
@@ -67038,7 +66998,7 @@ GameObject:
   - component: {fileID: 1492217578}
   - component: {fileID: 1492217580}
   m_Layer: 0
-  m_Name: "\u0431\u043B\u043E\u043A \u0446\u0435\u043B\u0438\u043A\u043E\u043C \u0431\u043E\u043B\u043E\u0442\u043E_0"
+  m_Name: small_block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67293,11 +67253,11 @@ Transform:
   m_GameObject: {fileID: 1563635026}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.8357, y: 110.6, z: 0.27508304}
+  m_LocalPosition: {x: 65.3168, y: 143.48965, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1929675519}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1563635028
 SpriteRenderer:
@@ -67667,7 +67627,7 @@ GameObject:
   - component: {fileID: 1618756209}
   - component: {fileID: 1618756210}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u043D\u0438\u0437_0"
+  m_Name: "\u043B\u0435\u0441-\u043D\u0438\u0437-home"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67682,11 +67642,11 @@ Transform:
   m_GameObject: {fileID: 1618756208}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.5527, y: 14.352005, z: 0.16871645}
+  m_LocalPosition: {x: -2.7531357, y: -23.470367, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 568866315}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1618756210
 SpriteRenderer:
@@ -68037,7 +67997,7 @@ GameObject:
   - component: {fileID: 1655261514}
   - component: {fileID: 1655261513}
   m_Layer: 0
-  m_Name: Flower (5)
+  m_Name: flower1
   m_TagString: flower1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68401,7 +68361,7 @@ GameObject:
   - component: {fileID: 1674982515}
   - component: {fileID: 1674982514}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u043B\u0435\u0432\u043E_0 (1)"
+  m_Name: "\u043B\u0435\u0441-\u043F\u0440\u0430\u0432\u043E-field1-swamp"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68456,7 +68416,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 8.885348, y: 5.5191355}
+  m_Size: {x: 8.885348, y: 4.5942945}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -68470,12 +68430,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674982513}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.33, y: 88.7, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.78, y: 90.37, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1677129379
 GameObject:
@@ -69008,11 +68968,11 @@ Transform:
   m_GameObject: {fileID: 1727891123}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.4878, y: 184.8325, z: 0.27508304}
+  m_LocalPosition: {x: -8.006702, y: 217.72215, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1929675519}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1727891125
 SpriteRenderer:
@@ -69745,7 +69705,7 @@ GameObject:
   - component: {fileID: 1756665932}
   - component: {fileID: 1756665931}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u043B\u0435\u0432\u043E_0"
+  m_Name: "\u043B\u0435\u0441-\u043F\u0440\u0430\u0432\u043E-field1-swamp"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69814,12 +69774,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756665930}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.19, y: 99.4132, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.7102647, y: 102.35283, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1759860077
 GameObject:
@@ -69831,7 +69791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1759860078}
   m_Layer: 0
-  m_Name: forest
+  m_Name: Forest
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69862,6 +69822,28 @@ Transform:
   - {fileID: 957163667}
   - {fileID: 2003055145}
   - {fileID: 1189046356}
+  - {fileID: 1166296405}
+  - {fileID: 528952977}
+  - {fileID: 1618756209}
+  - {fileID: 2007806925}
+  - {fileID: 1469325632}
+  - {fileID: 129253376}
+  - {fileID: 1387298169}
+  - {fileID: 1838689393}
+  - {fileID: 1563635027}
+  - {fileID: 1727891124}
+  - {fileID: 798972361}
+  - {fileID: 1756665932}
+  - {fileID: 1674982515}
+  - {fileID: 994387023}
+  - {fileID: 452300896}
+  - {fileID: 119642394}
+  - {fileID: 274673587}
+  - {fileID: 602389624}
+  - {fileID: 2132538411}
+  - {fileID: 262965416}
+  - {fileID: 92898712}
+  - {fileID: 2114420670}
   m_Father: {fileID: 678198332}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1784728044
@@ -69876,7 +69858,7 @@ GameObject:
   - component: {fileID: 1784728047}
   - component: {fileID: 1784728046}
   m_Layer: 0
-  m_Name: Flower (12)
+  m_Name: flower2
   m_TagString: flower2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70387,11 +70369,11 @@ Transform:
   m_GameObject: {fileID: 1838689392}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -110.0731, y: 109.24, z: 0.27508304}
+  m_LocalPosition: {x: -77.591995, y: 142.12964, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1929675519}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1838689394
 SpriteRenderer:
@@ -70968,7 +70950,7 @@ GameObject:
   - component: {fileID: 1859490598}
   - component: {fileID: 1859490597}
   m_Layer: 0
-  m_Name: Flower (10)
+  m_Name: flower1
   m_TagString: flower1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71719,7 +71701,7 @@ GameObject:
   - component: {fileID: 1912294041}
   - component: {fileID: 1912294040}
   m_Layer: 0
-  m_Name: Flower (15)
+  m_Name: flower2
   m_TagString: flower2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72149,7 +72131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929675519}
   m_Layer: 0
-  m_Name: FieldWithFlowers
+  m_Name: FieldWithFlowers_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72163,17 +72145,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929675518}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.960835, y: 29.950018, z: -0.27508304}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 32.4811, y: 32.88965, z: -17.925364}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 129253376}
-  - {fileID: 1387298169}
-  - {fileID: 1838689393}
-  - {fileID: 1563635027}
-  - {fileID: 1727891124}
-  - {fileID: 798972361}
   - {fileID: 2027628384}
   - {fileID: 1970529752}
   - {fileID: 1098911549}
@@ -72181,7 +72157,7 @@ Transform:
   - {fileID: 882191357}
   - {fileID: 659776929}
   - {fileID: 1655261512}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 678198332}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1942493454
 GameObject:
@@ -72797,7 +72773,7 @@ GameObject:
   - component: {fileID: 1970529754}
   - component: {fileID: 1970529753}
   m_Layer: 0
-  m_Name: Flower(2) (2)
+  m_Name: flower3
   m_TagString: flower3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72933,8 +72909,7 @@ GameObject:
   - component: {fileID: 1977935666}
   - component: {fileID: 1977935668}
   m_Layer: 0
-  m_Name: "\u0431\u043B\u043E\u043A \u0446\u0435\u043B\u0438\u043A\u043E\u043C \u0431\u043E\u043B\u043E\u0442\u043E_0
-    (8)"
+  m_Name: big_block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73381,7 +73356,7 @@ GameObject:
   - component: {fileID: 1995006736}
   - component: {fileID: 1995006735}
   m_Layer: 0
-  m_Name: Flower(2) (6)
+  m_Name: flower3
   m_TagString: flower3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73601,7 +73576,7 @@ GameObject:
   - component: {fileID: 2007806925}
   - component: {fileID: 2007806924}
   m_Layer: 0
-  m_Name: "\u0444\u043E\u043D\u044B (1)_0"
+  m_Name: "\u0442\u0440\u043E\u043F\u0438\u043D\u043A\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73671,11 +73646,11 @@ Transform:
   m_GameObject: {fileID: 2007806923}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.246502, y: 19.166306, z: 0.16871645}
+  m_LocalPosition: {x: 19.940666, y: -18.656067, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 568866315}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2018757573
 GameObject:
@@ -73915,7 +73890,7 @@ GameObject:
   - component: {fileID: 2027628386}
   - component: {fileID: 2027628385}
   m_Layer: 0
-  m_Name: Flower(2) (1)
+  m_Name: flower3
   m_TagString: flower3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74644,7 +74619,7 @@ GameObject:
   - component: {fileID: 2114420670}
   - component: {fileID: 2114420669}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u043F\u0440\u0430\u0432\u043E_0 (2)"
+  m_Name: "\u043B\u0435\u0441-\u043B\u0435\u0432\u043E-swamp"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74713,12 +74688,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114420668}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.4, y: 144.4978, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -39.879738, y: 147.43744, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2120857014
 GameObject:
@@ -74734,8 +74709,7 @@ GameObject:
   - component: {fileID: 2120857017}
   - component: {fileID: 2120857019}
   m_Layer: 0
-  m_Name: "\u0431\u043B\u043E\u043A \u0446\u0435\u043B\u0438\u043A\u043E\u043C \u0431\u043E\u043B\u043E\u0442\u043E_0
-    (10)"
+  m_Name: big_block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74896,7 +74870,7 @@ GameObject:
   - component: {fileID: 2132538411}
   - component: {fileID: 2132538410}
   m_Layer: 0
-  m_Name: "\u043B\u0435\u0441-\u0432\u0435\u0440\u0445_0"
+  m_Name: "\u043B\u0435\u0441-\u043D\u0438\u0437-swamp"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74965,12 +74939,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132538409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.4412, y: 108.1382, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -22.920937, y: 111.07783, z: -17.65028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1759860078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2145816725
 GameObject:
@@ -75057,24 +75031,10 @@ SceneRoots:
   - {fileID: 678198332}
   - {fileID: 13642788}
   - {fileID: 1444211442}
-  - {fileID: 1929675519}
   - {fileID: 386940244}
   - {fileID: 1916942242}
   - {fileID: 1100623717}
   - {fileID: 1679650156}
   - {fileID: 607505911}
-  - {fileID: 568866315}
-  - {fileID: 299163642}
   - {fileID: 523609417}
   - {fileID: 703707969}
-  - {fileID: 1756665932}
-  - {fileID: 1674982515}
-  - {fileID: 994387023}
-  - {fileID: 452300896}
-  - {fileID: 119642394}
-  - {fileID: 274673587}
-  - {fileID: 602389624}
-  - {fileID: 2132538411}
-  - {fileID: 262965416}
-  - {fileID: 92898712}
-  - {fileID: 2114420670}
