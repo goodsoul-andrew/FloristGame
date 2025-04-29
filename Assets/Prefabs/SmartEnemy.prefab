@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5413268422195238749}
   - component: {fileID: 90801890324538110}
   - component: {fileID: 2650203904615952914}
+  - component: {fileID: 6174691156844681649}
   m_Layer: 3
   m_Name: SmartEnemy
   m_TagString: Enemy
@@ -119,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
+  Enabled: 1
 --- !u!58 &4884180296162895117
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -194,9 +196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70960ad2368865cccae6d20269ba29c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 0}
-  damageDealer: {fileID: 0}
-  moveSpeed: 3
+  damageDealer: {fileID: 7950764486259190614}
+  ThisSpeed: 0
   detectionRadius: 20
   navMeshAgent: {fileID: 0}
 --- !u!195 &2650203904615952914
@@ -221,3 +222,25 @@ NavMeshAgent:
   m_BaseOffset: 2.6499963
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &6174691156844681649
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4819763407974122577}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4bf5dedecabba0141a00d8923d5ca054, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

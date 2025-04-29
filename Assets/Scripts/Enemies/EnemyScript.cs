@@ -5,6 +5,7 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
 {
     public DamageDealer damageDealer;
     public float Speed {get; set;}
+    public float speed = 3f;
     [SerializeField] protected float detectionRadius = 10f;
     protected Rigidbody2D rb;
     public Collider2D playerCollider {get; private set;}
@@ -19,9 +20,8 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
 
     protected void Start()
     {
-        Speed = 3f;
+        Speed = speed;
         HP = GetComponent<Health>();
-        damageDealer = GetComponent<DamageDealer>();
         damageDealer.Friends.Add("Enemy");
         rb = GetComponent<Rigidbody2D>();
         HP.OnDeath += DestroyMyself;

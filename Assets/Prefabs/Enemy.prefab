@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
+  Enabled: 1
 --- !u!58 &3529636829183315223
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -193,7 +194,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a90c1c2f6561997fe94f623451a45574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 0}
-  damageDealer: {fileID: 0}
-  moveSpeed: 3
+  damageDealer: {fileID: 89889383447048598}
   detectionRadius: 10

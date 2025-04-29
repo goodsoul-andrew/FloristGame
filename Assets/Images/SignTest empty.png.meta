@@ -2122,7 +2122,87 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SignTest empty_0: 2269262224505898729
+      SignTest empty_1: -650343290561922265
+      SignTest empty_10: -8247304399122895505
+      SignTest empty_11: -6082290401011277504
+      SignTest empty_12: 1827348237165793500
+      SignTest empty_13: -1356677779028777545
+      SignTest empty_14: -5885441111696432406
+      SignTest empty_15: -8170666595302789139
+      SignTest empty_16: -2821502192577144123
+      SignTest empty_17: 6280923220327365759
+      SignTest empty_18: 7158263316513296930
+      SignTest empty_19: -4675927311070600532
+      SignTest empty_2: -3488167773415929926
+      SignTest empty_20: 6905318668104726615
+      SignTest empty_21: -7854870012811262460
+      SignTest empty_22: 4229031655251384403
+      SignTest empty_23: -3686121693919999975
+      SignTest empty_24: -1115995997610101829
+      SignTest empty_25: -2201461654452792648
+      SignTest empty_26: -3771050000567033075
+      SignTest empty_27: 5901489258564751849
+      SignTest empty_28: -9052491840337234825
+      SignTest empty_29: -4725955410061462614
+      SignTest empty_3: 9145335518080818513
+      SignTest empty_30: -1981661743791399115
+      SignTest empty_31: 4610602670018776171
+      SignTest empty_32: 8072548619151723357
+      SignTest empty_33: 5120571271655908270
+      SignTest empty_34: 409313015549554288
+      SignTest empty_35: 5772374659954376640
+      SignTest empty_36: 2300469938867236647
+      SignTest empty_37: -522810577182279393
+      SignTest empty_38: -7863776525850762658
+      SignTest empty_39: 97848899508052990
+      SignTest empty_4: -1812008665388068686
+      SignTest empty_40: 908760547777248319
+      SignTest empty_41: 7637199534194783779
+      SignTest empty_42: -4569984339974160525
+      SignTest empty_43: -6529522771538324405
+      SignTest empty_44: 2133310469603182080
+      SignTest empty_45: 5422686180842896205
+      SignTest empty_46: 5999635091680240632
+      SignTest empty_47: 2660714712340571740
+      SignTest empty_48: 3547004087586806994
+      SignTest empty_49: -1448379106050410994
+      SignTest empty_5: 3316057920087960667
+      SignTest empty_50: -481368464811808981
+      SignTest empty_51: 3202527723718521672
+      SignTest empty_52: -648246201713085279
+      SignTest empty_53: 4110501098563866961
+      SignTest empty_54: 8798107738224313903
+      SignTest empty_55: -4646961232739916294
+      SignTest empty_56: -5264342782206974853
+      SignTest empty_57: 7321993473709378326
+      SignTest empty_58: -1710897411597578528
+      SignTest empty_59: 8623584400634345069
+      SignTest empty_6: -6690185597062674756
+      SignTest empty_60: -3279117856293378101
+      SignTest empty_61: 7677286067275441252
+      SignTest empty_62: 7973995216679447398
+      SignTest empty_63: -7429140382656013498
+      SignTest empty_64: -6316280725604144582
+      SignTest empty_65: -3942587950868801724
+      SignTest empty_66: -3872581178907749144
+      SignTest empty_67: -3457138767559884585
+      SignTest empty_68: 1194101360786373197
+      SignTest empty_69: 4431165000369029130
+      SignTest empty_7: 6392558124469641964
+      SignTest empty_70: 3571476491988890158
+      SignTest empty_71: -4335381644905265002
+      SignTest empty_72: -469066365600208450
+      SignTest empty_73: -4956065763431089257
+      SignTest empty_74: -1953189351897972705
+      SignTest empty_75: 7742473939903733711
+      SignTest empty_76: -6473505061778959969
+      SignTest empty_77: -200089807642105287
+      SignTest empty_78: -4362059036975824816
+      SignTest empty_79: 7823391632888886779
+      SignTest empty_8: -7742612667846906313
+      SignTest empty_9: 5606948861914824454
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
