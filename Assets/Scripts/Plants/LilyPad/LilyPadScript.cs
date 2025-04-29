@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LilyPad : Plant
@@ -35,9 +36,9 @@ public class LilyPad : Plant
         position.y = MathF.Round(position.y, 2);
         if (bridges.Count == 0)
         {
-            if (base.IsAreaAvailable(position))
+            if (IsAreaAvailable(position))
             {
-                base.Place(position);
+                Place(position);
                 return true;
             }
             return false;
@@ -70,5 +71,27 @@ public class LilyPad : Plant
             }
             return false;
         }
+    }
+
+    public override bool IsAreaAvailable(Vector2 position)
+    {
+        var obstacles = new string[] {"Obstacle", "PlayerMinion", "Ground"};
+        var possibleGround = new string[] {"Swamp"};
+        Collider2D[] colliders = GetCollidersInArea(position);
+        //Debug.Log($"{string.Join(", ", obstacles)}");
+        var found = false;
+        foreach (var collider in colliders)
+        {
+            //Debug.Log($"{collider.tag} {obstacles.Contains(collider.tag)}");
+            if (obstacles.Contains(collider.tag))
+            {
+                return false;
+            }
+            if (possibleGround.Contains(collider.tag))
+            {
+                found = true;
+            }
+        }
+        return found;
     }
 }

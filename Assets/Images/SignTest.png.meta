@@ -1,0 +1,2210 @@
+fileFormatVersion: 2
+guid: eb14740e94aafb4dab08e0760333a69d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7359523297809363616
+    second: SignTest_0
+  - first:
+      213: 919836669524219976
+    second: SignTest_1
+  - first:
+      213: -4772932877491894792
+    second: SignTest_2
+  - first:
+      213: -5652413905150081571
+    second: SignTest_3
+  - first:
+      213: -4349125502234254791
+    second: SignTest_4
+  - first:
+      213: 6927638634880013671
+    second: SignTest_5
+  - first:
+      213: -8639017396843223197
+    second: SignTest_6
+  - first:
+      213: 2577198030660392687
+    second: SignTest_7
+  - first:
+      213: -5261550286883347020
+    second: SignTest_8
+  - first:
+      213: -6551009363463630847
+    second: SignTest_9
+  - first:
+      213: 2336286853672527232
+    second: SignTest_10
+  - first:
+      213: 4368849562728899004
+    second: SignTest_11
+  - first:
+      213: -2978660820176208488
+    second: SignTest_12
+  - first:
+      213: 7788400885598993290
+    second: SignTest_13
+  - first:
+      213: 4481440052422577536
+    second: SignTest_14
+  - first:
+      213: -6928439893021652018
+    second: SignTest_15
+  - first:
+      213: 2400622275822553564
+    second: SignTest_16
+  - first:
+      213: 1546607556498588687
+    second: SignTest_17
+  - first:
+      213: -8687663391946559604
+    second: SignTest_18
+  - first:
+      213: 363558917930476347
+    second: SignTest_19
+  - first:
+      213: 3978913421800983507
+    second: SignTest_20
+  - first:
+      213: 3287952539911889493
+    second: SignTest_21
+  - first:
+      213: 6787020642114279865
+    second: SignTest_22
+  - first:
+      213: -7162342263025551532
+    second: SignTest_23
+  - first:
+      213: 6353581553976865104
+    second: SignTest_24
+  - first:
+      213: 3212373534112133509
+    second: SignTest_25
+  - first:
+      213: 6349971626564190358
+    second: SignTest_26
+  - first:
+      213: -5090865598544467850
+    second: SignTest_27
+  - first:
+      213: -6377428391769327451
+    second: SignTest_28
+  - first:
+      213: 3600061761581637005
+    second: SignTest_29
+  - first:
+      213: -4768665719975895371
+    second: SignTest_30
+  - first:
+      213: 957261307843221749
+    second: SignTest_31
+  - first:
+      213: 377682887158141898
+    second: SignTest_32
+  - first:
+      213: 2555551211121002574
+    second: SignTest_33
+  - first:
+      213: -3156549807893742178
+    second: SignTest_34
+  - first:
+      213: 8358612541710245043
+    second: SignTest_35
+  - first:
+      213: -4570402788907118348
+    second: SignTest_36
+  - first:
+      213: -4353732809599368516
+    second: SignTest_37
+  - first:
+      213: 5758021304097209276
+    second: SignTest_38
+  - first:
+      213: -6166789428799383494
+    second: SignTest_39
+  - first:
+      213: -950483536399214777
+    second: SignTest_40
+  - first:
+      213: 6727101888857988958
+    second: SignTest_41
+  - first:
+      213: 2350508062895007548
+    second: SignTest_42
+  - first:
+      213: 1884826376612943922
+    second: SignTest_43
+  - first:
+      213: -6606214794105048612
+    second: SignTest_44
+  - first:
+      213: 84931696841413797
+    second: SignTest_45
+  - first:
+      213: -1416748611790458657
+    second: SignTest_46
+  - first:
+      213: -2195206936972800118
+    second: SignTest_47
+  - first:
+      213: -2610807008974128424
+    second: SignTest_48
+  - first:
+      213: -5727704087177713450
+    second: SignTest_49
+  - first:
+      213: -1778494203664086859
+    second: SignTest_50
+  - first:
+      213: 7120571973372375045
+    second: SignTest_51
+  - first:
+      213: 4028073909215893378
+    second: SignTest_52
+  - first:
+      213: 4029188242787847182
+    second: SignTest_53
+  - first:
+      213: 5036012541560069701
+    second: SignTest_54
+  - first:
+      213: -6265986197811381248
+    second: SignTest_55
+  - first:
+      213: -645915236909021190
+    second: SignTest_56
+  - first:
+      213: -4605482156857796965
+    second: SignTest_57
+  - first:
+      213: 7810514351467686047
+    second: SignTest_58
+  - first:
+      213: 596994506848824350
+    second: SignTest_59
+  - first:
+      213: 341124109645260379
+    second: SignTest_60
+  - first:
+      213: -793874823625844121
+    second: SignTest_61
+  - first:
+      213: 4886366954216604011
+    second: SignTest_62
+  - first:
+      213: 5665501844302793045
+    second: SignTest_63
+  - first:
+      213: 2693039374229552753
+    second: SignTest_64
+  - first:
+      213: 8678592553072221818
+    second: SignTest_65
+  - first:
+      213: 6803702824133928530
+    second: SignTest_66
+  - first:
+      213: -8127373994771318692
+    second: SignTest_67
+  - first:
+      213: -1853740898394358396
+    second: SignTest_68
+  - first:
+      213: 970297154632840408
+    second: SignTest_69
+  - first:
+      213: 5002662296186488558
+    second: SignTest_70
+  - first:
+      213: -5272910363317586577
+    second: SignTest_71
+  - first:
+      213: 5246571047232336816
+    second: SignTest_72
+  - first:
+      213: 3669509803915497142
+    second: SignTest_73
+  - first:
+      213: 6691982692817227736
+    second: SignTest_74
+  - first:
+      213: 892825648817340523
+    second: SignTest_75
+  - first:
+      213: -2281437279557618573
+    second: SignTest_76
+  - first:
+      213: -7896179324676256346
+    second: SignTest_77
+  - first:
+      213: 4119348092209748145
+    second: SignTest_78
+  - first:
+      213: -4842038996507357525
+    second: SignTest_79
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SignTest_0
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1455
+        width: 280
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d8cd59d88bdd990800000000000000
+      internalID: -7359523297809363616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_1
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1907
+        width: 98
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8489e52d39ae3cc00800000000000000
+      internalID: 919836669524219976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_2
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1912
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5005406d223cdb0800000000000000
+      internalID: -4772932877491894792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_3
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 1942
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd50d0440879e81b0800000000000000
+      internalID: -5652413905150081571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_4
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1919
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9322cbbf56dc4a3c0800000000000000
+      internalID: -4349125502234254791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_5
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1660
+        width: 182
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7659b4c52aae32060800000000000000
+      internalID: 6927638634880013671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_6
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1619
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3676db4f27b0c1880800000000000000
+      internalID: -8639017396843223197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_7
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1881
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6595d44fb04c320800000000000000
+      internalID: 2577198030660392687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_8
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1856
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5a67614e73bf6b0800000000000000
+      internalID: -5261550286883347020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_9
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1856
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1001e7251b32615a0800000000000000
+      internalID: -6551009363463630847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_10
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1690
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085e096e3882c6020800000000000000
+      internalID: 2336286853672527232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_11
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1701
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1a397b78541ac30800000000000000
+      internalID: 4368849562728899004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_12
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1688
+        width: 158
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89df50304cba9a6d0800000000000000
+      internalID: -2978660820176208488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_13
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1808
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b377a3755f51c60800000000000000
+      internalID: 7788400885598993290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_14
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1799
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d0bd6ebf5413e30800000000000000
+      internalID: 4481440052422577536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_15
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1759
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb8cc030ac39df90800000000000000
+      internalID: -6928439893021652018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_16
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1809
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd90b46ad39b05120800000000000000
+      internalID: 2400622275822553564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_17
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 1706
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04880cd067a67510800000000000000
+      internalID: 1546607556498588687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_18
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1632
+        width: 119
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f2cda9c283f6780800000000000000
+      internalID: -8687663391946559604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_19
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1673
+        width: 194
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33eb2ed8ee9b0500800000000000000
+      internalID: 363558917930476347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_20
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 1638
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db4b7a0da0f73730800000000000000
+      internalID: 3978913421800983507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_21
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 1687
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552aacb2a6721ad20800000000000000
+      internalID: 3287952539911889493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_22
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 1460
+        width: 228
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b917789057503e50800000000000000
+      internalID: 6787020642114279865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_23
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1675
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4573894d8af3a9c90800000000000000
+      internalID: -7162342263025551532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_24
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 1610
+        width: 53
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051f348b2c47c2850800000000000000
+      internalID: 6353581553976865104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_25
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1611
+        width: 101
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581be9a95b4a49c20800000000000000
+      internalID: 3212373534112133509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_26
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1579
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6900b2ffc81af1850800000000000000
+      internalID: 6349971626564190358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_27
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1591
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678208fe5bc9959b0800000000000000
+      internalID: -5090865598544467850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_28
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 1606
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a83910baa2de77a0800000000000000
+      internalID: -6377428391769327451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_29
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1438
+        width: 146
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d5a84291df5f130800000000000000
+      internalID: 3600061761581637005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_30
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1592
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be114c0bcb42ddb0800000000000000
+      internalID: -4768665719975895371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_31
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1593
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f898337610e84d00800000000000000
+      internalID: 957261307843221749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_32
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1595
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac31ec6b59ccd3500800000000000000
+      internalID: 377682887158141898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_33
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1585
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48cf206944277320800000000000000
+      internalID: 2555551211121002574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_34
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 1571
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d7aa08caea134d0800000000000000
+      internalID: -3156549807893742178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_35
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 1544
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc93c322d1cff370800000000000000
+      internalID: 8358612541710245043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_36
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1570
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f09cb6e0eaa290c0800000000000000
+      internalID: -4570402788907118348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_37
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1573
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2cdd4a31f6493c0800000000000000
+      internalID: -4353732809599368516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_38
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 1570
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb78d76ed998ef40800000000000000
+      internalID: 5758021304097209276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_39
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1505
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3857c300b92b6aa0800000000000000
+      internalID: -6166789428799383494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_40
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1514
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747511072443fc2f0800000000000000
+      internalID: -950483536399214777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_41
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1423
+        width: 93
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f5d35b6877b5d50800000000000000
+      internalID: 6727101888857988958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_42
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1507
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c376c8231aeae9020800000000000000
+      internalID: 2350508062895007548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_43
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1491
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2381d417a9f382a10800000000000000
+      internalID: 1884826376612943922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_44
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1481
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1307f55a20254a0800000000000000
+      internalID: -6606214794105048612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_45
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1497
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a45764adecbd2100800000000000000
+      internalID: 84931696841413797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1368
+        width: 21
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0b332d4a2b65ce0800000000000000
+      internalID: -1416748611790458657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_47
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1362
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f4349ebee0981e0800000000000000
+      internalID: -2195206936972800118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1323
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da3ff4abdc84cbd0800000000000000
+      internalID: -2610807008974128424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_49
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1363
+        width: 66
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d82839ba7b1380b0800000000000000
+      internalID: -5727704087177713450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_50
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1312
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8c283d1f48157e0800000000000000
+      internalID: -1778494203664086859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_51
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1381
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500767ebb7a51d260800000000000000
+      internalID: 7120571973372375045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_52
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1402
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28715d7f0e796e730800000000000000
+      internalID: 4028073909215893378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_53
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1385
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ccc88fb5d8ae730800000000000000
+      internalID: 4029188242787847182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_54
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1402
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e991089b283e540800000000000000
+      internalID: 5036012541560069701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_55
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1429
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cb3ff60ceba09a0800000000000000
+      internalID: -6265986197811381248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_56
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1443
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af78605a38f3907f0800000000000000
+      internalID: -645915236909021190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_57
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1409
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b965715116a0610c0800000000000000
+      internalID: -4605482156857796965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_58
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1416
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f986258bb65846c60800000000000000
+      internalID: 7810514351467686047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_59
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 230
+        width: 1828
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c65994753f84800800000000000000
+      internalID: 596994506848824350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1231
+        width: 60
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b562ab3029aebb400800000000000000
+      internalID: 341124109645260379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_61
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1312
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ad7a5dd079bf4f0800000000000000
+      internalID: -793874823625844121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_62
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1254
+        width: 94
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61c9441bdcdfc340800000000000000
+      internalID: 4886366954216604011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_63
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 1148
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5590df709e7ef9e40800000000000000
+      internalID: 5665501844302793045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_64
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 991
+        width: 108
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17eb713ea099f5520800000000000000
+      internalID: 2693039374229552753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_65
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 1020
+        width: 130
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e583422fd807870800000000000000
+      internalID: 8678592553072221818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_66
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 1001
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25623d5cbab9b6e50800000000000000
+      internalID: 6803702824133928530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_67
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 967
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5878e49964c53f80800000000000000
+      internalID: -8127373994771318692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_68
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 931
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d379579703646e0800000000000000
+      internalID: -1853740898394358396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_69
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 846
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4767c0f10377d00800000000000000
+      internalID: 970297154632840408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_70
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 564
+        width: 100
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee68f676ad60d6540800000000000000
+      internalID: 5002662296186488558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_71
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 682
+        width: 111
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65bafd26fbd2d6b0800000000000000
+      internalID: -5272910363317586577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_72
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 248
+        width: 126
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3f127e1909fc840800000000000000
+      internalID: 5246571047232336816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_73
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 194
+        width: 168
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be423a89b7bce230800000000000000
+      internalID: 3669509803915497142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_74
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 429
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dfce60bdc2bedc50800000000000000
+      internalID: 6691982692817227736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_75
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 132
+        width: 106
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b608d1c7234f36c00800000000000000
+      internalID: 892825648817340523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_76
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 229
+        width: 98
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37472aeb1e4b650e0800000000000000
+      internalID: -2281437279557618573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_77
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 0
+        width: 122
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad43ed6db22b6290800000000000000
+      internalID: -7896179324676256346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_78
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 173
+        width: 114
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8585eb34dda2930800000000000000
+      internalID: 4119348092209748145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignTest_79
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 126
+        width: 31
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae0798df2f9dccb0800000000000000
+      internalID: -4842038996507357525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SignTest_0: -7359523297809363616
+      SignTest_1: 919836669524219976
+      SignTest_10: 2336286853672527232
+      SignTest_11: 4368849562728899004
+      SignTest_12: -2978660820176208488
+      SignTest_13: 7788400885598993290
+      SignTest_14: 4481440052422577536
+      SignTest_15: -6928439893021652018
+      SignTest_16: 2400622275822553564
+      SignTest_17: 1546607556498588687
+      SignTest_18: -8687663391946559604
+      SignTest_19: 363558917930476347
+      SignTest_2: -4772932877491894792
+      SignTest_20: 3978913421800983507
+      SignTest_21: 3287952539911889493
+      SignTest_22: 6787020642114279865
+      SignTest_23: -7162342263025551532
+      SignTest_24: 6353581553976865104
+      SignTest_25: 3212373534112133509
+      SignTest_26: 6349971626564190358
+      SignTest_27: -5090865598544467850
+      SignTest_28: -6377428391769327451
+      SignTest_29: 3600061761581637005
+      SignTest_3: -5652413905150081571
+      SignTest_30: -4768665719975895371
+      SignTest_31: 957261307843221749
+      SignTest_32: 377682887158141898
+      SignTest_33: 2555551211121002574
+      SignTest_34: -3156549807893742178
+      SignTest_35: 8358612541710245043
+      SignTest_36: -4570402788907118348
+      SignTest_37: -4353732809599368516
+      SignTest_38: 5758021304097209276
+      SignTest_39: -6166789428799383494
+      SignTest_4: -4349125502234254791
+      SignTest_40: -950483536399214777
+      SignTest_41: 6727101888857988958
+      SignTest_42: 2350508062895007548
+      SignTest_43: 1884826376612943922
+      SignTest_44: -6606214794105048612
+      SignTest_45: 84931696841413797
+      SignTest_46: -1416748611790458657
+      SignTest_47: -2195206936972800118
+      SignTest_48: -2610807008974128424
+      SignTest_49: -5727704087177713450
+      SignTest_5: 6927638634880013671
+      SignTest_50: -1778494203664086859
+      SignTest_51: 7120571973372375045
+      SignTest_52: 4028073909215893378
+      SignTest_53: 4029188242787847182
+      SignTest_54: 5036012541560069701
+      SignTest_55: -6265986197811381248
+      SignTest_56: -645915236909021190
+      SignTest_57: -4605482156857796965
+      SignTest_58: 7810514351467686047
+      SignTest_59: 596994506848824350
+      SignTest_6: -8639017396843223197
+      SignTest_60: 341124109645260379
+      SignTest_61: -793874823625844121
+      SignTest_62: 4886366954216604011
+      SignTest_63: 5665501844302793045
+      SignTest_64: 2693039374229552753
+      SignTest_65: 8678592553072221818
+      SignTest_66: 6803702824133928530
+      SignTest_67: -8127373994771318692
+      SignTest_68: -1853740898394358396
+      SignTest_69: 970297154632840408
+      SignTest_7: 2577198030660392687
+      SignTest_70: 5002662296186488558
+      SignTest_71: -5272910363317586577
+      SignTest_72: 5246571047232336816
+      SignTest_73: 3669509803915497142
+      SignTest_74: 6691982692817227736
+      SignTest_75: 892825648817340523
+      SignTest_76: -2281437279557618573
+      SignTest_77: -7896179324676256346
+      SignTest_78: 4119348092209748145
+      SignTest_79: -4842038996507357525
+      SignTest_8: -5261550286883347020
+      SignTest_9: -6551009363463630847
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
