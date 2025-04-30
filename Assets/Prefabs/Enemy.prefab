@@ -195,4 +195,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageDealer: {fileID: 89889383447048598}
+  obj: {fileID: 8224502964993987695}
+  speed: 3
   detectionRadius: 10

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 7950764486259190614}
   - component: {fileID: 4884180296162895117}
   - component: {fileID: 5413268422195238749}
-  - component: {fileID: 90801890324538110}
   - component: {fileID: 2650203904615952914}
   - component: {fileID: 6174691156844681649}
+  - component: {fileID: 90801890324538110}
   m_Layer: 3
   m_Name: SmartEnemy
   m_TagString: Enemy
@@ -184,22 +184,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &90801890324538110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4819763407974122577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70960ad2368865cccae6d20269ba29c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageDealer: {fileID: 7950764486259190614}
-  ThisSpeed: 0
-  detectionRadius: 20
-  navMeshAgent: {fileID: 0}
 --- !u!195 &2650203904615952914
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -244,3 +228,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &90801890324538110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4819763407974122577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70960ad2368865cccae6d20269ba29c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageDealer: {fileID: 7950764486259190614}
+  obj: {fileID: 4819763407974122577}
+  speed: 3
+  detectionRadius: 20
+  navMeshAgent: {fileID: 2650203904615952914}

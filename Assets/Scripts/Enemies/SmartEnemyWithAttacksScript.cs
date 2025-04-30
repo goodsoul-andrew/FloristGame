@@ -16,8 +16,8 @@ public class SmartEnemyWithAttacks : Enemy
     new void Start()
     {
         base.Start();
-        navMeshAgent = GetComponent<NavMeshAgent>();
 
+        navMeshAgent = mainObject.GetComponent<NavMeshAgent>();
         navMeshAgent.speed = Speed;
         navMeshAgent.updateRotation = false;
         navMeshAgent.updateUpAxis = false;
@@ -50,7 +50,6 @@ public class SmartEnemyWithAttacks : Enemy
     {
         yield return new WaitForSeconds(delay);
         inAnimation = false;
-        Debug.Log("ended");
         animator.Play("Idle");
         navMeshAgent.speed = Speed;
     }
