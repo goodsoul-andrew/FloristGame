@@ -343,11 +343,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771638bb718b59c45bc34881d3c9ce09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageDealer: {fileID: 3347513132100808176}
   mainObject: {fileID: 4376023809175220702}
   speed: 4
-  hp: {fileID: 1448034042651138705}
   detectionRadius: 30
+  damageDealer: {fileID: 3347513132100808176}
+  hp: {fileID: 1448034042651138705}
+  player: {fileID: 0}
   animator: {fileID: 6928658787595043169}
   hitBox: {fileID: 2935493967582085770}
 --- !u!1 &4376023809175220702
@@ -365,7 +366,7 @@ GameObject:
   - component: {fileID: 5592817914951574742}
   m_Layer: 3
   m_Name: SmartEnemyWithAttacks
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

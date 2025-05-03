@@ -27,6 +27,6 @@ public class ChasingState : IEnemyState
                 return;
             }
         }
-        enemy.MoveTowardsTarget(enemy.playerCollider.transform.position);
+        enemy.MoveTowardsTarget(enemy.player.TruePosition);
     }
 }

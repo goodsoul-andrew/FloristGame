@@ -13,25 +13,33 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
     protected Rigidbody2D rb;
     public Collider2D playerCollider {get; private set;}
 
-    private Player player;
-    protected CircleCollider2D selfCollider;
+    public Player player;
+    protected Collider2D selfCollider;
     private IEnemyState currentState;
 
     public readonly WanderingState wanderingState = new WanderingState();
     public readonly ChasingState chasingState = new ChasingState();
 
-    protected void Start()
+
+    void Awake()
+    {
+        if(mainObject==null)mainObject = this.gameObject;
+
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>();
+        selfCollider = GetComponent<Collider2D>();
+
+        HP = (hp==null)? mainObject.GetComponent<Health>(): hp;
+        HP.OnDeath += DestroyMyself;
+    }
+
+
+    protected virtual void Start()
     {
         Speed = speed;
-        if(mainObject==null)mainObject = this.gameObject;
-        HP = (hp==null)? mainObject.GetComponent<Health>(): hp;
         rb = mainObject.GetComponent<Rigidbody2D>();
 
         damageDealer.Friends.Add("Enemy");
-        HP.OnDeath += DestroyMyself;
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>();
-        selfCollider = GetComponent<CircleCollider2D>();
 
         ChangeState(wanderingState);
     }
@@ -43,14 +51,14 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
         currentState?.Enter(this);
     }
 
-    void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         currentState?.Update(this);
     }
 
     public bool IsPlayerInChasingRadius()
     {
-        if (playerCollider is not null)
+        if (player is not null)
         {
             if (Vector2.Distance(transform.position, player.TruePosition) <= detectionRadius && CanSeePlayer())
             {
@@ -62,9 +70,8 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
 
     public bool CanSeePlayer()
     {
-        var playerPos = playerCollider.transform.position + (Vector3)playerCollider.offset;
         Vector2 directionToPlayer = (player.TruePosition - (Vector2)selfCollider.transform.position).normalized;
-        var r = selfCollider.radius * selfCollider.transform.localScale.x + 0.1f;
+        var r = selfCollider.transform.localScale.x + 0.1f; // selfCollider.radius * 
         var hits = Physics2D.RaycastAll(selfCollider.transform.position, directionToPlayer, detectionRadius - r);
         foreach (var hit in hits)
         {
