@@ -152,10 +152,10 @@ public class Player : MonoBehaviour, IMoving, IDamageable
 
     public void PauseGame()
     {
-        Time.timeScale = 0f;
+        Time.timeScale = 0.1f;
         isPaused = true;
         pauseMenu.SetActive(true);
-        AudioListener.pause = true;
+        //AudioListener.pause = true;
     }
 
     public void ResumeGame()
@@ -163,6 +163,6 @@ public class Player : MonoBehaviour, IMoving, IDamageable
         Time.timeScale = 1f;
         isPaused = false;
         pauseMenu.SetActive(false);
-        AudioListener.pause = false;
+        //AudioListener.pause = false;
     }
 }

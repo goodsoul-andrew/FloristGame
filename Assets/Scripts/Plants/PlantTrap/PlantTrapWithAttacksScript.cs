@@ -34,7 +34,7 @@ public class PlantTrapWithAttacks : Plant
                 animator.SetBool("isOpen", false);
                 
                 //Debug.Log("Close trap");
-                hitBox.SetActive(true);
+                StartCoroutine(SetActiveAfterDelay(0.1f,true));
                 StartCoroutine(SetActiveAfterDelay(0.25f,false));
                 DestroyAfterDelay(0.8f);
                 FindFirstObjectByType<TutorialManager>().FinishTutorial("fight");
