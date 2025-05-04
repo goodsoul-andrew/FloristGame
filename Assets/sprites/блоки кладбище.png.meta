@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\u0431\u043B\u043E\u043A\u0438 \u043A\u043B\u0430\u0434\u0431\u0438\u0449\u0435_0": -3763083583711679880
+      "\u0431\u043B\u043E\u043A\u0438 \u043A\u043B\u0430\u0434\u0431\u0438\u0449\u0435_1": -1166358581281256883
+      "\u0431\u043B\u043E\u043A\u0438 \u043A\u043B\u0430\u0434\u0431\u0438\u0449\u0435_2": 6775394848854397873
+      "\u0431\u043B\u043E\u043A\u0438 \u043A\u043B\u0430\u0434\u0431\u0438\u0449\u0435_3": -6280189672872087459
+      "\u0431\u043B\u043E\u043A\u0438 \u043A\u043B\u0430\u0434\u0431\u0438\u0449\u0435_4": 2512361491929475360
+      "\u0431\u043B\u043E\u043A\u0438 \u043A\u043B\u0430\u0434\u0431\u0438\u0449\u0435_5": 7563712931592504827
+      "\u0431\u043B\u043E\u043A\u0438 \u043A\u043B\u0430\u0434\u0431\u0438\u0449\u0435_6": 5615205617543762273
+      "\u0431\u043B\u043E\u043A\u0438 \u043A\u043B\u0430\u0434\u0431\u0438\u0449\u0435_7": 2525910673757510494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
