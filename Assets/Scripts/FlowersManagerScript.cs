@@ -34,7 +34,7 @@ public class FlowersManager : MonoBehaviour
         }
         RecreateFlowersUI();
 
-        var scrollObj = CreateBasicObject(new Vector2(50, 50), new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0));
+        var scrollObj = CreateBasicObject(new Vector2(70, 70), new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0));
         var spriteImage = scrollObj.AddComponent<Image>();
         spriteImage.sprite = scrollSprite;
 
@@ -117,7 +117,7 @@ public class FlowersManager : MonoBehaviour
             var xLocation = (float)(i - (numberOfFlowers - 1) / 2.0) * 100;
 
             //фон
-            var backObj = CreateBasicObject(new Vector2(60, 60), new Vector2(xLocation, 0));
+            var backObj = CreateBasicObject(new Vector2(70, 70), new Vector2(xLocation, 0));
             var backImage = backObj.AddComponent<Image>();
             backImage.sprite = backSprite;
 
@@ -125,7 +125,7 @@ public class FlowersManager : MonoBehaviour
 
 
             //картинка
-            var imageObj = CreateBasicObject(new Vector2(40, 40), new Vector2(xLocation, 0));
+            var imageObj = CreateBasicObject(new Vector2(60, 60), new Vector2(xLocation, 0));
             var imageImage = imageObj.AddComponent<Image>();
             imageImage.sprite = Flowers[i].Object.GetComponent<SpriteRenderer>().sprite;
 

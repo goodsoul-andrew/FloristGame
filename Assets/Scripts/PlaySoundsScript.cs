@@ -12,7 +12,7 @@ public class PlaySoundsScript : MonoBehaviour
     }
 
     public void PlaySound(int numberOfGroup)
-    {
+    { 
         audioSource.PlayOneShot(SoundsGroups[numberOfGroup].Sounds[Random.Range(0,SoundsGroups[numberOfGroup].Sounds.Length)]);
     }
 }

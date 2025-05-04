@@ -7,9 +7,11 @@ public class DamageEffect : MonoBehaviour
     private Color originalColor;
     public float effectDuration = 0.1f;
     private Coroutine currentEffectCoroutine;
-
+    private AudioSource audioSource;
+    public AudioClip HurtSound;
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
     }
@@ -22,7 +24,7 @@ public class DamageEffect : MonoBehaviour
             healthComponent.OnDamage += HandleDamage;
         }
     }
-
+ 
     private void OnDisable()
     {
         Health healthComponent = GetComponent<Health>();
@@ -43,6 +45,7 @@ public class DamageEffect : MonoBehaviour
 
     private IEnumerator FlashRed()
     {
+        audioSource.PlayOneShot(HurtSound);
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(effectDuration);
         spriteRenderer.color = originalColor;
