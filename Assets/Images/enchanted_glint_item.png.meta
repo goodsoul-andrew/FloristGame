@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      enchanted_glint_item_0: -5301954057627357024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
