@@ -8,7 +8,6 @@ public class SpawnerEnemy : Enemy
     [SerializeField] private int maxCount;
     [SerializeField] private GameObject enemy;
     private System.Random intRnd;
-    private Shaker shaker;
     public Animator animator;
 
     public readonly SpawnerIdleState idleState = new SpawnerIdleState();
@@ -18,8 +17,6 @@ public class SpawnerEnemy : Enemy
     {
         if (minCount > maxCount) throw new Exception("minCount must be <= maxCount");
         intRnd = new System.Random();
-        shaker = GetComponent<Shaker>();
-        HP.OnDamage += shaker.Shake;
         
         animator = GetComponent<Animator>();
         

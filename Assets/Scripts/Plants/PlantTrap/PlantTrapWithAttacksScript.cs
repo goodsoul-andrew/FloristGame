@@ -27,7 +27,7 @@ public class PlantTrapWithAttacks : Plant
     {
         if (! damageDealer.Friends.Contains(collision.tag))
         {
-            Debug.Log($"{collision.tag} {string.Join(", ", damageDealer.Friends)} {damageDealer.Friends.Contains(collision.tag)}");
+            //Debug.Log($"{collision.tag} {string.Join(", ", damageDealer.Friends)} {damageDealer.Friends.Contains(collision.tag)}");
             if (isOpen)
             {
                 isOpen = false;
@@ -46,10 +46,10 @@ public class PlantTrapWithAttacks : Plant
     {
         var obstacles = new string[] {"Obstacle", "PlayerMinion", "PlantTrap"};
         Collider2D[] colliders = GetCollidersInArea(position);
-        Debug.Log($"{string.Join(", ", obstacles)}");
+        //Debug.Log($"{string.Join(", ", obstacles)}");
         foreach (var collider in colliders)
         {
-            Debug.Log($"{collider.tag} {obstacles.Contains(collider.tag)}");
+            //Debug.Log($"{collider.tag} {obstacles.Contains(collider.tag)}");
             if (obstacles.Contains(collider.tag))
             {
                 return false;

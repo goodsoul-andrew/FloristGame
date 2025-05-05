@@ -40,14 +40,14 @@ public class Swamp : MonoBehaviour
 
     public void Enable(GameObject target)
     {
-        Debug.Log($"enable swamp for {target}, {disabled.Contains(target)} {Utils.StandsOn(target, "Swamp")}");
+        //Debug.Log($"enable swamp for {target}, {disabled.Contains(target)} {Utils.StandsOn(target, "Swamp")}");
         swampEffect.ApplyEffect(target);
 
     }
 
     public void Disable(GameObject target)
     {
-        Debug.Log($"disable swamp for {target}, {disabled.Contains(target)} {Utils.StandsOnGround(target)}");
+        //Debug.Log($"disable swamp for {target}, {disabled.Contains(target)} {Utils.StandsOnGround(target)}");
         swampEffect.RemoveEffect(target);
     }
 
@@ -75,7 +75,7 @@ public class SwampEffect : StatusEffect
             moving.Speed = Math.Max(0, moving.Speed / 2);
         }
         damageCoroutine = target.GetComponent<MonoBehaviour>().StartCoroutine(DealDamage(target));
-        Debug.Log($"Swamp effect activated for {target}");
+        //Debug.Log($"Swamp effect activated for {target}");
     }
 
     public override void CancelEffect(GameObject target)
@@ -89,7 +89,7 @@ public class SwampEffect : StatusEffect
             target.GetComponent<MonoBehaviour>().StopCoroutine(damageCoroutine);
             damageCoroutine = null;
         }
-        Debug.Log($"Swamp effect cancelled for {target}");
+        //Debug.Log($"Swamp effect cancelled for {target}");
     }
 
     IEnumerator DealDamage(GameObject target)
@@ -98,7 +98,7 @@ public class SwampEffect : StatusEffect
         {
             if (target.TryGetComponent<Health>(out var health))
             {
-                Debug.Log($"Swamp Effect damaged {target}");
+                //Debug.Log($"Swamp Effect damaged {target}");
                 health.TakeDamage(damageAmount);
             }
             yield return new WaitForSeconds(damageTimeout);

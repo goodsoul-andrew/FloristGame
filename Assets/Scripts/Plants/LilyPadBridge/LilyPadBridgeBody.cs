@@ -29,12 +29,12 @@ public class LilyPadBridgeBody : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Player exited LilyPad");
+            //Debug.Log("Player exited LilyPad");
             Physics2D.IgnoreLayerCollision(swampLayer, playerLayer, false);
         }
         if (Utils.StandsOnGround(player.gameObject))
         {
-            Debug.Log("Player is on other LilyPad");
+            //Debug.Log("Player is on other LilyPad");
             Physics2D.IgnoreLayerCollision(swampLayer, playerLayer, true);
         }
         //Debug.Log($"player is on LilyPad: {player.CheckIfOnLilyPad()}");

@@ -14,7 +14,7 @@ public class LilyPadBridgeEdge : MonoBehaviour
     {
         if (collision.CompareTag("Swamp") && ! block)
         {
-            Debug.Log("edge is on swamp");
+            //Debug.Log("edge is on swamp");
             edgeCollider.enabled = true;
         }
         /*else if (collision.CompareTag("LilyPad"))

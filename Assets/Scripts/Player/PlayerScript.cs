@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour, IMoving, IDamageable
 {
@@ -57,6 +58,7 @@ public class Player : MonoBehaviour, IMoving, IDamageable
         playerInput.actions["SkipDialogue"].started += HandleDialogueSkip;
 
         StartCoroutine(StartPlaceDelay(0));
+        HP.OnDeath += Restart;
         ResumeGame();
     }
 
@@ -89,13 +91,13 @@ public class Player : MonoBehaviour, IMoving, IDamageable
     private void HandleMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-        // Debug.Log($"Movement Input: {moveInput}");
+        // //Debug.Log($"Movement Input: {moveInput}");
     }
 
     private void HandleMoveCanceled(InputAction.CallbackContext context)
     {
         moveInput = Vector2.zero;
-        // Debug.Log($"Movement Input canceled");
+        // //Debug.Log($"Movement Input canceled");
     }
 
     private void HandleClick(InputAction.CallbackContext context)
@@ -164,5 +166,10 @@ public class Player : MonoBehaviour, IMoving, IDamageable
         isPaused = false;
         pauseMenu.SetActive(false);
         //AudioListener.pause = false;
+    }
+
+    private void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

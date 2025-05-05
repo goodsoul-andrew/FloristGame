@@ -35,10 +35,10 @@ public class Plant : MonoBehaviour
     {
         var obstacles = new string[] {"Obstacle", "PlayerMinion"};
         Collider2D[] colliders = GetCollidersInArea(position);
-        Debug.Log($"{string.Join(", ", obstacles)}");
+        //Debug.Log($"{string.Join(", ", obstacles)}");
         foreach (var collider in colliders)
         {
-            Debug.Log($"{collider.tag} {obstacles.Contains(collider.tag)}");
+            //Debug.Log($"{collider.tag} {obstacles.Contains(collider.tag)}");
             if (obstacles.Contains(collider.tag))
             {
                 return false;

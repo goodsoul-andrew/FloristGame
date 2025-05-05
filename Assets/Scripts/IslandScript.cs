@@ -63,7 +63,7 @@ public class Island : MonoBehaviour
         {
             if (collider != null && Utils.ground.Contains(collider.tag) && collider.transform.position != transform.position)
             {
-                Debug.Log($"Other island is {collider.tag} on {collider.transform.position}, this is {tag} on {transform.position}");
+                //Debug.Log($"Other island is {collider.tag} on {collider.transform.position}, this is {tag} on {transform.position}");
                 return true;
             }
         }

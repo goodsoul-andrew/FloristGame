@@ -5,6 +5,13 @@ public class Shaker : MonoBehaviour
 {
     public float shakeDuration = 0.2f;
     public float shakeStrength = 0.1f;
+    private Health healthComponent;
+
+    void Start()
+    {
+        Health healthComponent = GetComponent<Health>();
+        healthComponent.OnDamage += Shake;
+    }
 
     public void Shake()
     {

@@ -16,7 +16,7 @@ public class DialigueTrigger : Interaction
     public override void EndInteraction()
     {
         FindFirstObjectByType<DialogueManager>().EndDialogue();
-        Debug.Log("ended");
+        //Debug.Log("ended");
     }
 
     void OnTriggerEnter2D(Collider2D other)
