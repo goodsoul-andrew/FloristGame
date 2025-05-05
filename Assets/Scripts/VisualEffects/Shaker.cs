@@ -9,7 +9,7 @@ public class Shaker : MonoBehaviour
 
     void Start()
     {
-        Health healthComponent = GetComponent<Health>();
+        healthComponent = GetComponent<Health>();
         healthComponent.OnDamage += Shake;
     }
 
