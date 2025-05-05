@@ -481,8 +481,8 @@ GameObject:
   - component: {fileID: 4106577917666877313}
   - component: {fileID: 1646922396416865766}
   - component: {fileID: 3420128840710257994}
-  - component: {fileID: 5592817914951574742}
-  - component: {fileID: 5520513229712031253}
+  - component: {fileID: 8357776244667861872}
+  - component: {fileID: 5888674964719586869}
   m_Layer: 3
   m_Name: SmartEnemyWithAttacks
   m_TagString: Enemy
@@ -604,20 +604,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5592817914951574742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4376023809175220702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 832c9e68f22bf9ca4ac7da527d2855ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHP: 20
---- !u!114 &5520513229712031253
+--- !u!114 &8357776244667861872
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -631,6 +618,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeDuration: 0.2
   shakeStrength: 0.1
+--- !u!114 &5888674964719586869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4376023809175220702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 832c9e68f22bf9ca4ac7da527d2855ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 20
 --- !u!1 &4675722560716287341
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832c9e68f22bf9ca4ac7da527d2855ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 10
+  maxHP: 20
 --- !u!61 &6722139764908968743
 BoxCollider2D:
   m_ObjectHideFlags: 0

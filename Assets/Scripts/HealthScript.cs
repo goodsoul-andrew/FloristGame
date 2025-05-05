@@ -21,6 +21,7 @@ public class Health : MonoBehaviour
     public virtual void TakeDamage(float damage)
     {
         currentHP -= damage;
+        //Debug.Log($"Damaged {currentHP + damage} -> {currentHP}");
         if (currentHP <= 0)
         {
             currentHP = 0;

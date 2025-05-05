@@ -61,6 +61,7 @@ public class PlantTrapWithAttacks : Plant
     private IEnumerator SetActiveAfterDelay(float delay,bool active)
     {
         yield return new WaitForSeconds(delay);
+        damageDealer.Enabled = active;
         hitBox.SetActive(active);
     }
 }
