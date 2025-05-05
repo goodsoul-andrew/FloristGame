@@ -17,7 +17,7 @@ public class Player : MonoBehaviour, IMoving, IDamageable
     private DialogueManager dialogueManager;
 
     private Vector2 moveInput;
-    private bool isPaused;
+    public bool isPaused;
     private bool canPlace;
     [SerializeField] private float placeRadius = 5;
     [SerializeField] private float placeDelay = 2f;
@@ -59,7 +59,6 @@ public class Player : MonoBehaviour, IMoving, IDamageable
 
         StartCoroutine(StartPlaceDelay(0));
         HP.OnDeath += Restart;
-        ResumeGame();
     }
 
     private void FixedUpdate()
@@ -90,6 +89,7 @@ public class Player : MonoBehaviour, IMoving, IDamageable
 
     private void HandleMove(InputAction.CallbackContext context)
     {
+        if (isPaused) return;
         moveInput = context.ReadValue<Vector2>();
         // //Debug.Log($"Movement Input: {moveInput}");
     }
@@ -138,11 +138,9 @@ public class Player : MonoBehaviour, IMoving, IDamageable
 
     private void HandleDialogueSkip(InputAction.CallbackContext context)
     {
-        if (!isPaused)
-        {
-            dialogueManager.DisplayNextSentence();
-            FindFirstObjectByType<TutorialManager>().FinishTutorial("dialogue");
-        }
+        if (isPaused) return;
+        dialogueManager.DisplayNextSentence();
+        FindFirstObjectByType<TutorialManager>().FinishTutorial("dialogue");
     }
 
     public IEnumerator StartPlaceDelay(float delay)
