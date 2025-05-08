@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Animated-Bomb-Transparent-Free-PNG_0: 6089261343544386879
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

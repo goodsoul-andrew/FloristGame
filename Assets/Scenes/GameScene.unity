@@ -11960,7 +11960,7 @@ MonoBehaviour:
     Count: -1
   scrollSprite: {fileID: 116991130260295528, guid: fab6d36fe794c034a9e418efae3b944c, type: 3}
   backSprite: {fileID: -885821910916194319, guid: 3505bfaeadf11d84cbf26240d320a94d, type: 3}
-  numberOfFlowers: 4
+  numberOfFlowers: 5
   Bar: {fileID: 888783682}
 --- !u!1 &706260763
 GameObject:
