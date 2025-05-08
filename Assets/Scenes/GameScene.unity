@@ -11946,18 +11946,18 @@ MonoBehaviour:
   - Name: lilly
     Object: {fileID: 207077199748663049, guid: 050a15d013a3f0dc0894e95f348a4135, type: 3}
     Count: 12
-  - Name: playerFlower
-    Object: {fileID: 1946183536}
-    Count: -1
+  - Name: bomb
+    Object: {fileID: 3789392046953241000, guid: 38ab63b3a0f3c8842a01591725051b6b, type: 3}
+    Count: 5
   - Name: orange flower
     Object: {fileID: 5429236483667629792, guid: 511bb33459118ed029161b44617c59a9, type: 3}
     Count: 2
   - Name: pink flower
     Object: {fileID: 3646481026932210888, guid: 2b787ad11c0173f90a652f5d3caf4ea7, type: 3}
     Count: 4
-  - Name: 
-    Object: {fileID: 551170128155598930, guid: 21ea896b4473ab64aa969861be6b3e83, type: 3}
-    Count: 6
+  - Name: player
+    Object: {fileID: 1946183536}
+    Count: -1
   scrollSprite: {fileID: 116991130260295528, guid: fab6d36fe794c034a9e418efae3b944c, type: 3}
   backSprite: {fileID: -885821910916194319, guid: 3505bfaeadf11d84cbf26240d320a94d, type: 3}
   numberOfFlowers: 4

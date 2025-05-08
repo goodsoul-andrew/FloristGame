@@ -12,8 +12,6 @@ public class CutsceneController : MonoBehaviour
         player = FindFirstObjectByType<Player>();
         player.ResumeGame();
         player.isPaused = true;
-        animator.SetTrigger("StartCutscene");
-        StartCoroutine(StartEndDelay(21));
         
     }
 
@@ -23,13 +21,11 @@ public class CutsceneController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetTrigger("EndCutscene");
-            StartCoroutine(StartEndDelay(0));
         }
     }
 
-    public IEnumerator StartEndDelay(float delay)
+    public void EndCutscene()
     {
-        yield return new WaitForSeconds(delay);
         FindFirstObjectByType<TutorialManager>().AddTutorialToTheQueue("walk");
         FindFirstObjectByType<TutorialManager>().AddTutorialToTheQueue("place");
         FindFirstObjectByType<TutorialManager>().AddTutorialToTheQueue("change");

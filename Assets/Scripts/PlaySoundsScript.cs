@@ -15,6 +15,11 @@ public class PlaySoundsScript : MonoBehaviour
     { 
         audioSource.PlayOneShot(SoundsGroups[numberOfGroup].Sounds[Random.Range(0,SoundsGroups[numberOfGroup].Sounds.Length)]);
     }
+
+    public void StopSound()
+    { 
+        audioSource.Stop();
+    }
 }
 
 [System.Serializable]
