@@ -8,7 +8,7 @@ public class HealDealer : MonoBehaviour
     public HashSet<string> Friends = new HashSet<string>();
     public bool Enabled = true;
 
-    private void Heal(GameObject target)
+    private void DealHeal(GameObject target)
     {
         if (!Enabled) return;
         if (!Friends.Contains(target.tag)) return;
@@ -20,11 +20,11 @@ public class HealDealer : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Heal(collision.gameObject);
+        DealHeal(collision.gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Heal(collision.gameObject);
+        DealHeal(collision.gameObject);
     }
 }
