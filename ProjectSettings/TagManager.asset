@@ -15,6 +15,10 @@ TagManager:
   - Ground
   - Swamp
   - PlantBomb
+  - LilyPadCollected
+  - HealFlowerCollected
+  - BombFlowerCollected
+  - WallFlowerCollected
   layers:
   - Default
   - TransparentFX

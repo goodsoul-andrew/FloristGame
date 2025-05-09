@@ -8369,10 +8369,11 @@ GameObject:
   - component: {fileID: 499316054}
   - component: {fileID: 499316053}
   - component: {fileID: 499316052}
+  - component: {fileID: 499316055}
   m_Layer: 0
   m_Name: "\u043C\u0435\u0448\u043E\u0447\u0435\u043A \u043A\u0443\u0432\u0448\u0438\u043D\u043A\u0430
     (1)"
-  m_TagString: flower1
+  m_TagString: LilyPadCollected
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8483,6 +8484,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 299163642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &499316055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499316051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9642d88651471b439490e5ab1746e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfFlowers: 4
 --- !u!1 &517475220
 GameObject:
   m_ObjectHideFlags: 0
@@ -11945,15 +11959,12 @@ MonoBehaviour:
   - Name: bomb
     Object: {fileID: 3789392046953241000, guid: 38ab63b3a0f3c8842a01591725051b6b, type: 3}
     Count: 5
+  - Name: healFlower
+    Object: {fileID: 3646481026932210888, guid: 2b787ad11c0173f90a652f5d3caf4ea7, type: 3}
+    Count: 4
   - Name: orange flower
     Object: {fileID: 5429236483667629792, guid: 511bb33459118ed029161b44617c59a9, type: 3}
     Count: 2
-  - Name: pink flower
-    Object: {fileID: 3646481026932210888, guid: 2b787ad11c0173f90a652f5d3caf4ea7, type: 3}
-    Count: 4
-  - Name: player
-    Object: {fileID: 1946183536}
-    Count: -1
   scrollSprite: {fileID: 116991130260295528, guid: fab6d36fe794c034a9e418efae3b944c, type: 3}
   backSprite: {fileID: -885821910916194319, guid: 3505bfaeadf11d84cbf26240d320a94d, type: 3}
   numberOfFlowers: 5
@@ -12405,9 +12416,10 @@ GameObject:
   - component: {fileID: 728860127}
   - component: {fileID: 728860126}
   - component: {fileID: 728860125}
+  - component: {fileID: 728860128}
   m_Layer: 0
   m_Name: "\u043C\u0435\u0448\u043E\u0447\u0435\u043A \u043A\u0443\u0432\u0448\u0438\u043D\u043A\u0430"
-  m_TagString: flower1
+  m_TagString: LilyPadCollected
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12518,6 +12530,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 299163642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &728860128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728860124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9642d88651471b439490e5ab1746e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfFlowers: 5
 --- !u!1 &735910995
 GameObject:
   m_ObjectHideFlags: 0
@@ -17427,10 +17452,11 @@ GameObject:
   - component: {fileID: 971962810}
   - component: {fileID: 971962809}
   - component: {fileID: 971962808}
+  - component: {fileID: 971962811}
   m_Layer: 0
   m_Name: "\u043C\u0435\u0448\u043E\u0447\u0435\u043A \u043A\u0443\u0432\u0448\u0438\u043D\u043A\u0430
     (2)"
-  m_TagString: flower1
+  m_TagString: LilyPadCollected
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17541,6 +17567,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 299163642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &971962811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971962807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9642d88651471b439490e5ab1746e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfFlowers: 2
 --- !u!1 &975474409
 GameObject:
   m_ObjectHideFlags: 0
@@ -61469,7 +61508,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fc2072374ac4f334b8457bc8f04bb6b6, type: 2}
+  - {fileID: 2100000, guid: 968a14c6384720c40abff23925a1180c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

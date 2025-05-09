@@ -90,9 +90,9 @@ public class FlowersManager : MonoBehaviour
         return numberOfFlowers;
     }
 
-    public void ChangeNumberOfFlowers(int index)
+    public void ChangeNumberOfFlowers(int index, int amount)
     {
-        Flowers[index].Count++;
+        Flowers[index].Count += amount;
         var textComponent = FlowersNumbers[index].GetComponent<TextMeshProUGUI>();
         textComponent.text = Flowers[index].Count.ToString();
     }

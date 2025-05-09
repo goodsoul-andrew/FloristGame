@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class CollectFlowersScript : MonoBehaviour
 {
-    private readonly List<string> flowerTags = new() { "flower1", "flower2", "flower3" };
     private Rigidbody2D rb;
     public FlowersManager FlowersManager;
 
@@ -14,19 +13,22 @@ public class CollectFlowersScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (flowerTags.Contains(collision.gameObject.tag))
+        if (collision.gameObject.TryGetComponent<CollectedFlower>(out var collectedFlower))
         {
             Destroy(collision.gameObject);
             switch (collision.gameObject.tag)
             {
-                case "flower1":
-                    FlowersManager.ChangeNumberOfFlowers(1);
+                case "LilyPadCollected":
+                    FlowersManager.ChangeNumberOfFlowers(1, collectedFlower.amountOfFlowers);
                     break;
-                case "flower2":
-                    FlowersManager.ChangeNumberOfFlowers(2);
+                case "BombFlowerCollected":
+                    FlowersManager.ChangeNumberOfFlowers(2, collectedFlower.amountOfFlowers);
                     break;
-                case "flower3":
-                    FlowersManager.ChangeNumberOfFlowers(3);
+                case "HealFlowerCollected":
+                    FlowersManager.ChangeNumberOfFlowers(3, collectedFlower.amountOfFlowers);
+                    break;
+                case "WallFlowerCollected":
+                    FlowersManager.ChangeNumberOfFlowers(4, collectedFlower.amountOfFlowers);
                     break;
             }
         }
