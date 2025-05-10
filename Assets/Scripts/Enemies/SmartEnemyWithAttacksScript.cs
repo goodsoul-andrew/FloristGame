@@ -7,17 +7,16 @@ using System.Collections.Generic;
 
 public class SmartEnemyWithAttacks : Enemy
 {    
+    public bool inAnimation = false;
     private NavMeshAgent navMeshAgent;
-    [SerializeField] private Animator animator;
-    [SerializeField] private GameObject hitBox;
-    private bool inAnimation = false;
-    private bool hasEnemyInArea = false;
+    private Animator animator;
 
     new void Start()
     {
         base.Start();
 
-        navMeshAgent = mainObject.GetComponent<NavMeshAgent>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
         navMeshAgent.speed = Speed;
         navMeshAgent.updateRotation = false;
         navMeshAgent.updateUpAxis = false;
@@ -25,46 +24,23 @@ public class SmartEnemyWithAttacks : Enemy
         chasingState.ForgetTarget = false;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.TryGetComponent<Player>(out var player)) hasEnemyInArea = true;
-    }
-
-    void OnTriggerExit2D(Collider2D other) 
-    {
-        if(other.TryGetComponent<Player>(out var player)) hasEnemyInArea = false;
-    }
-
     public override void MoveTowardsTarget(Vector2 targetPosition)
     {
         navMeshAgent.SetDestination(targetPosition);
     }
 
-    private IEnumerator SetActiveAfterDelay(float delay,bool active)
-    {
-        yield return new WaitForSeconds(delay);
-        hitBox.SetActive(active);
-    }
-
-    private IEnumerator EndAnimationAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        inAnimation = false;
-        animator.Play("Idle");
-        navMeshAgent.speed = Speed;
-    }
-
     private void Update()
     {
-        if(hasEnemyInArea && !inAnimation)
+        if(Vector2.Distance(transform.position, player.TruePosition) <= 2 && !inAnimation)
         {
+            animator.SetTrigger("Attack");
             navMeshAgent.speed = 0;
             inAnimation = true;
-            animator.Play("EnemyHit");
-            StartCoroutine(SetActiveAfterDelay(0.43f,true));
-            StartCoroutine(SetActiveAfterDelay(0.55f,false));
-            StartCoroutine(EndAnimationAfterDelay(1f));
         }
+    }
+    public void UpdateSpeed()
+    {
+        navMeshAgent.speed = Speed;
     }
 
 }

@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour, IMoving, IDamageable
 {
-    public GameObject mainObject;
     [SerializeField] private float speed = 3f;
     [SerializeField] protected float detectionRadius = 10f;
     public DamageDealer damageDealer;
@@ -23,13 +22,11 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
 
     void Awake()
     {
-        if(mainObject==null)mainObject = this.gameObject;
-
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>();
         selfCollider = GetComponent<Collider2D>();
 
-        HP = (hp==null)? mainObject.GetComponent<Health>(): hp;
+        HP = (hp==null)? GetComponent<Health>(): hp;
         HP.OnDeath += DestroyMyself;
     }
 
@@ -37,7 +34,7 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
     protected virtual void Start()
     {
         Speed = speed;
-        rb = mainObject.GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
 
         damageDealer.Friends.Add("Enemy");
 
@@ -95,11 +92,11 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
 
     protected void DestroyMyself()
     {
-        for (int i = mainObject.transform.childCount - 1; i >= 0; i--)
+        for (int i = transform.childCount - 1; i >= 0; i--)
         {
-            Transform child = mainObject.transform.GetChild(i);
+            Transform child = transform.GetChild(i);
             Destroy(child.gameObject);
         }
-        Destroy(mainObject.gameObject);
+        Destroy(this.gameObject);
     }
 }
