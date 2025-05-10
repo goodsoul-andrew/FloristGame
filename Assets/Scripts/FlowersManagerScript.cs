@@ -42,16 +42,8 @@ public class FlowersManager : MonoBehaviour
     }
     public void PlaceFlower(Vector2 position)
     {
-        if (Index >= numberOfFlowers)
-        {
-            //Debug.Log("Цветка под таким индексом нет");
-            return;
-        }
-        if (Flowers[Index].Count == 0)
-        {
-            //Debug.Log("Закончились");
-            return;
-        }
+        if (Index >= numberOfFlowers) return;
+        if (Flowers[Index].Count == 0) return;
         if (Plants[Index].IsAreaAvailable(position))
         {
             FindFirstObjectByType<TutorialManager>().FinishTutorial("place");
@@ -127,7 +119,7 @@ public class FlowersManager : MonoBehaviour
             //картинка
             var imageObj = CreateBasicObject(new Vector2(60, 60), new Vector2(xLocation, 0));
             var imageImage = imageObj.AddComponent<Image>();
-            imageImage.sprite = Flowers[i].Object.GetComponent<SpriteRenderer>().sprite;
+            imageImage.sprite = Flowers[i].Sprite;
 
             FlowersImages[i] = imageObj;
 
@@ -164,6 +156,7 @@ public class Flower
 {
     public string Name;
     public GameObject Object;
+    public Sprite Sprite;
     public int Count;
 
 }

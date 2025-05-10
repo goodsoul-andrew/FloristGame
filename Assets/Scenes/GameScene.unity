@@ -8309,6 +8309,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1444211442}
     m_Modifications:
+    - target: {fileID: 1448034042651138705, guid: e2afb8bab561a2d439fc9535ebbf7697, type: 3}
+      propertyPath: maxHP
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2582199376392777724, guid: e2afb8bab561a2d439fc9535ebbf7697, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43
@@ -8352,6 +8356,10 @@ PrefabInstance:
     - target: {fileID: 4376023809175220702, guid: e2afb8bab561a2d439fc9535ebbf7697, type: 3}
       propertyPath: m_Name
       value: SmartEnemyWithAttacks
+      objectReference: {fileID: 0}
+    - target: {fileID: 5888674964719586869, guid: e2afb8bab561a2d439fc9535ebbf7697, type: 3}
+      propertyPath: maxHP
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12271,9 +12279,9 @@ MonoBehaviour:
   - Name: healFlower
     Object: {fileID: 3646481026932210888, guid: 2b787ad11c0173f90a652f5d3caf4ea7, type: 3}
     Count: 4
-  - Name: orange flower
-    Object: {fileID: 5429236483667629792, guid: 511bb33459118ed029161b44617c59a9, type: 3}
-    Count: 2
+  - Name: Wall
+    Object: {fileID: 1728276783131919843, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+    Count: 7
   scrollSprite: {fileID: 116991130260295528, guid: fab6d36fe794c034a9e418efae3b944c, type: 3}
   backSprite: {fileID: -885821910916194319, guid: 3505bfaeadf11d84cbf26240d320a94d, type: 3}
   numberOfFlowers: 5
@@ -129219,6 +129227,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 511bb33459118ed029161b44617c59a9, type: 3}
+--- !u!1001 &5849632278445543544
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1728276783131919843, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+      propertyPath: m_Name
+      value: WallCreator
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476104791577904826, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5653346
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476104791577904826, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -47.852192
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476104791577904826, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7408671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476104791577904826, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476104791577904826, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476104791577904826, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476104791577904826, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476104791577904826, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476104791577904826, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476104791577904826, guid: de0c9f11fbef97443805e27aef935288, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de0c9f11fbef97443805e27aef935288, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -129230,3 +129295,4 @@ SceneRoots:
   - {fileID: 13642788}
   - {fileID: 1444211442}
   - {fileID: 703707969}
+  - {fileID: 5849632278445543544}

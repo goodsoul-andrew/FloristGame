@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
     [SerializeField] private Health hp;
     protected Rigidbody2D rb;
     public Collider2D playerCollider {get; private set;}
-
+ 
     public Player player;
     protected Collider2D selfCollider;
     private IEnemyState currentState;
