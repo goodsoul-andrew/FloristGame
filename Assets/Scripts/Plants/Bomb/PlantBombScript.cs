@@ -20,18 +20,4 @@ public class PlantBomb : Plant
         damageDealer.Friends.AddRange(friends);
         animator.SetTrigger("StartDetonation");
     }
-
-    public void Detonate()
-    {
-        StartCoroutine(SetActiveAfterDelay(0.01f,true));
-        StartCoroutine(SetActiveAfterDelay(0.25f,true));
-        DestroyAfterDelay(0.9f);
-    }
-
-    private IEnumerator SetActiveAfterDelay(float delay,bool active)
-    {
-        yield return new WaitForSeconds(delay);
-        damageDealer.Enabled = active;
-        hitBox.SetActive(active);
-    }
 }
