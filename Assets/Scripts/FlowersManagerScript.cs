@@ -44,17 +44,14 @@ public class FlowersManager : MonoBehaviour
     {
         if (Index >= numberOfFlowers) return;
         if (Flowers[Index].Count == 0) return;
-        if (Plants[Index].IsAreaAvailable(position))
+        if (Plants[Index].TryPlace(position))
         {
             FindFirstObjectByType<TutorialManager>().FinishTutorial("place");
-            if (Plants[Index].TryPlace(position))
+            Flowers[Index].Count--;
+            if (Flowers[Index].Count >= 0)
             {
-                Flowers[Index].Count--;
-                if (Flowers[Index].Count >= 0)
-                {
-                    var textComponent = FlowersNumbers[Index].GetComponent<TextMeshProUGUI>();
-                    textComponent.text = Flowers[Index].Count.ToString();
-                }
+                var textComponent = FlowersNumbers[Index].GetComponent<TextMeshProUGUI>();
+                textComponent.text = Flowers[Index].Count.ToString();
             }
         }
     }

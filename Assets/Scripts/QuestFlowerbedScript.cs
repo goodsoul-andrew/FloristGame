@@ -19,6 +19,7 @@ public class QuestFlowerbed : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision)
     {
+        Debug.Log($"{collision.tag} is planted");
         if (! isActive) return;
         if (questPlant.CompareTag(collision.tag))
         {

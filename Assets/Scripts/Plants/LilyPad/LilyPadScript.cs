@@ -75,7 +75,7 @@ public class LilyPad : Plant
 
     public override bool IsAreaAvailable(Vector2 position)
     {
-        var obstacles = new string[] {"Obstacle", "PlayerMinion", "Ground"};
+        var obstacles = new string[] {"Obstacle", "PlayerMinion", "PlantTrap"};
         var possibleGround = new string[] {"Swamp"};
         Collider2D[] colliders = GetCollidersInArea(position);
         //Debug.Log($"{string.Join(", ", obstacles)}");
