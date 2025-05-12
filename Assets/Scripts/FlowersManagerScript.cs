@@ -27,6 +27,7 @@ public class FlowersManager : MonoBehaviour
     private GameObject[] FlowersImages;
     private GameObject[] FlowersBackgrounds;
     private RectTransform scrollTransform;
+    private GameObject scrollSelectionFrame;
 
     private void Start()
     {
@@ -45,11 +46,7 @@ public class FlowersManager : MonoBehaviour
         FlowersCount = Flowers.Count;
         RecreateFlowersUI();
 
-        var scrollObj = CreateBasicObject(new Vector2(70, 70), new Vector2((float)(Index - (FlowersCount - 1) / 2.0) * 100, 0));
-        var spriteImage = scrollObj.AddComponent<Image>();
-        spriteImage.sprite = scrollSprite;
-
-        scrollTransform = scrollObj.GetComponent<RectTransform>();
+        RecreateSelectionFrame();
     }
     public void PlaceFlower(Vector2 position)
     {
@@ -73,7 +70,7 @@ public class FlowersManager : MonoBehaviour
         if (index < FlowersCount)
         {
             FindFirstObjectByType<TutorialManager>().FinishTutorial("change");
-            //Debug.Log($"Новый индекс:{index}");
+            Debug.Log($"Новый индекс:{index}");
             Index = index;
             scrollTransform.anchoredPosition = new Vector2((float)(Index - (FlowersCount - 1) / 2.0) * 100, 0);
         }
@@ -100,6 +97,9 @@ public class FlowersManager : MonoBehaviour
             Flowers.Add(flower);
             Plants.Add(plant);
             FlowersCount += 1;
+            RecreateFlowersUI();
+            RecreateSelectionFrame();
+            //scrollTransform.anchoredPosition = new Vector2((float)(Index - (FlowersCount - 1) / 2.0) * 100, 0);
         }
     }
 
@@ -107,7 +107,7 @@ public class FlowersManager : MonoBehaviour
     {
         if (FlowersNumbers != null)
         {
-            for (var i = 0; i < FlowersCount; i++)
+            for (var i = 0; i < FlowersNumbers.Length; i++)
             {
                 if (FlowersNumbers[i] != null) Destroy(FlowersNumbers[i]);
                 if (FlowersImages[i] != null) Destroy(FlowersImages[i]);
@@ -149,6 +149,17 @@ public class FlowersManager : MonoBehaviour
             FlowersNumbers[i] = textObj;
 
         }
+    }
+
+    private void RecreateSelectionFrame()
+    {
+        Destroy(scrollSelectionFrame);
+        scrollSelectionFrame = CreateBasicObject(new Vector2(70, 70), new Vector2((float)(Index - (FlowersCount - 1) / 2.0) * 100, 0));
+        scrollSelectionFrame.name = "FlowerBarSelectionFrame";
+        var spriteImage = scrollSelectionFrame.AddComponent<Image>();
+        spriteImage.sprite = scrollSprite;
+
+        scrollTransform = scrollSelectionFrame.GetComponent<RectTransform>();
     }
 
     private GameObject CreateBasicObject(Vector2 size, Vector2 position)

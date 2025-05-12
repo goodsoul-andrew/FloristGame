@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public class CollectedFlower: MonoBehaviour
+public class CollectibleFlower: MonoBehaviour
 {
+    public GameObject PlantObject;
     public int amountOfFlowers;
 }

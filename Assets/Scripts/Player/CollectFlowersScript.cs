@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +14,7 @@ public class CollectFlowersScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent<CollectedFlower>(out var collectedFlower))
+        if (collision.gameObject.TryGetComponent<CollectibleFlower>(out var collectedFlower))
         {
             switch (collision.gameObject.tag)
             {
@@ -30,8 +31,21 @@ public class CollectFlowersScript : MonoBehaviour
                     FlowersManager.ChangeNumberOfFlowers(4, collectedFlower.amountOfFlowers);
                     break;
                 case "QuestFlower1":
-                    //var flower = new Flower("QuestFlower1", collision.gameObject, collision.gameObject.GetComponent<SpriteRenderer>().sprite, 1);
-                    //FlowersManager.AddFlower(flower);
+                    var questFlower = new Flower("QuestFlower1", collectedFlower.PlantObject, collision.gameObject.GetComponent<SpriteRenderer>().sprite, 1);
+                    FlowersManager.AddFlower(questFlower);
+                    break;
+                default:
+                    Console.WriteLine("just collectible flower");
+                    if (collectedFlower.PlantObject != null)
+                    {
+                        var flower = new Flower(
+                            collectedFlower.tag,
+                            collectedFlower.PlantObject,
+                            collectedFlower.PlantObject.GetComponent<SpriteRenderer>().sprite,
+                            collectedFlower.amountOfFlowers
+                        );
+                        FlowersManager.AddFlower(flower);
+                    }
                     break;
             }
             Destroy(collision.gameObject);
