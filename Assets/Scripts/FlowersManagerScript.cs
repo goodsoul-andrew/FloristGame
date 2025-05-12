@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class FlowersManager : MonoBehaviour
 {
     [SerializeField] private List<Flower> Flowers;
-    private Plant[] Plants;
+    private List<Plant> Plants;
     [SerializeField] private Sprite scrollSprite;
     [SerializeField] private Sprite backSprite;
     [SerializeField] private int numberOfFlowers;
@@ -21,12 +21,12 @@ public class FlowersManager : MonoBehaviour
 
     private void Start()
     {
-        Plants = new Plant[Flowers.Count];
-        for (var i = 0; i < Plants.Length; i++)
+        Plants = new List<Plant>();
+        for (var i = 0; i < Flowers.Count; i++)
         {
             if (Flowers[i].Object.TryGetComponent<Plant>(out var plant))
             {
-                Plants[i] = plant;
+                Plants.Add(plant);
             }
             else
             {
