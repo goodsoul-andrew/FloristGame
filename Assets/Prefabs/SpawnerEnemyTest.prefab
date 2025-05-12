@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -621312088735702321, guid: e6de6714e77b2fddb8b05c144fcb264e, type: 3}
+  m_Sprite: {fileID: 6810463077589642200, guid: 9491613a369fced408bbeb130744fb7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,7 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67cb9e042b8d72e4aed9d2a6f696f02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainObject: {fileID: 0}
   speed: 3
   detectionRadius: 10
   damageDealer: {fileID: 0}
@@ -127,7 +126,7 @@ MonoBehaviour:
   timeout: 2
   minCount: 2
   maxCount: 5
-  enemy: {fileID: 4376023809175220702, guid: e2afb8bab561a2d439fc9535ebbf7697, type: 3}
+  enemy: {fileID: 4376023809175220702, guid: b50ae66eef3b1c747902adb3dd69ebd2, type: 3}
   animator: {fileID: 0}
 --- !u!50 &4116412023811195717
 Rigidbody2D:
