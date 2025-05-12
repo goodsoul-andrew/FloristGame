@@ -1,30 +1,31 @@
 using UnityEngine;
+using UnityEngine.LightTransport;
 
 public class QuestFlowerbed : MonoBehaviour
 {
     [SerializeField] GameObject questPlant;
     public System.Action OnComplete;
     private bool isActive;
+    private Health HP;
 
     void Start()
     {
         isActive = true;
+        HP = GetComponent<Health>();
+        HP.IsImmortal = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public bool IsRightFlower(QuestFlower flower)
     {
-        
+        return questPlant.CompareTag(flower.tag);
     }
 
-    void OnTriggerStay2D(Collider2D collision)
+    public bool TryActivate(QuestFlower flower)
     {
-        Debug.Log($"{collision.tag} is planted");
-        if (! isActive) return;
-        if (questPlant.CompareTag(collision.tag))
-        {
-            OnComplete?.Invoke();
-            Debug.Log("Right plant is planted");
-        }
+
+        if (!isActive || !IsRightFlower(flower)) return false;
+        OnComplete?.Invoke();
+        HP.Kill();
+        return true;
     }
 }

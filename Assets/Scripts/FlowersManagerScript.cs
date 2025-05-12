@@ -2,10 +2,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using System.Collections.Generic;
 
 public class FlowersManager : MonoBehaviour
 {
-    [SerializeField] private Flower[] Flowers;
+    [SerializeField] private List<Flower> Flowers;
     private Plant[] Plants;
     [SerializeField] private Sprite scrollSprite;
     [SerializeField] private Sprite backSprite;
@@ -20,7 +21,7 @@ public class FlowersManager : MonoBehaviour
 
     private void Start()
     {
-        Plants = new Plant[Flowers.Length];
+        Plants = new Plant[Flowers.Count];
         for (var i = 0; i < Plants.Length; i++)
         {
             if (Flowers[i].Object.TryGetComponent<Plant>(out var plant))
@@ -70,7 +71,7 @@ public class FlowersManager : MonoBehaviour
 
     public void SetNumberOfFlowers(int number)
     {
-        numberOfFlowers = Math.Min(number, Flowers.Length);
+        numberOfFlowers = Math.Min(number, Flowers.Count);
         RecreateFlowersUI();
         scrollTransform.anchoredPosition = new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0);
     }

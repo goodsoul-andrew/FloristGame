@@ -19,6 +19,7 @@ TagManager:
   - HealFlowerCollected
   - BombFlowerCollected
   - WallFlowerCollected
+  - QuestFlowerbed
   layers:
   - Default
   - TransparentFX
