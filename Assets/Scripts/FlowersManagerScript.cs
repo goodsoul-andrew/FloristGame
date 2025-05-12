@@ -10,7 +10,16 @@ public class FlowersManager : MonoBehaviour
     private List<Plant> Plants;
     [SerializeField] private Sprite scrollSprite;
     [SerializeField] private Sprite backSprite;
-    [SerializeField] private int numberOfFlowers;
+    [SerializeField] private int _flowersCount;
+    public int FlowersCount
+    {
+        get => _flowersCount;
+        set
+        {
+            if (Flowers is not null && Flowers.Count < value) return;
+            _flowersCount = value;
+        }
+    }
     [SerializeField] private GameObject Bar;
 
     private int Index = 0;
@@ -35,7 +44,7 @@ public class FlowersManager : MonoBehaviour
         }
         RecreateFlowersUI();
 
-        var scrollObj = CreateBasicObject(new Vector2(70, 70), new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0));
+        var scrollObj = CreateBasicObject(new Vector2(70, 70), new Vector2((float)(Index - (FlowersCount - 1) / 2.0) * 100, 0));
         var spriteImage = scrollObj.AddComponent<Image>();
         spriteImage.sprite = scrollSprite;
 
@@ -43,7 +52,7 @@ public class FlowersManager : MonoBehaviour
     }
     public void PlaceFlower(Vector2 position)
     {
-        if (Index >= numberOfFlowers) return;
+        if (Index >= FlowersCount) return;
         if (Flowers[Index].Count == 0) return;
         if (Plants[Index].TryPlace(position))
         {
@@ -60,24 +69,20 @@ public class FlowersManager : MonoBehaviour
     {
         index--;
         //Debug.Log($"индекс нажат:{index}");
-        if (index < numberOfFlowers)
+        if (index < FlowersCount)
         {
             FindFirstObjectByType<TutorialManager>().FinishTutorial("change");
             //Debug.Log($"Новый индекс:{index}");
             Index = index;
-            scrollTransform.anchoredPosition = new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0);
+            scrollTransform.anchoredPosition = new Vector2((float)(Index - (FlowersCount - 1) / 2.0) * 100, 0);
         }
     }
 
     public void SetNumberOfFlowers(int number)
     {
-        numberOfFlowers = Math.Min(number, Flowers.Count);
+        FlowersCount = Math.Min(number, Flowers.Count);
         RecreateFlowersUI();
-        scrollTransform.anchoredPosition = new Vector2((float)(Index - (numberOfFlowers - 1) / 2.0) * 100, 0);
-    }
-    public int GetNumberOfFlowers()
-    {
-        return numberOfFlowers;
+        scrollTransform.anchoredPosition = new Vector2((float)(Index - (FlowersCount - 1) / 2.0) * 100, 0);
     }
 
     public void ChangeNumberOfFlowers(int index, int amount)
@@ -91,20 +96,20 @@ public class FlowersManager : MonoBehaviour
     {
         if (FlowersNumbers != null)
         {
-            for (var i = 0; i < numberOfFlowers; i++)
+            for (var i = 0; i < FlowersCount; i++)
             {
                 if (FlowersNumbers[i] != null) Destroy(FlowersNumbers[i]);
                 if (FlowersImages[i] != null) Destroy(FlowersImages[i]);
                 if (FlowersBackgrounds[i] != null) Destroy(FlowersBackgrounds[i]);
             }
         }
-        FlowersNumbers = new GameObject[numberOfFlowers];
-        FlowersImages = new GameObject[numberOfFlowers];
-        FlowersBackgrounds = new GameObject[numberOfFlowers];
+        FlowersNumbers = new GameObject[FlowersCount];
+        FlowersImages = new GameObject[FlowersCount];
+        FlowersBackgrounds = new GameObject[FlowersCount];
 
-        for (var i = 0; i < numberOfFlowers; i++)
+        for (var i = 0; i < FlowersCount; i++)
         {
-            var xLocation = (float)(i - (numberOfFlowers - 1) / 2.0) * 100;
+            var xLocation = (float)(i - (FlowersCount - 1) / 2.0) * 100;
 
             //фон
             var backObj = CreateBasicObject(new Vector2(70, 70), new Vector2(xLocation, 0));
