@@ -20,6 +20,7 @@ TagManager:
   - BombFlowerCollected
   - WallFlowerCollected
   - QuestFlowerbed
+  - QuestFlower1
   layers:
   - Default
   - TransparentFX

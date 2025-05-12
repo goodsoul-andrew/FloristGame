@@ -42,6 +42,7 @@ public class FlowersManager : MonoBehaviour
                 throw new InvalidOperationException("Попытка добавить в массив растений не растение");
             }
         }
+        FlowersCount = Flowers.Count;
         RecreateFlowersUI();
 
         var scrollObj = CreateBasicObject(new Vector2(70, 70), new Vector2((float)(Index - (FlowersCount - 1) / 2.0) * 100, 0));
@@ -92,6 +93,16 @@ public class FlowersManager : MonoBehaviour
         textComponent.text = Flowers[index].Count.ToString();
     }
 
+    public void AddFlower(Flower flower)
+    {
+        if (flower.Object.TryGetComponent<Plant>(out var plant))
+        {
+            Flowers.Add(flower);
+            Plants.Add(plant);
+            FlowersCount += 1;
+        }
+    }
+
     public void RecreateFlowersUI()
     {
         if (FlowersNumbers != null)
@@ -122,7 +133,7 @@ public class FlowersManager : MonoBehaviour
             //картинка
             var imageObj = CreateBasicObject(new Vector2(60, 60), new Vector2(xLocation, 0));
             var imageImage = imageObj.AddComponent<Image>();
-            imageImage.sprite = Flowers[i].Sprite;
+            imageImage.sprite = Flowers[i].Image;
 
             FlowersImages[i] = imageObj;
 
@@ -159,7 +170,14 @@ public class Flower
 {
     public string Name;
     public GameObject Object;
-    public Sprite Sprite;
+    public Sprite Image;
     public int Count;
 
+    public Flower (string name, GameObject obj, Sprite sprite, int count)
+    {
+        Name = name;
+        Object = obj;
+        Image = sprite;
+        Count = count;
+    }
 }

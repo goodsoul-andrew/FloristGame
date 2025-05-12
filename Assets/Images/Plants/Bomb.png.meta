@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1fa73a8f1e0da404b8d84271680c15ca
+guid: 7e5fbc8836c90aac18aa9cd11a231243
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2112956272714146212
-    second: "\u043A\u043E\u043B\u044E\u0447\u043A\u0430_0"
+      213: -1483665779731714255
+    second: Bomb_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,27 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u043A\u043E\u043B\u044E\u0447\u043A\u0430_0"
+      name: Bomb_0
       rect:
         serializedVersion: 2
-        x: 180
-        y: 160
-        width: 637
-        height: 710
+        x: 210
+        y: 184
+        width: 672
+        height: 677
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a16f0df88ab25d10800000000000000
-      internalID: 2112956272714146212
+      spriteID: 13f20b985d5f86be0800000000000000
+      internalID: -1483665779731714255
       vertices: []
       indices: 
       edges: []
@@ -125,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4b7f84d65aa925cfcbd12c0a21467e20
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u043A\u043E\u043B\u044E\u0447\u043A\u0430_0": 2112956272714146212
+      Bomb_0: -1483665779731714255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

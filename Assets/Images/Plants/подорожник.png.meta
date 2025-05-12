@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 200a56b67a8060c1aa3c5fcd9c34f13f
+guid: 6c3a41707a7ae474cb91218653026603
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6636963309793451902
-    second: Lilypad_0
-  - first:
-      213: 5237606164704071833
-    second: Lilypad_1
-  - first:
-      213: 1453897970555885594
-    second: Lilypad_2
+      213: 1164949898700614173
+    second: "\u043F\u043E\u0434\u043E\u0440\u043E\u0436\u043D\u0438\u043A_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lilypad_0
+      name: "\u043F\u043E\u0434\u043E\u0440\u043E\u0436\u043D\u0438\u043A_0"
       rect:
         serializedVersion: 2
-        x: 219
-        y: 173
-        width: 654
-        height: 678
+        x: 91
+        y: 112
+        width: 642
+        height: 822
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 280e57ca805c4e3a0800000000000000
-      internalID: -6636963309793451902
+      spriteID: d1a6d2db2cbba2010800000000000000
+      internalID: 1164949898700614173
       vertices: []
       indices: 
       edges: []
@@ -144,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f89af5b4eaf333e2db88421f86c19e84
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -154,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lilypad_0: -6636963309793451902
-      Lilypad_1: 5237606164704071833
-      Lilypad_2: 1453897970555885594
+      "\u043F\u043E\u0434\u043E\u0440\u043E\u0436\u043D\u0438\u043A_0": 1164949898700614173
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

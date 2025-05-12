@@ -12835,27 +12835,27 @@ MonoBehaviour:
   Flowers:
   - Name: trap
     Object: {fileID: 3426676297266344394, guid: 54a75107b144764409778ad6b3bd127c, type: 3}
-    Sprite: {fileID: -8888341327064046431, guid: 84cbae3b0bd36d5baa0a1922c255a2cf, type: 3}
+    Image: {fileID: -8888341327064046431, guid: 84cbae3b0bd36d5baa0a1922c255a2cf, type: 3}
     Count: -1
   - Name: lilly
     Object: {fileID: 207077199748663049, guid: 050a15d013a3f0dc0894e95f348a4135, type: 3}
-    Sprite: {fileID: -6636963309793451902, guid: 200a56b67a8060c1aa3c5fcd9c34f13f, type: 3}
+    Image: {fileID: -6636963309793451902, guid: 200a56b67a8060c1aa3c5fcd9c34f13f, type: 3}
     Count: 12
   - Name: bomb
     Object: {fileID: 3789392046953241000, guid: 38ab63b3a0f3c8842a01591725051b6b, type: 3}
-    Sprite: {fileID: 7630904981163443126, guid: f50b15161df051c41a52ea998ed5f412, type: 3}
+    Image: {fileID: -1483665779731714255, guid: 7e5fbc8836c90aac18aa9cd11a231243, type: 3}
     Count: 5
   - Name: healFlower
     Object: {fileID: 3646481026932210888, guid: 2b787ad11c0173f90a652f5d3caf4ea7, type: 3}
-    Sprite: {fileID: 1164949898700614173, guid: 6c3a41707a7ae474cb91218653026603, type: 3}
+    Image: {fileID: 1164949898700614173, guid: 6c3a41707a7ae474cb91218653026603, type: 3}
     Count: 4
   - Name: Wall
     Object: {fileID: 1728276783131919843, guid: de0c9f11fbef97443805e27aef935288, type: 3}
-    Sprite: {fileID: 2112956272714146212, guid: 1fa73a8f1e0da404b8d84271680c15ca, type: 3}
+    Image: {fileID: 2112956272714146212, guid: 1fa73a8f1e0da404b8d84271680c15ca, type: 3}
     Count: 7
   scrollSprite: {fileID: 116991130260295528, guid: fab6d36fe794c034a9e418efae3b944c, type: 3}
   backSprite: {fileID: -885821910916194319, guid: 3505bfaeadf11d84cbf26240d320a94d, type: 3}
-  numberOfFlowers: 5
+  _flowersCount: 5
   Bar: {fileID: 888783682}
 --- !u!1 &706260763
 GameObject:
@@ -132677,6 +132677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 1000
+  IsImmortal: 0
 --- !u!114 &1946183547
 MonoBehaviour:
   m_ObjectHideFlags: 0
