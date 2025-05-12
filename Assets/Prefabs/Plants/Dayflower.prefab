@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4582617326537697132}
   - component: {fileID: 110021123014076411}
   m_Layer: 0
-  m_Name: Torchflower
+  m_Name: Dayflower
   m_TagString: QuestFlower1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -6147924151400181128, guid: 68b1853f6cfbbf52991075b45b2481c1, type: 3}
+  m_Sprite: {fileID: -2179900589009936893, guid: 30bc98a80b728378fb22b7044a234b61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -141,7 +141,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.33, y: 0.63}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

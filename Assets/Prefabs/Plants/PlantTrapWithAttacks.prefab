@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6175146547185488574}
   - component: {fileID: 6397202300391561121}
   m_Layer: 0
-  m_Name: TrapPlantWithAttacks
+  m_Name: PlantTrapWithAttacks
   m_TagString: PlantTrap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

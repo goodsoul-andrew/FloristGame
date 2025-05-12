@@ -6,9 +6,6 @@ TagManager:
   tags:
   - PlayerMinion
   - Enemy
-  - flower1
-  - flower2
-  - flower3
   - Obstacle
   - LilyPad
   - PlantTrap
@@ -21,6 +18,8 @@ TagManager:
   - WallFlowerCollected
   - QuestFlowerbed
   - QuestFlower1
+  - HealFlower
+  - WallCreator
   layers:
   - Default
   - TransparentFX

@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 6378851113616734987}
   - component: {fileID: 49178407697818398}
   m_Layer: 0
-  m_Name: BombPlant
-  m_TagString: Untagged
+  m_Name: PlantBomb
+  m_TagString: PlantBomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

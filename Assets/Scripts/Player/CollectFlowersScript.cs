@@ -35,16 +35,17 @@ public class CollectFlowersScript : MonoBehaviour
                     FlowersManager.AddFlower(questFlower);
                     break;
                 default:
-                    Console.WriteLine("just collectible flower");
                     if (collectedFlower.PlantObject != null)
                     {
-                        var flower = new Flower(
-                            collectedFlower.tag,
-                            collectedFlower.PlantObject,
-                            collectedFlower.PlantObject.GetComponent<SpriteRenderer>().sprite,
-                            collectedFlower.amountOfFlowers
-                        );
-                        FlowersManager.AddFlower(flower);
+                        if (!FlowersManager.TryUpdateFlower(collectedFlower.PlantObject.tag, collectedFlower.amountOfFlowers))
+                        {
+                            var flower = new Flower(
+                                collectedFlower.PlantObject,
+                                collectedFlower.PlantObject.GetComponent<SpriteRenderer>().sprite,
+                                collectedFlower.amountOfFlowers
+                            );
+                            FlowersManager.AddFlower(flower);
+                        }
                     }
                     break;
             }

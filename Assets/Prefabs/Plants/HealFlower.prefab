@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8072165606855698460}
   m_Layer: 0
   m_Name: HealFlower
-  m_TagString: flower1
+  m_TagString: HealFlower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -103,6 +103,14 @@ public class FlowersManager : MonoBehaviour
         }
     }
 
+    public bool TryUpdateFlower(string name, int amount)
+    {
+        var ind = Flowers.FindIndex(fl => fl.Name == name);
+        if (ind < 0) return false;
+        ChangeNumberOfFlowers(ind, amount);
+        return true;
+    }
+
     public void RecreateFlowersUI()
     {
         if (FlowersNumbers != null)
@@ -187,6 +195,14 @@ public class Flower
     public Flower (string name, GameObject obj, Sprite sprite, int count)
     {
         Name = name;
+        Object = obj;
+        Image = sprite;
+        Count = count;
+    }
+
+    public Flower (GameObject obj, Sprite sprite, int count)
+    {
+        Name = obj.tag;
         Object = obj;
         Image = sprite;
         Count = count;
