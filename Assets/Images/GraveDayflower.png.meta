@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GraveDayflower_0: 4743212540301410594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

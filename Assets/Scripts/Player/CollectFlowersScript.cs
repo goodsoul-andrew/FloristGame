@@ -16,6 +16,7 @@ public class CollectFlowersScript : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<CollectibleFlower>(out var collectedFlower))
         {
+            FindFirstObjectByType<TutorialManager>().FinishTutorial("take");
             switch (collision.gameObject.tag)
             {
                 case "LilyPadCollected":

@@ -27,6 +27,7 @@ public class CutsceneController : MonoBehaviour
     public void EndCutscene()
     {
         FindFirstObjectByType<TutorialManager>().AddTutorialToTheQueue("walk");
+        FindFirstObjectByType<TutorialManager>().AddTutorialToTheQueue("take");
         FindFirstObjectByType<TutorialManager>().AddTutorialToTheQueue("place");
         FindFirstObjectByType<TutorialManager>().AddTutorialToTheQueue("change");
         player.ResumeGame();
