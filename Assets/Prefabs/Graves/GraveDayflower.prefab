@@ -32,6 +32,7 @@ Transform:
   m_Children:
   - {fileID: 450768648855183930}
   - {fileID: 7475174612120803329}
+  - {fileID: 5336776033058194377}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &496147487387467093
@@ -180,7 +181,7 @@ GameObject:
   - component: {fileID: 1441268096621035939}
   - component: {fileID: 8138107097347346026}
   m_Layer: 0
-  m_Name: DayflowerFlowerbed
+  m_Name: Flowerbed
   m_TagString: QuestFlowerbed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -259,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44d1ee9725f173c7952f729f18bcd5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questPlant: {fileID: 3056645557828350677, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+  questPlant: {fileID: 5425730262500944390, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
 --- !u!114 &8138107097347346026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,3 +275,77 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 0
   IsImmortal: 1
+--- !u!1001 &5171580387080297595
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8325125440627033258}
+    m_Modifications:
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.5563116
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5323029
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252948657321987579, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+      propertyPath: m_Name
+      value: CollectibleHomeFlower
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+--- !u!4 &5336776033058194377 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 996752855535509426, guid: e68adf8e98d60b3708f504ce45d931d0, type: 3}
+  m_PrefabInstance: {fileID: 5171580387080297595}
+  m_PrefabAsset: {fileID: 0}

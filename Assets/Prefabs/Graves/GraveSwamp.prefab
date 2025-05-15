@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5269195851080950206
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4244462535662577567}
+    m_Modifications:
+    - target: {fileID: 522497577913338741, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_Name
+      value: CollectibleSwampFlower
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.09719
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8027403
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+--- !u!4 &8687186702307473538 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3571609535286925628, guid: 2eece341e7e6cec41bd3a3656060db1f, type: 3}
+  m_PrefabInstance: {fileID: 5269195851080950206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5291612236332884789
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 496147487387467093, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2799909650898253246, guid: 1e75e85581c6937dd8b2bd1a2e5cdddc, type: 3}
+    - target: {fileID: 1441268096621035939, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: questPlant
+      value: 
+      objectReference: {fileID: 5847994445646374764, guid: 7ae4a1ad4b216ad75a893e30c17450d9, type: 3}
+    - target: {fileID: 4684327105198410066, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_Name
+      value: GraveSwamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104061540975331071, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_Name
+      value: SwampFlowerbed
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 8989368145922396544, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8687186702307473538}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+--- !u!4 &4244462535662577567 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+  m_PrefabInstance: {fileID: 5291612236332884789}
+  m_PrefabAsset: {fileID: 0}

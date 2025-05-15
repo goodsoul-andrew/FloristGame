@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4715747725320352528
+--- !u!1001 &1901696738121551210
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,73 +8,73 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 110021123014076411, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 110021123014076411, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 3056645557828350677, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
-      propertyPath: m_Name
-      value: SwampFlower
-      objectReference: {fileID: 0}
-    - target: {fileID: 3056645557828350677, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
-      propertyPath: m_TagString
-      value: SwampFlower
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096556410309760758, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -8968746144957900785, guid: 725e4cfc17e8d8418890d4dd40673a75, type: 3}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.25
+      value: 0.2
       objectReference: {fileID: 0}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.25
+      value: 0.2
       objectReference: {fileID: 0}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4862893206791305434, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+    - target: {fileID: 3020399664214536517, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816564574823741744, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7280202492324272881, guid: 0ad9414829694f4638362fe8f231615f, type: 3}
+    - target: {fileID: 5425730262500944390, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+      propertyPath: m_Name
+      value: SwampFlower
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425730262500944390, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+      propertyPath: m_TagString
+      value: MazeFlower
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189362314652350107, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 8.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189362314652350107, guid: 2be21d6b21109f4a2b433e3febdbfba9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 6.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
