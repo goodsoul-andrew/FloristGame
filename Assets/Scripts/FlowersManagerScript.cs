@@ -65,7 +65,7 @@ public class FlowersManager : MonoBehaviour
     }
     public void SetIndex(int index)
     {
-        index--;
+        //index--;
         //Debug.Log($"индекс нажат:{index}");
         if (index < FlowersCount)
         {

@@ -625,7 +625,18 @@
                     "path": "<Keyboard>/9",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ChangeFlower",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f561ba32-1995-40be-b4bb-1ce9ac5f92d0",
+                    "path": "<Keyboard>/0",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
                     "action": "ChangeFlower",
                     "isComposite": false,
                     "isPartOfComposite": false

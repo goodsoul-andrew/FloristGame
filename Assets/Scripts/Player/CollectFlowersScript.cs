@@ -31,13 +31,10 @@ public class CollectFlowersScript : MonoBehaviour
                 case "WallFlowerCollected":
                     FlowersManager.ChangeNumberOfFlowers(4, collectedFlower.amountOfFlowers);
                     break;
-                case "QuestFlower1":
-                    var questFlower = new Flower("QuestFlower1", collectedFlower.PlantObject, collision.gameObject.GetComponent<SpriteRenderer>().sprite, 1);
-                    FlowersManager.AddFlower(questFlower);
-                    break;
                 default:
                     if (collectedFlower.PlantObject != null)
                     {
+                        Debug.Log($"collected {collectedFlower.PlantObject.tag}");
                         if (!FlowersManager.TryUpdateFlower(collectedFlower.PlantObject.tag, collectedFlower.amountOfFlowers))
                         {
                             var flower = new Flower(
