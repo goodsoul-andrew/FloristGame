@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WitherRose_0: -3304713540708592570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

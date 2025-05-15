@@ -1131,6 +1131,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: timeout
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: maxCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: minCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: detectionRadius
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24943,6 +24959,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: timeout
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: maxCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: minCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: detectionRadius
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24999,6 +25031,22 @@ PrefabInstance:
     - target: {fileID: 3892540394457916591, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: timeout
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: maxCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: minCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: detectionRadius
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -134988,6 +135036,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: timeout
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: maxCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: minCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564709612429402958, guid: b2d731d15e280566ea3ecc35bada9359, type: 3}
+      propertyPath: detectionRadius
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -136102,7 +136166,7 @@ Transform:
   m_GameObject: {fileID: 1946183536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.26, y: -40.91, z: 0}
+  m_LocalPosition: {x: -0.9, y: -47.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -136186,7 +136250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832c9e68f22bf9ca4ac7da527d2855ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 1000
+  maxHP: 100
   IsImmortal: 0
 --- !u!114 &1946183547
 MonoBehaviour:
