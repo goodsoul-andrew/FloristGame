@@ -17,9 +17,13 @@ TagManager:
   - BombFlowerCollected
   - WallFlowerCollected
   - QuestFlowerbed
-  - QuestFlower1
   - HealFlower
   - WallCreator
+  - FieldFlower
+  - SwampFlower
+  - MazeFlower
+  - HomeFlower
+  - CorruptionFlower
   layers:
   - Default
   - TransparentFX

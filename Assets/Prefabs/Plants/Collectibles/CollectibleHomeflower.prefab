@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3183532368265714184}
   - component: {fileID: 808401196047816868}
   m_Layer: 0
-  m_Name: CollectibleDayflower
-  m_TagString: QuestFlower1
+  m_Name: CollectibleHomeflower
+  m_TagString: HomeFlower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
