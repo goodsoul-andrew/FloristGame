@@ -86,6 +86,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -445756688639035318, guid: 7c4433b7939fd7592a53f17408069c55, type: 3}
+    - target: {fileID: 496147487387467093, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1441268096621035939, guid: 62f2f50203e833bfb862a02431902758, type: 3}
       propertyPath: questPlant
       value: 

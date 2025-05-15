@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6995678389919626242, guid: f76855230cb047060a091f8c4798b33e, type: 3}
+    - target: {fileID: 496147487387467093, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4684327105198410066, guid: 62f2f50203e833bfb862a02431902758, type: 3}
       propertyPath: m_Name
       value: GraveHome
