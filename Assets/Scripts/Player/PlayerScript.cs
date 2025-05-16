@@ -1,9 +1,5 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
-using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -21,7 +17,7 @@ public class Player : MonoBehaviour, IMoving, IDamageable
     private bool canPlace;
     [SerializeField] private float placeRadius = 5;
     [SerializeField] private float placeDelay = 2f;
-    [SerializeField] private UnityEngine.GameObject pauseMenu;
+    [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject InteractionObject;
 
 
