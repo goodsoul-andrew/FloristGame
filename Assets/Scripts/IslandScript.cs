@@ -23,6 +23,7 @@ public class Island : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D collision)
     {
+        //Debug.Log($"exited island {this.gameObject}");
         if (IsTargetOnOtherIsland(collision))
         {
             swamp.Disable(collision.gameObject);

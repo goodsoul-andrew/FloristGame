@@ -44,7 +44,7 @@ public class Utils
         var colliders = Physics2D.OverlapCircleAll(position, 0.5f);
         foreach (var collider in colliders)
         {
-            //Debug.Log($"{collider.tag} {collider}");
+            //Debug.Log($"stands on {collider.tag} {collider}");
             if (collider != null && collider.CompareTag(tag))
             {
                 return true;

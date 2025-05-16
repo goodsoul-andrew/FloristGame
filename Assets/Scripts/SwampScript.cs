@@ -7,6 +7,8 @@ public class Swamp : MonoBehaviour
 {
     private SwampEffect swampEffect;
     private HashSet<GameObject> disabled;
+    [SerializeField] private float damageAmount = 5f;
+    [SerializeField] private float damageTimeout = 1f;
 
     void Awake()
     {
@@ -16,7 +18,7 @@ public class Swamp : MonoBehaviour
     void Start()
     {
         disabled = new HashSet<GameObject>();
-        swampEffect = new SwampEffect(this, 2f, 5f);
+        swampEffect = new SwampEffect(this, damageTimeout, damageAmount);
     }
 
     // Update is called once per frame
@@ -96,12 +98,12 @@ public class SwampEffect : StatusEffect
     {
         while (affected.Contains(target))
         {
+            yield return new WaitForSeconds(damageTimeout);
             if (target.TryGetComponent<Health>(out var health))
             {
                 //Debug.Log($"Swamp Effect damaged {target}");
                 health.TakeDamage(damageAmount);
             }
-            yield return new WaitForSeconds(damageTimeout);
         }
     }
 }

@@ -29,7 +29,7 @@ public class Gates : MonoBehaviour
 
     void OpenGates()
     {
-        Debug.Log("open gates");
+        //Debug.Log("open gates");
         var rightCollider = right.GetComponent<BoxCollider2D>();
         var width = rightCollider.size.x;
         rightCollider.size = new Vector2(rightCollider.size.x / 2, rightCollider.size.y);

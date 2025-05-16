@@ -15,7 +15,7 @@ public class Shaker : MonoBehaviour
 
     public void Shake()
     {
-        Debug.Log("start shaking");
+        //Debug.Log("start shaking");
         StartCoroutine(ShakeCoroutine());
     }
 

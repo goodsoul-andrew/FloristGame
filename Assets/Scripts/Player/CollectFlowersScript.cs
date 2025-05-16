@@ -34,7 +34,7 @@ public class CollectFlowersScript : MonoBehaviour
                 default:
                     if (collectedFlower.PlantObject != null)
                     {
-                        Debug.Log($"collected {collectedFlower.PlantObject.tag}");
+                        //Debug.Log($"collected {collectedFlower.PlantObject.tag}");
                         if (!FlowersManager.TryUpdateFlower(collectedFlower.PlantObject.tag, collectedFlower.amountOfFlowers))
                         {
                             var flower = new Flower(

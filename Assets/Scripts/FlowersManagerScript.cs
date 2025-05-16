@@ -70,7 +70,7 @@ public class FlowersManager : MonoBehaviour
         if (index < FlowersCount)
         {
             FindFirstObjectByType<TutorialManager>().FinishTutorial("change");
-            Debug.Log($"Новый индекс:{index}");
+            //Debug.Log($"Новый индекс:{index}");
             Index = index;
             scrollTransform.anchoredPosition = new Vector2((float)(Index - (FlowersCount - 1) / 2.0) * 100, 0);
         }
