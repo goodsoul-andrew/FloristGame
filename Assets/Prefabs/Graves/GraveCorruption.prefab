@@ -98,6 +98,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraveCorruption
       objectReference: {fileID: 0}
+    - target: {fileID: 6338411071035317191, guid: 62f2f50203e833bfb862a02431902758, type: 3}
+      propertyPath: 'SoundsGroups.Array.data[0].Sounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c786dd4c3bf70a52181308f383b06887, type: 3}
     - target: {fileID: 8325125440627033258, guid: 62f2f50203e833bfb862a02431902758, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.486
