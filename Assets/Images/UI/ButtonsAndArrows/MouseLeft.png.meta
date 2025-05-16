@@ -114,8 +114,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0411\u0435\u0437 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044F
-        (1)_0"
+      name: MouseLeft
       rect:
         serializedVersion: 2
         x: 302
@@ -123,7 +122,7 @@ TextureImporter:
         width: 437
         height: 864
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,7 +139,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0a57a0cdf159b4406b7560a4872aac2d
     internalID: 0
     vertices: []
     indices: 
@@ -150,7 +149,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u0411\u0435\u0437 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044F (1)_0": -6036222816874579000
+      MouseLeft: -6036222816874579000
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
