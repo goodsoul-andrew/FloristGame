@@ -25,6 +25,7 @@ public class Barrier : MonoBehaviour
         Count -= 1;
         if (Count <= 0)
         {
+            FindFirstObjectByType<TutorialManager>().FinishTutorial("block");
             Destroy(gameObject);
         }
     }
