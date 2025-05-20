@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PodorozhnikTutorial1_0: -4070839049246968865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
