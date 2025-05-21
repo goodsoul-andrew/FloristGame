@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: 2b2caf1054ead7ff89bfea34db8c671b
+guid: 2de161c9f98222c47aa1671c2f3051a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3053855866712526480
-    second: DangerCircle_0
+      213: 3202985873394954016
+    second: "\u043B\u0435\u0441 \u0434\u0438\u0430\u0433\u043E\u043D\u0430\u043B\u044C
+      \u043F\u0440\u0430\u0432\u043E-\u043D\u0438\u0437_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +47,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,30 +97,18 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DangerCircle_0
+      name: "\u043B\u0435\u0441 \u0434\u0438\u0430\u0433\u043E\u043D\u0430\u043B\u044C
+        \u043F\u0440\u0430\u0432\u043E-\u043D\u0438\u0437_0"
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 505
-        height: 505
+        x: 0
+        y: 262
+        width: 4592
+        height: 5238
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +117,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0717b5de4468e95d0800000000000000
-      internalID: -3053855866712526480
+      spriteID: 02fec448eaa437c20800000000000000
+      internalID: 3202985873394954016
       vertices: []
       indices: 
       edges: []
@@ -138,7 +127,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DangerCircle_0: -3053855866712526480
+      "\u043B\u0435\u0441 \u0434\u0438\u0430\u0433\u043E\u043D\u0430\u043B\u044C \u043F\u0440\u0430\u0432\u043E-\u043D\u0438\u0437_0": 3202985873394954016
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
