@@ -194,15 +194,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RootAppears_0
+      name: RootAppears_1
       rect:
         serializedVersion: 2
-        x: 1022
-        y: 304
-        width: 57
-        height: 154
+        x: 777
+        y: 190
+        width: 530
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,37 +216,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RootAppears_1
-      rect:
-        serializedVersion: 2
-        x: 1564
-        y: 427
-        width: 50
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e3fc1a03b240ba40800000000000000
-      internalID: 5381874891443991522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: RootAppears_2
       rect:
         serializedVersion: 2
-        x: 1700
-        y: 301
-        width: 85
-        height: 410
+        x: 1475
+        y: 190
+        width: 530
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,56 +241,12 @@ TextureImporter:
       name: RootAppears_3
       rect:
         serializedVersion: 2
-        x: 1827
-        y: 411
-        width: 50
-        height: 68
+        x: 2187
+        y: 190
+        width: 527
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8a7c0a8e500f2b40800000000000000
-      internalID: 5417549282792995468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_4
-      rect:
-        serializedVersion: 2
-        x: 2278
-        y: 452
-        width: 28
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a0099dc1db036dd0800000000000000
-      internalID: -2494136772907695964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_5
-      rect:
-        serializedVersion: 2
-        x: 2412
-        y: 304
-        width: 91
-        height: 513
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -326,37 +260,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RootAppears_6
+      name: RootAppears_4
       rect:
         serializedVersion: 2
-        x: 2566
-        y: 455
-        width: 26
-        height: 25
+        x: 2954
+        y: 190
+        width: 530
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ce9a50d5e861fa700800000000000000
-      internalID: 553686079891679724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_7
-      rect:
-        serializedVersion: 2
-        x: 3165
-        y: 302
-        width: 114
-        height: 589
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -370,15 +282,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RootAppears_8
+      name: RootAppears_0
       rect:
         serializedVersion: 2
-        x: 487
-        y: 306
-        width: 39
-        height: 87
+        x: 246
+        y: 196
+        width: 530
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -391,429 +303,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: RootAppears_9
-      rect:
-        serializedVersion: 2
-        x: 846
-        y: 301
-        width: 134
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 525fcdf44660b7c10800000000000000
-      internalID: 2052241083103769893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_10
-      rect:
-        serializedVersion: 2
-        x: 1112
-        y: 308
-        width: 118
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b375a69c7be45f00800000000000000
-      internalID: 1104766728948511668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_11
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 369
-        width: 61
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9f39106333886650800000000000000
-      internalID: 6226370741518548891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_12
-      rect:
-        serializedVersion: 2
-        x: 1891
-        y: 368
-        width: 65
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e8a32d030d8543f0800000000000000
-      internalID: -917171904855168795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_13
-      rect:
-        serializedVersion: 2
-        x: 2216
-        y: 375
-        width: 34
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10cffa085a8301190800000000000000
-      internalID: -7993827055102854143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_14
-      rect:
-        serializedVersion: 2
-        x: 2642
-        y: 379
-        width: 29
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 37aea51e958cf6550800000000000000
-      internalID: 6156359503997233779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_15
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 306
-        width: 75
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9e41e0c16c89b6ba0800000000000000
-      internalID: -6094609694074202903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_16
-      rect:
-        serializedVersion: 2
-        x: 548
-        y: 305
-        width: 64
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8d595e32d0f56bf40800000000000000
-      internalID: 5743882884799108568
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_17
-      rect:
-        serializedVersion: 2
-        x: 1479
-        y: 292
-        width: 73
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70afd85c78c9a2240800000000000000
-      internalID: 4767795262474025479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_18
-      rect:
-        serializedVersion: 2
-        x: 1916
-        y: 313
-        width: 66
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57b122de3e2e965c0800000000000000
-      internalID: -4221593707119240331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_19
-      rect:
-        serializedVersion: 2
-        x: 2198
-        y: 290
-        width: 37
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4285b51d47af87160800000000000000
-      internalID: 7023638998519863332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_20
-      rect:
-        serializedVersion: 2
-        x: 2668
-        y: 311
-        width: 28
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c77b993440d99f550800000000000000
-      internalID: 6195155404064405372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_21
-      rect:
-        serializedVersion: 2
-        x: 973
-        y: 223
-        width: 135
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5bd0d12778f820b00800000000000000
-      internalID: 793354296268492213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_22
-      rect:
-        serializedVersion: 2
-        x: 1623
-        y: 225
-        width: 54
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b26f2b79873341850800000000000000
-      internalID: 6346754367906051627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_23
-      rect:
-        serializedVersion: 2
-        x: 1715
-        y: 195
-        width: 37
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c53c86fa5017ff990800000000000000
-      internalID: -7350031797613706404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_24
-      rect:
-        serializedVersion: 2
-        x: 1791
-        y: 228
-        width: 44
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9ebf40a28eed49df0800000000000000
-      internalID: -174269396841858071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_25
-      rect:
-        serializedVersion: 2
-        x: 2336
-        y: 223
-        width: 27
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f97169054307cb500800000000000000
-      internalID: 413328635803867039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_26
-      rect:
-        serializedVersion: 2
-        x: 2526
-        y: 232
-        width: 27
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7307f5574935feb10800000000000000
-      internalID: 2012919455547355191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RootAppears_27
-      rect:
-        serializedVersion: 2
-        x: 2437
-        y: 193
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2f92ddba6dd4769d0800000000000000
-      internalID: -2781168660476253710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a35033400f58d853c8cca7be79702397
     internalID: 0
     vertices: []
     indices: 
@@ -823,34 +317,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RootAppears_0: 1462322811025276905
-      RootAppears_1: 5381874891443991522
-      RootAppears_10: 1104766728948511668
-      RootAppears_11: 6226370741518548891
-      RootAppears_12: -917171904855168795
-      RootAppears_13: -7993827055102854143
-      RootAppears_14: 6156359503997233779
-      RootAppears_15: -6094609694074202903
-      RootAppears_16: 5743882884799108568
-      RootAppears_17: 4767795262474025479
-      RootAppears_18: -4221593707119240331
-      RootAppears_19: 7023638998519863332
+      RootAppears_0: -4274545950519153644
+      RootAppears_1: 1462322811025276905
       RootAppears_2: 3551243878587235001
-      RootAppears_20: 6195155404064405372
-      RootAppears_21: 793354296268492213
-      RootAppears_22: 6346754367906051627
-      RootAppears_23: -7350031797613706404
-      RootAppears_24: -174269396841858071
-      RootAppears_25: 413328635803867039
-      RootAppears_26: 2012919455547355191
-      RootAppears_27: -2781168660476253710
-      RootAppears_3: 5417549282792995468
-      RootAppears_4: -2494136772907695964
-      RootAppears_5: 6785987756230259682
-      RootAppears_6: 553686079891679724
-      RootAppears_7: 6390836843555375947
-      RootAppears_8: -4274545950519153644
-      RootAppears_9: 2052241083103769893
+      RootAppears_3: 6785987756230259682
+      RootAppears_4: 6390836843555375947
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
