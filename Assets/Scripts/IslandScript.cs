@@ -9,7 +9,7 @@ public class Island : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = FindFirstObjectByType<Player>();
         GetSwamp();
     }
 

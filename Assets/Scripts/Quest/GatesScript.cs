@@ -32,16 +32,16 @@ public class Gates : MonoBehaviour
         //Debug.Log("open gates");
         var rightCollider = right.GetComponent<BoxCollider2D>();
         var width = rightCollider.size.x;
-        rightCollider.size = new Vector2(rightCollider.size.x / 2, rightCollider.size.y);
-        rightCollider.offset = new Vector2(rightCollider.offset.x + width / 4, rightCollider.offset.y);
+        rightCollider.size = new Vector2(rightCollider.size.x  * 0.53f, rightCollider.size.y);
+        rightCollider.offset = new Vector2(rightCollider.offset.x + width  * 0.53f * 0.5f, rightCollider.offset.y);
 
         var rightAnimator = right.GetComponent<Animator>();
         rightAnimator.SetBool("isOpen", true);
 
         var leftCollider = left.GetComponent<BoxCollider2D>();
         width = leftCollider.size.x;
-        leftCollider.size = new Vector2(leftCollider.size.x / 2, leftCollider.size.y);
-        leftCollider.offset = new Vector2(leftCollider.offset.x - width / 4, leftCollider.offset.y);
+        leftCollider.size = new Vector2(leftCollider.size.x * 0.53f, leftCollider.size.y);
+        leftCollider.offset = new Vector2(leftCollider.offset.x - width  * 0.53f * 0.5f, leftCollider.offset.y);
 
         var leftAnimator = left.GetComponent<Animator>();
         leftAnimator.SetBool("isOpen", true);

@@ -9,6 +9,7 @@ public class DamageEffect : MonoBehaviour
     private Coroutine currentEffectCoroutine;
     private AudioSource audioSource;
     public AudioClip HurtSound;
+    [SerializeField] private Health HP;
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -18,10 +19,13 @@ public class DamageEffect : MonoBehaviour
 
     private void OnEnable()
     {
-        Health healthComponent = GetComponent<Health>();
-        if (healthComponent != null)
+        if (HP == null)
         {
-            healthComponent.OnDamage += HandleDamage;
+            HP = GetComponent<Health>();
+        }
+        if (HP != null)
+        {
+            HP.OnDamage += HandleDamage;
         }
     }
  

@@ -8,7 +8,7 @@ public class Player : MonoBehaviour, IMoving, IDamageable
 {
     private Rigidbody2D rb;
     private PlayerInput playerInput;
-    private Animator animator;
+    [SerializeField]private Animator animator;
     private FlowersManager flowersManager;
     private DialogueManager dialogueManager;
 
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour, IMoving, IDamageable
         Speed = 6f;
         playerInput = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        // animator = GetComponent<Animator>();
         flowersManager = FindFirstObjectByType<FlowersManager>();
         dialogueManager = FindFirstObjectByType<DialogueManager>();
         selfColllider = GetComponent<CircleCollider2D>();

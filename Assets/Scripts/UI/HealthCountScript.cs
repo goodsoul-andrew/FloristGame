@@ -5,11 +5,15 @@ using UnityEngine.UI;
 public class HealthCount : MonoBehaviour
 {
     private TMP_Text healthText;
-    [SerializeField]private GameObject player;
+    [SerializeField]private Player player;
     private Health playerHP;
 
     void Start()
     {
+        if (player == null)
+        {
+            player = FindFirstObjectByType<Player>();
+        }
         healthText = GetComponent<TMP_Text>();
         playerHP = player.GetComponent<Health>();
         playerHP.OnHealthChanged += UpdateHealthDisplay;

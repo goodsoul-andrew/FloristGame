@@ -11,7 +11,7 @@ public class LilyPadBridgeBody : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = FindFirstObjectByType<Player>();
         swampLayer = LayerMask.NameToLayer("Swamp");
         playerLayer = LayerMask.NameToLayer("Player");
     }

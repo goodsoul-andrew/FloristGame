@@ -4,11 +4,15 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     private Image healthBar;
-    [SerializeField]private GameObject player;
+    [SerializeField]private Player player;
     private Health playerHP;
 
     void Start()
     {
+        if (player == null)
+        {
+            player = FindFirstObjectByType<Player>();
+        }
         healthBar = GetComponent<Image>();
         playerHP = player.GetComponent<Health>();
         playerHP.OnHealthChanged += UpdateHealthBar;

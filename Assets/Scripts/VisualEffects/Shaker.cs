@@ -6,11 +6,18 @@ public class Shaker : MonoBehaviour
     public float shakeDuration = 0.2f;
     public float shakeStrength = 0.1f;
     private Health healthComponent;
+    [SerializeField] private Health HP;
 
     void Start()
     {
-        healthComponent = GetComponent<Health>();
-        healthComponent.OnDamage += Shake;
+        if (HP == null)
+        {
+            HP = GetComponent<Health>();
+        }
+        if (HP != null)
+        {
+            HP.OnDamage += Shake;
+        }
     }
 
     public void Shake()
@@ -29,9 +36,7 @@ public class Shaker : MonoBehaviour
         {
             float xOffset = Random.Range(-shakeStrength, shakeStrength);
             float yOffset = Random.Range(-shakeStrength, shakeStrength);
-
             transform.localPosition = originalPosition + new Vector3(xOffset, yOffset, 0);
-
             elapsed += Time.deltaTime;
             yield return null;
         }

@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
 
     void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = FindFirstObjectByType<Player>();
         playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>();
         selfCollider = GetComponent<Collider2D>();
 
