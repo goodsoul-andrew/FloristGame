@@ -17999,7 +17999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDelay: 2
-  existenceTime: 0
+  existenceTime: 2
 --- !u!58 &788224630
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18130,7 +18130,7 @@ Animator:
   m_GameObject: {fileID: 788224628}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 668f8e7d276ec055397111fad7f55273, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8b362db1ce2fc8eb293a4d7664ace08c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
