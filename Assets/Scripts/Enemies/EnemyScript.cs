@@ -27,16 +27,16 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
         selfCollider = GetComponent<Collider2D>();
 
         HP = (hp==null)? GetComponent<Health>(): hp;
-        HP.OnDeath += DestroyMyself;
     }
 
 
     protected virtual void Start()
     {
         Speed = speed;
+        HP.OnDeath += DestroyMyself;
         rb = GetComponent<Rigidbody2D>();
 
-        damageDealer.Friends.Add("Enemy");
+        damageDealer.Friends.AddRange(new string[] {"Enemy", "Spawner", "Boss"});
 
         ChangeState(wanderingState);
     }

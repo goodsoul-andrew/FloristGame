@@ -5,7 +5,6 @@ public class Shaker : MonoBehaviour
 {
     public float shakeDuration = 0.2f;
     public float shakeStrength = 0.1f;
-    private Health healthComponent;
     [SerializeField] private Health HP;
 
     void Start()

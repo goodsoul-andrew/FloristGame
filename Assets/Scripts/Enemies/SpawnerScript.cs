@@ -15,6 +15,7 @@ public class SpawnerEnemy : Enemy
 
     protected override void Start()
     {
+        HP.OnDeath += DestroyMyself;
         if (minCount > maxCount) throw new Exception("minCount must be <= maxCount");
         intRnd = new System.Random();
         

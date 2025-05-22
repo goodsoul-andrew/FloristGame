@@ -4,23 +4,21 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     private Image healthBar;
-    [SerializeField]private Player player;
-    private Health playerHP;
+    [SerializeField]private Health health;
 
     void Start()
     {
-        if (player == null)
+        if (health == null)
         {
-            player = FindFirstObjectByType<Player>();
+            health = FindFirstObjectByType<Player>().GetComponent<Health>();
         }
         healthBar = GetComponent<Image>();
-        playerHP = player.GetComponent<Health>();
-        playerHP.OnHealthChanged += UpdateHealthBar;
+        health.OnHealthChanged += UpdateHealthBar;
     }
 
     
     private void UpdateHealthBar()
     {
-        healthBar.fillAmount = playerHP.HP / playerHP.maxHP;
+        healthBar.fillAmount = health.HP / health.maxHP;
     }
 }

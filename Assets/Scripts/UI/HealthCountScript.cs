@@ -5,22 +5,20 @@ using UnityEngine.UI;
 public class HealthCount : MonoBehaviour
 {
     private TMP_Text healthText;
-    [SerializeField]private Player player;
-    private Health playerHP;
+    [SerializeField]private Health health;
 
     void Start()
     {
-        if (player == null)
+        if (health == null)
         {
-            player = FindFirstObjectByType<Player>();
+            health = FindFirstObjectByType<Player>().GetComponent<Health>();
         }
         healthText = GetComponent<TMP_Text>();
-        playerHP = player.GetComponent<Health>();
-        playerHP.OnHealthChanged += UpdateHealthDisplay;
+        health.OnHealthChanged += UpdateHealthDisplay;
     }
 
     private void UpdateHealthDisplay()
     {
-        healthText.text = $"HP: {playerHP.HP} / {playerHP.maxHP}";
+        healthText.text = $"HP: {health.HP} / {health.maxHP}";
     }
 }

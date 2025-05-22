@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 class Root : MonoBehaviour
@@ -7,10 +8,12 @@ class Root : MonoBehaviour
     [SerializeField] private float existenceTime;
     private CircleCollider2D selfCollider;
     private Animator animator;
-    private Health hp;
+    private DamageDealer damageDealer;
     protected void Awake()
     {
-        hp = GetComponent<Health>();
+        damageDealer = GetComponent<DamageDealer>();
+        damageDealer.Friends.AddRange(new string[] {"Enemy", "Spawner", "Boss"});
+        damageDealer.Active = false;
         selfCollider = GetComponent<CircleCollider2D>();
         animator = GetComponent<Animator>();
     }
@@ -34,6 +37,7 @@ class Root : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
         //yield return WaitForAnimation("StartAttack");
         selfCollider.enabled = true;
+        damageDealer.Active = true;
         yield return new WaitForSeconds(existenceTime);
         animator.SetTrigger("EndAttack");
         yield return new WaitForSeconds(0.4f);

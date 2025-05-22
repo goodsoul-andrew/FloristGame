@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1461306569216804806}
   - component: {fileID: 308044990684373232}
+  - component: {fileID: 6795334551023955861}
   m_Layer: 3
   m_Name: image
   m_TagString: Untagged
@@ -87,6 +88,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6795334551023955861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206763654163224897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07a6bbce34283ec358a4d6793d8ae2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  HP: {fileID: 1448034042651138705}
+  audioSource: {fileID: 7240994550230359815}
+  effectDuration: 0.1
+  shakeStrength: 0.1
+  HurtSound: {fileID: 8300000, guid: 15df5d86a74eb89e9964e23cb3aa24b6, type: 3}
 --- !u!1 &2935493967582085770
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,8 +270,6 @@ GameObject:
   - component: {fileID: 4106577917666877313}
   - component: {fileID: 1646922396416865766}
   - component: {fileID: 3420128840710257994}
-  - component: {fileID: 8357776244667861872}
-  - component: {fileID: 5888674964719586869}
   - component: {fileID: 2234388228210369871}
   - component: {fileID: 2944912463450790614}
   - component: {fileID: 7240994550230359815}
@@ -377,33 +394,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8357776244667861872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4376023809175220702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b0d02aaeb0083e358fef62667bf0efb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shakeDuration: 0.2
-  shakeStrength: 0.1
---- !u!114 &5888674964719586869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4376023809175220702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 832c9e68f22bf9ca4ac7da527d2855ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHP: 10
 --- !u!114 &2234388228210369871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,6 +596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 10
+  IsImmortal: 0
 --- !u!61 &6722139764908968743
 BoxCollider2D:
   m_ObjectHideFlags: 0

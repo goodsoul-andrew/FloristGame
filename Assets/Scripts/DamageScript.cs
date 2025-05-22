@@ -6,12 +6,12 @@ public class DamageDealer : MonoBehaviour
 {
     public float damageAmount;
     public HashSet<string> Friends = new HashSet<string>();
-    public bool Enabled = true;
+    public bool Active = true;
 
     private void DealDamage(GameObject target)
     {
         //Debug.Log($"Target is {target.name}");
-        if (!Enabled) return;
+        if (!Active) return;
         if (Friends.Contains(target.tag)) return;
         if (target.TryGetComponent<Health>(out var health))
         {
