@@ -24,6 +24,7 @@ TagManager:
   - MazeFlower
   - HomeFlower
   - CorruptionFlower
+  - Boss
   layers:
   - Default
   - TransparentFX

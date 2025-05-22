@@ -11,7 +11,7 @@ class Boss : Enemy
     [SerializeField] private GameObject rootAttack;
 
 
-    private PlaySoundsScript soundPlayer;
+    [SerializeField] private PlaySoundsScript soundPlayer;
     private System.Random rnd = new System.Random();
 
     [SerializeField] private float attackTimeout;
@@ -19,9 +19,11 @@ class Boss : Enemy
     protected override void Start()
     {
         bossbar.SetActive(false);
-        soundPlayer = GetComponent<PlaySoundsScript>();
+        soundPlayer = (soundPlayer == null) ? GetComponent<PlaySoundsScript>() : soundPlayer;
         player = FindFirstObjectByType<Player>();
         phase1 = new BossPhase(attackTimeout, new List<Action> { RootPlayer });
+
+        HP.OnDeath += Die;
     }
 
     public void StartFight()
@@ -49,5 +51,13 @@ class Boss : Enemy
     {
         var ind = rnd.Next(attackPool.Count);
         attackPool[ind]();
+    }
+
+    void Die()
+    {
+        soundPlayer.StopLoopedSound();
+        soundPlayer.PlaySound("Death");
+        bossbar.SetActive(false);
+        
     }
 }
