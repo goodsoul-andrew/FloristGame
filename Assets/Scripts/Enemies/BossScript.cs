@@ -9,6 +9,7 @@ class Boss : Enemy
     public bool isAwaken { get; private set; }
     [SerializeField] private GameObject bossbar;
     [SerializeField] private GameObject rootAttack;
+    [SerializeField] private GameObject enemy;
 
 
     [SerializeField] private PlaySoundsScript soundPlayer;
@@ -45,6 +46,16 @@ class Boss : Enemy
     void RootPlayer()
     {
         SpawnRoot(player.TruePosition);
+    }
+
+    public void SpawnEnemies()
+    {
+        for (var i = 0; i < 2; i++)
+        {
+            var r = 2f;
+            var pos = UnityEngine.Random.insideUnitCircle * r;
+            Instantiate(enemy, (Vector2)transform.position + pos, Quaternion.Euler(0, 0, 0));
+        }
     }
 
     public void Attack(List<Action> attackPool)
