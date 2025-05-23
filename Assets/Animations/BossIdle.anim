@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RootSignAnimation
+  m_Name: BossIdle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -3053855866712526480, guid: 2b2caf1054ead7ff89bfea34db8c671b, type: 3}
+      value: {fileID: 2345694687838689814, guid: 9d859d2662e06226590f41a327fc57e1, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,7 +44,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -3053855866712526480, guid: 2b2caf1054ead7ff89bfea34db8c671b, type: 3}
+    - {fileID: 2345694687838689814, guid: 9d859d2662e06226590f41a327fc57e1, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

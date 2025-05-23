@@ -99,7 +99,7 @@ public class SwampEffect : StatusEffect
         while (affected.Contains(target))
         {
             yield return new WaitForSeconds(damageTimeout);
-            if (target.TryGetComponent<Health>(out var health))
+            if (!target.CompareTag("Boss") && target.TryGetComponent<Health>(out var health))
             {
                 //Debug.Log($"Swamp Effect damaged {target}");
                 health.TakeDamage(damageAmount);

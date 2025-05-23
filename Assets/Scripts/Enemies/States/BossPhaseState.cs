@@ -6,9 +6,9 @@ public class BossPhase : IEnemyState
 {
     private float timer;
     public float attackTimeout;
-    public List<Action> attackPool;
+    public List<WeightedAttack> attackPool;
 
-    public BossPhase(float attackTimeout, List<Action> attackPool)
+    public BossPhase(float attackTimeout, List<WeightedAttack> attackPool)
     {
         this.attackTimeout = attackTimeout;
         this.attackPool = attackPool;
@@ -32,7 +32,7 @@ public class BossPhase : IEnemyState
         timer += Time.deltaTime;
         if (timer >= attackTimeout)
         {
-            boss.Attack(attackPool);
+            boss.RandomAttack(attackPool);
             timer = 0;
         }
     }
