@@ -164,6 +164,6 @@ public class Player : MonoBehaviour, IMoving, IDamageable
 
     private void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("MainMenuScene");
     }
 }

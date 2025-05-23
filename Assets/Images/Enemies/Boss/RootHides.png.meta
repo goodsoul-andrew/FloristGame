@@ -141,9 +141,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 463
-        y: 190
+        y: 0
         width: 114
-        height: 700
+        height: 890
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,9 +163,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 938
-        y: 190
+        y: 0
         width: 124
-        height: 700
+        height: 890
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,9 +185,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1381
-        y: 190
+        y: 0
         width: 150
-        height: 700
+        height: 890
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,9 +207,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1829
-        y: 190
+        y: 0
         width: 179
-        height: 700
+        height: 890
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,9 +229,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2269
-        y: 190
+        y: 0
         width: 172
-        height: 700
+        height: 890
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,9 +251,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2778
-        y: 190
+        y: 0
         width: 104
-        height: 700
+        height: 890
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,9 +273,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3203
-        y: 190
+        y: 0
         width: 76
-        height: 700
+        height: 890
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,9 +295,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3551
-        y: 190
+        y: 0
         width: 58
-        height: 700
+        height: 890
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,9 +317,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3805
-        y: 190
+        y: 0
         width: 44
-        height: 700
+        height: 890
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
