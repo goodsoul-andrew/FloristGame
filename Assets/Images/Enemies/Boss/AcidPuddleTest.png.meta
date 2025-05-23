@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AcidPuddleTest_0: -4603619385310562744
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
