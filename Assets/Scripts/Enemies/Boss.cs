@@ -34,6 +34,18 @@ class Boss : Enemy
         HP.OnDeath += Die;
     }
 
+    void Update()
+    {
+        if (player.TruePosition.x > transform.position.x)
+        {
+            animator.SetBool("LooksRight", true);
+        }
+        else
+        {
+            animator.SetBool("LooksRight", false);
+        }
+    }
+
     public void StartFight()
     {
         if (isAwaken) return;
