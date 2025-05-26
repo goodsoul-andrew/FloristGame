@@ -145554,6 +145554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 6064573387749356484, guid: b452a5844588c2bedbbbec5902c2b43f, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8822191667329752112, guid: b452a5844588c2bedbbbec5902c2b43f, type: 3}
       propertyPath: bossbar
       value: 
