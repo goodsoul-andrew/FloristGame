@@ -57,7 +57,7 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
     {
         if (player is not null)
         {
-            if (Vector2.Distance(transform.position, player.TruePosition) <= detectionRadius && CanSeePlayer())
+            if (Vector2.Distance(transform.position, player.TruePosition) <= detectionRadius && CanSeePlayer() && !player.isDead)
             {
                 return true;
             }

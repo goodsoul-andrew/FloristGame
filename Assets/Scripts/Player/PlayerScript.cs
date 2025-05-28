@@ -14,11 +14,14 @@ public class Player : MonoBehaviour, IMoving, IDamageable
 
     private Vector2 moveInput;
     public bool isPaused;
+    public bool isDead;
     private bool canPlace;
     [SerializeField] private float placeRadius = 5;
     [SerializeField] private float placeDelay = 2f;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject InteractionObject;
+
+    [SerializeField]private Animator cutsceneAnimator;
 
 
     private List<Interaction> interactors = new();
@@ -54,7 +57,7 @@ public class Player : MonoBehaviour, IMoving, IDamageable
         playerInput.actions["SkipDialogue"].started += HandleDialogueSkip;
 
         StartCoroutine(StartPlaceDelay(0));
-        HP.OnDeath += Restart;
+        HP.OnDeath += HandleDeath;
     }
 
     private void FixedUpdate()
@@ -139,6 +142,12 @@ public class Player : MonoBehaviour, IMoving, IDamageable
         FindFirstObjectByType<TutorialManager>().FinishTutorial("dialogue");
     }
 
+    private void HandleDeath()
+    {
+        isPaused = true;
+        isDead = true;
+        cutsceneAnimator.SetTrigger("Die");
+    }
     public IEnumerator StartPlaceDelay(float delay)
     {
         canPlace = false;
@@ -160,10 +169,5 @@ public class Player : MonoBehaviour, IMoving, IDamageable
         isPaused = false;
         pauseMenu.SetActive(false);
         //AudioListener.pause = false;
-    }
-
-    private void Restart()
-    {
-        SceneManager.LoadScene("MainMenuScene");
     }
 }

@@ -31,7 +31,7 @@ public class SmartEnemyWithAttacks : Enemy
 
     private void Update()
     {
-        if(Vector2.Distance(transform.position, player.TruePosition) <= 2 && !inAnimation)
+        if(Vector2.Distance(transform.position, player.TruePosition) <= 2 && !inAnimation && !player.isDead)
         {
             animator.SetTrigger("Attack");
             navMeshAgent.speed = 0;

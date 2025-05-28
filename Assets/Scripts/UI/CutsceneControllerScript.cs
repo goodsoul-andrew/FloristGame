@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 public class CutsceneController : MonoBehaviour
 {
     private Animator animator;
@@ -12,7 +13,7 @@ public class CutsceneController : MonoBehaviour
         player = FindFirstObjectByType<Player>();
         player.ResumeGame();
         player.isPaused = true;
-        
+
     }
 
     // Update is called once per frame
@@ -29,6 +30,14 @@ public class CutsceneController : MonoBehaviour
         FindFirstObjectByType<TutorialManager>().AddTutorialToTheQueue("walk");
         FindFirstObjectByType<TutorialManager>().AddTutorialToTheQueue("take");
         player.ResumeGame();
-        Destroy(this);
+    }
+
+    public void ToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenuScene");
+    }
+    public void RestartScene()
+    {
+        SceneManager.LoadScene("GameScene");
     }
 }
