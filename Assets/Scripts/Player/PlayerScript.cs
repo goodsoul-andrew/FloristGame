@@ -31,10 +31,12 @@ public class Player : MonoBehaviour, IMoving, IDamageable
 
     public float Speed { get; set; }
     public Health HP {get; set;}
+    public float MaxSpeed {get; set;}
 
     private void Start()
     {
         Speed = 6f;
+        MaxSpeed = Speed;
         playerInput = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
         // animator = GetComponent<Animator>();

@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
     [SerializeField] protected float detectionRadius = 10f;
     public DamageDealer damageDealer;
     public float Speed {get; set;}
+    public float MaxSpeed {get; set;}
     public Health HP { get; set; }
     [SerializeField] private Health hp;
     protected Rigidbody2D rb;
@@ -33,6 +34,7 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
     protected virtual void Start()
     {
         Speed = speed;
+        MaxSpeed = speed;
         HP.OnDeath += DestroyMyself;
         rb = GetComponent<Rigidbody2D>();
 

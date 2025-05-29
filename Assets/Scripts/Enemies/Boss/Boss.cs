@@ -36,6 +36,7 @@ class Boss : Enemy
 
     void Update()
     {
+        if (!isAwaken) return;
         if (player.TruePosition.x > transform.position.x)
         {
             animator.SetBool("LooksRight", true);

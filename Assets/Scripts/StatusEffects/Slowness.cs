@@ -19,7 +19,7 @@ public class Slowness : StatusEffect
     {
         if (target.TryGetComponent<IMoving>(out var moving))
         {
-            moving.Speed = Math.Max(0, moving.Speed - slowAmount);
+            moving.Speed = Math.Max(0, moving.MaxSpeed - slowAmount);
         }
     }
 
@@ -27,7 +27,7 @@ public class Slowness : StatusEffect
     {
         if (target.TryGetComponent<IMoving>(out var moving))
         {
-            moving.Speed += slowAmount;
+            moving.Speed = moving.MaxSpeed;
         }
     }
 }

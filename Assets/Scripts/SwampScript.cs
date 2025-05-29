@@ -74,7 +74,7 @@ public class SwampEffect : StatusEffect
     {
         if (target.TryGetComponent<IMoving>(out var moving))
         {
-            moving.Speed = Math.Max(0, moving.Speed / 2);
+            moving.Speed = Math.Max(0, moving.MaxSpeed / 2);
         }
         damageCoroutine = target.GetComponent<MonoBehaviour>().StartCoroutine(DealDamage(target));
         //Debug.Log($"Swamp effect activated for {target}");
@@ -84,7 +84,7 @@ public class SwampEffect : StatusEffect
     {
         if (target.TryGetComponent<IMoving>(out var moving))
         {
-            moving.Speed *= 2;
+            moving.Speed = moving.MaxSpeed;
         }
         if (damageCoroutine != null)
         {

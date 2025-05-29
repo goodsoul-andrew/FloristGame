@@ -1,6 +1,7 @@
 public interface IMoving
 {
-    public float Speed {get; set;}
+    public float MaxSpeed { get; set; }
+    public float Speed { get; set; }
 }
 
 public interface IDamageable

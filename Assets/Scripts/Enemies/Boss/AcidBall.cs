@@ -6,11 +6,13 @@ public class AcidBall : MonoBehaviour
     public Vector2 Destination;
     public float MoveSpeed = 5f;
     [SerializeField]private GameObject acidPuddle;
+    private PlaySoundsScript soundPlayer;
 
     public Vector2 startPosition;
 
     void Start()
     {
+        soundPlayer = GetComponent<PlaySoundsScript>();
         //startPosition = transform.position;
     }
 
@@ -19,6 +21,7 @@ public class AcidBall : MonoBehaviour
         if (Vector2.Distance(transform.position, Destination) < 0.1f)
         {
             Instantiate(acidPuddle, transform.position, Quaternion.Euler(0, 0, 0));
+            soundPlayer.PlaySound("Splash");
             Destroy(this.gameObject);
             return;
         }
