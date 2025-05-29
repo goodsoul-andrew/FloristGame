@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class AcidBall : MonoBehaviour
+public class Ball : MonoBehaviour
 {
     public Vector2 Destination;
     public float MoveSpeed = 5f;

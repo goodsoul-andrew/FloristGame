@@ -12,10 +12,13 @@ class Boss : Enemy
     private System.Random rnd = new System.Random();
     [SerializeField] private GameObject bossbar;
     [SerializeField] private Root rootAttack;
-    [SerializeField] private AcidBall acidBall;
+    [SerializeField] private Ball acidBall;
+    [SerializeField] private Ball spawnerBall;
+    [SerializeField]private Ball enemyBall;
+    [SerializeField] private CollectibleFlower drop;
     [SerializeField] private PlaySoundsScript soundPlayer;
     [SerializeField] private float attackTimeout;
-    [SerializeField]private Animator animator;
+    [SerializeField] private Animator animator;
 
     private BossPhase phase1;
     protected override void Start()
@@ -26,8 +29,10 @@ class Boss : Enemy
 
         var phase1Attacks = new List<WeightedAttack>
         {
-            new WeightedAttack(RootPlayer, 50),
-            new WeightedAttack(AcidAttack, 50)
+            new WeightedAttack(RootPlayer, 40),
+            new WeightedAttack(AcidAttack, 40),
+            new WeightedAttack(EnemyAttack, 19),
+            new WeightedAttack(SpawnerAttack, 1)
         };
         phase1 = new BossPhase(attackTimeout, phase1Attacks);
 
@@ -71,17 +76,28 @@ class Boss : Enemy
     void AcidAttack()
     {
         animator.SetTrigger("AcidAttack");
-        StartCoroutine(DelayedAcidBallSpawn());
+        StartCoroutine(DelayedAcidBallSpawn(acidBall));
+    }
+    void SpawnerAttack()
+    {
+        animator.SetTrigger("AcidAttack");
+        StartCoroutine(DelayedAcidBallSpawn(spawnerBall));
     }
 
-    IEnumerator DelayedAcidBallSpawn()
+    void EnemyAttack()
+    {
+        animator.SetTrigger("AcidAttack");
+        StartCoroutine(DelayedAcidBallSpawn(enemyBall));
+    }
+
+    IEnumerator DelayedAcidBallSpawn(Ball ball)
     {
         yield return new WaitForSeconds(0.2f);
 
         var pos = (Vector2)transform.position + 2.5f * Vector2.up;
-        acidBall.startPosition = pos;
-        acidBall.Destination = player.TruePosition;
-        Instantiate(acidBall, pos, Quaternion.Euler(0, 0, 0));
+        ball.startPosition = pos;
+        ball.Destination = player.TruePosition;
+        Instantiate(ball, pos, Quaternion.Euler(0, 0, 0));
     }
 
     public void RandomAttack(List<WeightedAttack> attackPool)
@@ -105,7 +121,10 @@ class Boss : Enemy
         soundPlayer.StopLoopedSound();
         soundPlayer.PlaySound("Death");
         bossbar.SetActive(false);
-
+        Instantiate(drop, HP.transform.position, Quaternion.Euler(0, 0, 0));
+        Destroy(animator.gameObject);
+        Destroy(HP.gameObject);
+        Destroy(gameObject);
     }
 }
 

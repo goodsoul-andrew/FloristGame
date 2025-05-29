@@ -148,6 +148,8 @@ public class Player : MonoBehaviour, IMoving, IDamageable
     {
         isPaused = true;
         isDead = true;
+        HP.IsImmortal = true;
+        animator.SetBool("isDead", true);
         cutsceneAnimator.SetTrigger("Die");
     }
     public IEnumerator StartPlaceDelay(float delay)

@@ -42,7 +42,7 @@ public class CollectFlowersScript : MonoBehaviour
                         {
                             var flower = new Flower(
                                 collectedFlower.PlantObject,
-                                collectedFlower.PlantObject.GetComponent<SpriteRenderer>().sprite,
+                                collectedFlower.GetComponent<SpriteRenderer>().sprite,
                                 collectedFlower.amountOfFlowers
                             );
                             FlowersManager.AddFlower(flower);

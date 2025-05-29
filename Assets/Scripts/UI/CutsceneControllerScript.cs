@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 public class CutsceneController : MonoBehaviour
 {
-    private Animator animator;
+    public Animator animator;
     private Player player;
     void Start()
     {
