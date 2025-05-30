@@ -16360,6 +16360,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6123914789910373056, guid: 1cadfa5043a1b3976829401dc9098715, type: 3}
+      propertyPath: m_Size.x
+      value: 5.34194
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123914789910373056, guid: 1cadfa5043a1b3976829401dc9098715, type: 3}
+      propertyPath: m_Size.y
+      value: 4.3951416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123914789910373056, guid: 1cadfa5043a1b3976829401dc9098715, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.46129894
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123914789910373056, guid: 1cadfa5043a1b3976829401dc9098715, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.53611755
+      objectReference: {fileID: 0}
     - target: {fileID: 8687186702307473538, guid: 1cadfa5043a1b3976829401dc9098715, type: 3}
       propertyPath: m_LocalPosition.x
       value: -70.2
@@ -18244,6 +18260,14 @@ PrefabInstance:
     - target: {fileID: 3162545230608785588, guid: c71156c373336de4385be9214f31474e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142251065115488062, guid: c71156c373336de4385be9214f31474e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0724679
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142251065115488062, guid: c71156c373336de4385be9214f31474e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0019920468
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -146069,6 +146093,14 @@ PrefabInstance:
     - target: {fileID: 2762057621704072244, guid: 83f00fcda5b2e1badb2d8c13a096ea4b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2994299283696853303, guid: 83f00fcda5b2e1badb2d8c13a096ea4b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.50524044
+      objectReference: {fileID: 0}
+    - target: {fileID: 2994299283696853303, guid: 83f00fcda5b2e1badb2d8c13a096ea4b, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00000047683716
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
