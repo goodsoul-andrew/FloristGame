@@ -65,7 +65,7 @@ class BossPhase2 : BossPhase
     public override void Enter(Enemy enemy)
     {
         base.Enter(enemy);
-        var boss = enemy as Boss;
+        var boss = (Boss)enemy;
         boss.Roar();
         boss.CreateSpawners();
     }

@@ -11,10 +11,9 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
     public Health Hp { get; set; }
     [SerializeField] private Health hp;
     protected Rigidbody2D rb;
-    public Collider2D playerCollider {get; private set;}
  
     public Player player;
-    protected Collider2D selfCollider;
+    [SerializeField]protected Collider2D selfCollider;
     private IEnemyState currentState;
 
     public readonly WanderingState wanderingState = new WanderingState();
@@ -24,8 +23,7 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
     void Awake()
     {
         player = FindFirstObjectByType<Player>();
-        playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>();
-        selfCollider = GetComponent<Collider2D>();
+        selfCollider = (selfCollider == null) ? GetComponent<Collider2D>() : selfCollider;
 
         Hp = (hp==null)? GetComponent<Health>(): hp;
     }

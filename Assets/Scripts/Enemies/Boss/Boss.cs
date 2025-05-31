@@ -14,7 +14,7 @@ class Boss : Enemy
     [SerializeField] private Ball spawnerBall;
     [SerializeField]private Ball enemyBall;
     [SerializeField] private CollectibleFlower drop;
-    [SerializeField] private PlaySoundsScript soundPlayer;
+    [SerializeField] public PlaySoundsScript soundPlayer;
     [SerializeField] private float attackTimeout;
     [SerializeField] private Animator animator;
 
@@ -128,11 +128,7 @@ class Boss : Enemy
     public void CreateSpawners()
     {
         var ball = spawnerBall;
-        var pos = (Vector2)transform.position + 2.5f * Vector2.down;
-        ball.startPosition = pos;
-        ball.Destination = pos;
-        Instantiate(ball, pos, Quaternion.Euler(0, 0, 0));
-        pos = (Vector2)transform.position + 2.5f * Vector2.right;
+        var pos = (Vector2)transform.position + 2.5f * Vector2.right;
         ball.startPosition = pos;
         ball.Destination = pos;
         Instantiate(ball, pos, Quaternion.Euler(0, 0, 0));
@@ -144,6 +140,7 @@ class Boss : Enemy
 
     public void RandomAttack(List<WeightedAttack> attackPool)
     {
+        Debug.Log($"Auddio source enabled : {soundPlayer.audioSource.enabled}");
         var totalWeight = attackPool.Select(el => el.Weight).Sum();
         var ind = rnd.Next(totalWeight);
         var currentWeight = 0;

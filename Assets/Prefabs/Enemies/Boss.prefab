@@ -502,6 +502,7 @@ MonoBehaviour:
   damageDealer: {fileID: 0}
   hp: {fileID: 1653831142371019915}
   player: {fileID: 0}
+  selfCollider: {fileID: 5020663233004012086}
   bossbar: {fileID: 0}
   rootAttack: {fileID: 8198132315925889617, guid: 0a7dd9512ad90701e958b4eda8f695e0, type: 3}
   acidBall: {fileID: 2586776298890057288, guid: 9c48e4e75a7b3c524bff383be2cc048f, type: 3}

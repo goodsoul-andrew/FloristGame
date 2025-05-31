@@ -6,7 +6,7 @@ public class PlaySoundsScript : MonoBehaviour
 {
     [SerializeField] private SoundsGroup[] SoundsGroups;
     private Dictionary<string, int> namesToIndexes = new Dictionary<string, int>();
-    private AudioSource audioSource;
+    public AudioSource audioSource { get; private set; }
 
     private AudioClip currentLoopedSound;
     private string currentLoopedGroupName;
@@ -23,13 +23,13 @@ public class PlaySoundsScript : MonoBehaviour
 
     public void PlaySound(int numberOfGroup)
     {
-        StopLoopedSound();
+        //StopLoopedSound();
         audioSource.PlayOneShot(SoundsGroups[numberOfGroup].Sounds[Random.Range(0, SoundsGroups[numberOfGroup].Sounds.Length)]);
     }
 
     public void PlaySound(string nameOfGroup)
     {
-        StopLoopedSound();
+        //StopLoopedSound();
         var ind = namesToIndexes[nameOfGroup];
         audioSource.PlayOneShot(SoundsGroups[ind].Sounds[Random.Range(0, SoundsGroups[ind].Sounds.Length)]);
     }
@@ -70,12 +70,6 @@ public class PlaySoundsScript : MonoBehaviour
         currentLoopedSound = null;
         currentLoopedGroupName = null;
 
-    }
-
-    public void StopSound()
-    {
-        StopLoopedSound();
-        audioSource.Stop();
     }
 }
 
