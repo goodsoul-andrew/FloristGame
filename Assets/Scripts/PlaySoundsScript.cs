@@ -71,6 +71,12 @@ public class PlaySoundsScript : MonoBehaviour
         currentLoopedGroupName = null;
 
     }
+
+    public void StopSound()
+    {
+        StopLoopedSound();
+        audioSource.Stop();
+    }
 }
 
 [System.Serializable]
