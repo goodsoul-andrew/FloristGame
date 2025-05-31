@@ -4,15 +4,17 @@ using System.Linq;
 using Unity.IO.LowLevel.Unsafe;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Plant : MonoBehaviour
 {
     public bool IsInfinite;
     public float destroyDelay = 10f;
+    
 
     protected virtual void Awake()
     {
-        if (! IsInfinite) StartCoroutine(RemoveAfterDelay(destroyDelay));
+        if (!IsInfinite) StartCoroutine(RemoveAfterDelay(destroyDelay));
     }
 
     private IEnumerator RemoveAfterDelay(float delay)
