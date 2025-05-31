@@ -128,11 +128,11 @@ class Boss : Enemy
     public void CreateSpawners()
     {
         var ball = spawnerBall;
-        var pos = (Vector2)transform.position + 2.5f * Vector2.right;
+        var pos = (Vector2)transform.position + 5f * Vector2.right;
         ball.startPosition = pos;
         ball.Destination = pos;
         Instantiate(ball, pos, Quaternion.Euler(0, 0, 0));
-        pos = (Vector2)transform.position + 2.5f * Vector2.left;
+        pos = (Vector2)transform.position + 5f * Vector2.left;
         ball.startPosition = pos;
         ball.Destination = pos;
         Instantiate(ball, pos, Quaternion.Euler(0, 0, 0));

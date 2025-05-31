@@ -12,6 +12,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6136754738999075604, guid: f24b5f4411bb5cc2caffddba3dbe32ca, type: 3}
+    - target: {fileID: 1536506722128870173, guid: 9c48e4e75a7b3c524bff383be2cc048f, type: 3}
+      propertyPath: m_LightCookieSprite
+      value: 
+      objectReference: {fileID: -6136754738999075604, guid: f24b5f4411bb5cc2caffddba3dbe32ca, type: 3}
+    - target: {fileID: 1536506722128870173, guid: 9c48e4e75a7b3c524bff383be2cc048f, type: 3}
+      propertyPath: m_LocalBounds.m_Center.y
+      value: 0.022509694
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536506722128870173, guid: 9c48e4e75a7b3c524bff383be2cc048f, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.x
+      value: 3.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536506722128870173, guid: 9c48e4e75a7b3c524bff383be2cc048f, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.y
+      value: 3.725
+      objectReference: {fileID: 0}
     - target: {fileID: 2432883433921565251, guid: 9c48e4e75a7b3c524bff383be2cc048f, type: 3}
       propertyPath: m_Name
       value: BallEnemy

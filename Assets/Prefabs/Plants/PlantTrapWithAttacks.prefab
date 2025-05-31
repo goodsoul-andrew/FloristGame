@@ -103,7 +103,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -8888341327064046431, guid: 84cbae3b0bd36d5baa0a1922c255a2cf, type: 3}
   m_Color: {r: 0.98490566, g: 0.96446425, b: 0.96446425, a: 1}
   m_FlipX: 0
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
-  Enabled: 1
+  Active: 1
 --- !u!222 &470858072669709221
 CanvasRenderer:
   m_ObjectHideFlags: 0

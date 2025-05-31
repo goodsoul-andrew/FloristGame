@@ -59,6 +59,15 @@ TagManager:
   - 
   - TrueUI
   m_SortingLayers:
+  - name: Invisible
+    uniqueID: 3112930501
+    locked: 0
+  - name: Ground
+    uniqueID: 4169408699
+    locked: 0
+  - name: Objects
+    uniqueID: 3794527121
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

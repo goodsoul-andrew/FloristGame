@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: 6810463077589642200, guid: 9491613a369fced408bbeb130744fb7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -125,6 +125,7 @@ MonoBehaviour:
   damageDealer: {fileID: 0}
   hp: {fileID: 0}
   player: {fileID: 0}
+  selfCollider: {fileID: 0}
   timeout: 2
   minCount: 2
   maxCount: 5

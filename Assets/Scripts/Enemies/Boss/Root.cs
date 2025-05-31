@@ -1,21 +1,26 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 class Root : MonoBehaviour
 {
     [SerializeField] private float attackDelay;
     [SerializeField] private float existenceTime;
+    [SerializeField] private GameObject spotlight;
+    private Light2D spotlightLight;
     private CircleCollider2D selfCollider;
     private Animator animator;
     private DamageDealer damageDealer;
     protected void Awake()
     {
         damageDealer = GetComponent<DamageDealer>();
-        damageDealer.Friends.AddRange(new string[] {"Enemy", "Spawner", "Boss"});
+        damageDealer.Friends.AddRange(new string[] { "Enemy", "Spawner", "Boss" });
         damageDealer.Active = false;
         selfCollider = GetComponent<CircleCollider2D>();
         animator = GetComponent<Animator>();
+        spotlightLight = spotlight.GetComponent<Light2D>();
+        spotlightLight.enabled = false;
     }
 
     protected void Start()
@@ -34,6 +39,7 @@ class Root : MonoBehaviour
         yield return new WaitForSeconds(attackDelay);
         // Debug.Log("Root started attack");
         animator.SetTrigger("StartAttack");
+        spotlightLight.enabled = true;
         yield return new WaitForSeconds(0.4f);
         //yield return WaitForAnimation("StartAttack");
         selfCollider.enabled = true;
