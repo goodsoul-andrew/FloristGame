@@ -30,7 +30,7 @@ public class Player : MonoBehaviour, IMoving, IDamageable
     public Vector2 TruePosition => (Vector2)selfColllider.transform.position + selfColllider.offset;
 
     public float Speed { get; set; }
-    public Health HP {get; set;}
+    public Health Hp {get; set;}
     public float MaxSpeed {get; set;}
 
     private void Start()
@@ -43,7 +43,7 @@ public class Player : MonoBehaviour, IMoving, IDamageable
         flowersManager = FindFirstObjectByType<FlowersManager>();
         dialogueManager = FindFirstObjectByType<DialogueManager>();
         selfColllider = GetComponent<CircleCollider2D>();
-        HP = GetComponent<Health>();
+        Hp = GetComponent<Health>();
 
         playerInput.actions["Move"].performed += HandleMove;
         playerInput.actions["Move"].canceled += HandleMoveCanceled;
@@ -59,7 +59,7 @@ public class Player : MonoBehaviour, IMoving, IDamageable
         playerInput.actions["SkipDialogue"].started += HandleDialogueSkip;
 
         StartCoroutine(StartPlaceDelay(0));
-        HP.OnDeath += HandleDeath;
+        Hp.OnDeath += HandleDeath;
     }
 
     private void FixedUpdate()
@@ -148,7 +148,7 @@ public class Player : MonoBehaviour, IMoving, IDamageable
     {
         isPaused = true;
         isDead = true;
-        HP.IsImmortal = true;
+        Hp.IsImmortal = true;
         animator.SetBool("isDead", true);
         cutsceneAnimator.SetTrigger("Die");
     }

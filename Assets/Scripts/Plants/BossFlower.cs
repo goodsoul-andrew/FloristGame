@@ -14,7 +14,7 @@ class BossFlower : MonoBehaviour
     {
         player.isDead = true;
         player.isPaused = true;
-        player.HP.IsImmortal = true;
+        player.Hp.IsImmortal = true;
         cutscene.animator.SetTrigger("Win");
     }
 }

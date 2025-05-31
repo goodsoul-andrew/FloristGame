@@ -6,5 +6,5 @@ public interface IMoving
 
 public interface IDamageable
 {
-    public Health HP {get; set;}
+    public Health Hp {get; set;}
 }

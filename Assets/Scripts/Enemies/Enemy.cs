@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
     public DamageDealer damageDealer;
     public float Speed {get; set;}
     public float MaxSpeed {get; set;}
-    public Health HP { get; set; }
+    public Health Hp { get; set; }
     [SerializeField] private Health hp;
     protected Rigidbody2D rb;
     public Collider2D playerCollider {get; private set;}
@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
         playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>();
         selfCollider = GetComponent<Collider2D>();
 
-        HP = (hp==null)? GetComponent<Health>(): hp;
+        Hp = (hp==null)? GetComponent<Health>(): hp;
     }
 
 
@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour, IMoving, IDamageable
     {
         Speed = speed;
         MaxSpeed = speed;
-        HP.OnDeath += DestroyMyself;
+        Hp.OnDeath += DestroyMyself;
         rb = GetComponent<Rigidbody2D>();
 
         damageDealer.Friends.AddRange(new string[] {"Enemy", "Spawner", "Boss"});
