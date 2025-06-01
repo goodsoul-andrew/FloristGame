@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f69c15598f1d4d63cb3b0f1f589982a9
+guid: cf2daaffe0a0ab94f928cf8e847266d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9113772275395560289
-    second: Boss_phase2_0
+      213: 5855523606567490877
+    second: background_image2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_phase2_0
+      name: background_image2_0
       rect:
         serializedVersion: 2
-        x: 54
-        y: 68
-        width: 877
-        height: 940
+        x: 565
+        y: 162
+        width: 279
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 16381cef89f9a7e70800000000000000
-      internalID: 9113772275395560289
+      spriteID: d359e5f32bff24150800000000000000
+      internalID: 5855523606567490877
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Boss_phase2_0: 9113772275395560289
+      background_image2_0: 5855523606567490877
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

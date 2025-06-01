@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      glowing_mushroom_0: 7872864792647758184
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
