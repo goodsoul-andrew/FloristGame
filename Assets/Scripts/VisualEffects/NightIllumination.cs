@@ -5,7 +5,7 @@ class NightIllumination : MonoBehaviour
 {
     private Daytime daytime;
     private Light2D light2D;
-    [SerializeField] private int numberWhenActivate = 2;
+    [SerializeField] private int numberWhenActivate = 3;
     
     void Start()
     {
@@ -14,11 +14,11 @@ class NightIllumination : MonoBehaviour
         if (light2D != null)
         {
             light2D.enabled = false;
-            if (daytime.Time > 1)
+            if (daytime.Time >= numberWhenActivate)
             {
                 light2D.enabled = true;
             }
-            daytime.OnDaytimeChange += () => { if (daytime.Time > numberWhenActivate && light2D != null) light2D.enabled = true; };
+            daytime.OnDaytimeChange += () => { if (daytime.Time >= numberWhenActivate && light2D != null) light2D.enabled = true; };
         }
     }   
 }
